@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "outDir": "./dist/",
+    "baseUrl": "./",
+    "paths": {
+      "@engine/*": ["./crawler/engine/*"],
+      "@connectors/*": ["./crawler/connectors/*"],
+      "@helper/*": ["./crawler/helper/*"]
+    },
+    "removeComments": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true
+  },
+  "include": ["crawler", "node_modules/@types/puppeteer/index.d.ts"]
+}
