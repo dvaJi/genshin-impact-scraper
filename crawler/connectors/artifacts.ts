@@ -8,27 +8,13 @@ export default class CharactersCrawler extends Connector {
   selectors = {
     urls: "table > tbody > tr > td:nth-child(1) > div > div.card_caption > a",
     name: "#mw-content-text > div > aside > h2",
-    imgs:
-      "#mw-content-text > div > aside > section > table > tbody > tr > td > a > img",
+    imgs: "#mw-content-text > div > aside > section > table > tbody > tr > td",
     names: "table > tbody > tr:nth-child(1) > th",
     descriptions: "table > tbody > tr:nth-child(2) > td > i",
     rarity:
       "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-panel-scroll-wrapper > ul > li",
     drops:
       "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-section-contents > div",
-    // type: "#mw-content-text > div > aside > div:nth-child(3) > div > a",
-    // description: "#mw-content-text > div > p:nth-child(6) > i",
-    // base_atk:
-    //   "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(1)",
-    // substat:
-    //   "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(2)",
-    // substat_value:
-    //   "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(3)",
-    // passive: "#mw-content-text > div > aside > div:nth-child(10) > div",
-    // bonus:
-    //   "#mw-content-text > div > aside > section:nth-child(11) > div.pi-section-contents > div.pi-section-content.pi-section-active > div:nth-child(1) > div",
-    // location: "#mw-content-text > div > aside > div:nth-child(6) > div > a",
-    // series: "#mw-content-text > div > aside > div:nth-child(5) > div",
   };
 
   constructor() {
@@ -81,14 +67,17 @@ export default class CharactersCrawler extends Connector {
       const sets: any[] = [];
 
       doc.querySelectorAll(this.selectors.imgs).forEach((value) => {
+        const imgDom = value.querySelector("td > a > img");
         const artifactName =
-          value.getAttribute("alt")?.replace(".png", "").replace("Item ", "") ||
-          "";
-        const type = this.getArtifactType(artifactName);
+          imgDom
+            ?.getAttribute("alt")
+            ?.replace(".png", "")
+            .replace("Item ", "") || "";
+        const type = value.getAttribute("data-source");
         sets.push({
           name: artifactName,
           type,
-          img: value.getAttribute("src")?.replace("/60?", "/256?") || "",
+          img: imgDom?.getAttribute("src")?.replace("/60?", "/256?") || "",
         });
       });
 
