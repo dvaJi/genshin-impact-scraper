@@ -45,8 +45,9 @@ export default class CharactersCrawler extends Connector {
 
       weaponsLinks = [
         ...weaponsLinks,
-        ...this.getWeaponsLinks(
-          storedContent.get(`List of ${weaponName}`) || ""
+        ...this.parseTableLinks(
+          storedContent.get(`List of ${weaponName}`) || "",
+          this.selectors.urls
         ),
       ];
     }
@@ -107,19 +108,5 @@ export default class CharactersCrawler extends Connector {
 
     // console.log(weapons);
     // this.saveFile(JSON.stringify(weapons), "weapons");
-  }
-
-  getWeaponsLinks(content: string): string[] {
-    const weaponsLinks: string[] = [];
-
-    const swordsSection = this.createDOM(content);
-
-    swordsSection.window.document
-      .querySelectorAll(this.selectors.urls)
-      .forEach((value) => {
-        weaponsLinks.push(value.getAttribute("href") || "");
-      });
-
-    return weaponsLinks.filter((l) => l !== "");
   }
 }

@@ -73,13 +73,23 @@ export interface Weapon {
   series?: string;
 }
 
-interface Bonus {
-  count: number;
-  value: string;
+interface ArtifactSet {
+  name: string;
+  description: string;
 }
 
 export interface Artifact {
-  name: string;
   id: string;
-  bonus: Bonus[];
+  name: string;
+  min_rarity: number;
+  max_rarity: number;
+  flower?: ArtifactSet;
+  plume?: ArtifactSet;
+  sands?: ArtifactSet;
+  goblet?: ArtifactSet;
+  circlet?: ArtifactSet;
+  "1pc"?: string;
+  "2pc"?: string;
+  "4pc"?: string;
+  drop: Record<string, string[]>;
 }

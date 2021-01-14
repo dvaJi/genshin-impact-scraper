@@ -10,8 +10,6 @@ export interface Crawler {
   label: string;
   isValid: boolean;
   requestOptions: RequestInit;
-  createDOM(content: string): JSDOM;
-  fetchDOM(request: Request, retries: number): Promise<JSDOM>;
   run(): Promise<void>;
 }
 
@@ -31,14 +29,14 @@ export abstract class Connector implements Crawler {
   /**
    * Create CheerioStatic from the given content.
    */
-  createDOM(content: string): JSDOM {
+  protected createDOM(content: string): JSDOM {
     return new JSDOM(content);
   }
 
   /**
    * Return a promise that will be resolved after the given amount of time in milliseconds
    */
-  wait(time: number): Promise<void> {
+  protected wait(time: number): Promise<void> {
     return new Promise((resolve) => {
       setTimeout(resolve, time);
     });
@@ -47,12 +45,12 @@ export abstract class Connector implements Crawler {
   /**
    * Return a promise that will be resolved after between min and max.
    */
-  randomWait(min = 500, max = 2000): Promise<void> {
+  protected randomWait(min = 500, max = 2000): Promise<void> {
     const time = Math.floor(Math.random() * (max - min + 1)) + min;
     return this.wait(time);
   }
 
-  parseWikiContent(
+  protected parseWikiContent(
     document: Document,
     selector = "#mw-content-text > div > *"
   ): Map<string, string> {
@@ -79,7 +77,7 @@ export abstract class Connector implements Crawler {
     return storedContent;
   }
 
-  getInfoboxContent(
+  protected getInfoboxContent(
     document: Document,
     selector = "#mw-content-text > div > aside > *"
   ): Map<string, string> {
@@ -112,10 +110,24 @@ export abstract class Connector implements Crawler {
     return storedContent;
   }
 
+  protected parseTableLinks(content: string, selector: string): string[] {
+    const weaponsLinks: string[] = [];
+
+    const tableSection = this.createDOM(content);
+
+    tableSection.window.document
+      .querySelectorAll(selector)
+      .forEach((value) => {
+        weaponsLinks.push(value.getAttribute("href") || "");
+      });
+
+    return weaponsLinks.filter((l) => l !== "");
+  }
+
   /**
    * Get the content for the given Request.
    */
-  async fetchDOM(request: Request, retries = 0): Promise<JSDOM> {
+  protected async fetchDOM(request: Request, retries = 0): Promise<JSDOM> {
     if (typeof request === "string") {
       request = new Request(request, this.requestOptions);
     }
@@ -154,7 +166,7 @@ export abstract class Connector implements Crawler {
     });
   }
 
-  slugify(value: string) {
+  protected slugify(value: string) {
     if (!value) return "";
 
     return value
