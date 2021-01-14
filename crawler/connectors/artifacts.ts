@@ -11,6 +11,7 @@ export default class CharactersCrawler extends Connector {
     imgs: "#mw-content-text > div > aside > section > table > tbody > tr > td",
     names: "table > tbody > tr:nth-child(1) > th",
     descriptions: "table > tbody > tr:nth-child(2) > td > i",
+    bonuses: "#mw-content-text > div > aside > section:nth-child(4) > div, #mw-content-text > div > aside > section:nth-child(3) > div",
     rarity:
       "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-panel-scroll-wrapper > ul > li",
     drops:
@@ -33,7 +34,7 @@ export default class CharactersCrawler extends Connector {
 
     const artifactsLinks: string[] = [
       ...this.parseTableLinks(
-        storedContent.get("5-Piece Artifact Sets") || "",
+        storedContent.get("2-4 Piece Artifact Sets") || "",
         this.selectors.urls
       ),
       ...this.parseTableLinks(
@@ -63,6 +64,24 @@ export default class CharactersCrawler extends Connector {
         max_rarity: Math.max(...rarity),
         drop: drops,
       };
+
+      doc.querySelectorAll(this.selectors.bonuses).forEach((value) => {
+        const source = value.getAttribute("data-source");
+        let piecesKey: "1pc" | "2pc" | "4pc" = "1pc";
+        if (source === "2pcBonus") {
+          piecesKey = "2pc";
+        } else if (source === "4pcBonus") {
+          piecesKey = "4pc";
+        }
+
+        console.log("BONUES",source, value
+          ?.querySelector("div > div")
+          ?.textContent?.trim())
+
+        artifact[piecesKey] = value
+          ?.querySelector("div > div")
+          ?.textContent?.trim();
+      });
 
       const sets: any[] = [];
 
