@@ -93,3 +93,22 @@ export interface Artifact {
   "4pc"?: string;
   drop: Record<string, string[]>;
 }
+
+export interface GemQuality {
+  id: string;
+  name: string;
+  description: string;
+  craft?: {
+    name: string;
+    amount: number;
+  };
+  rarity: number;
+  sources: string[];
+}
+
+export interface GemsMaterial {
+  id: string;
+  name: string;
+  material_type: string[];
+  quality: GemQuality[];
+}
