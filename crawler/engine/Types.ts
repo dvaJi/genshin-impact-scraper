@@ -112,3 +112,14 @@ export interface GemsMaterial {
   material_type: string[];
   quality: GemQuality[];
 }
+
+export interface Material {
+  id: string;
+  name: string;
+  type: string;
+  rarity?: number;
+  material_type: string[];
+  description: string;
+  location?: string;
+  sources?: string[];
+}
