@@ -34,29 +34,37 @@ interface Constellation {
   description: string;
 }
 
+interface AscensionMaterial {
+  name: string;
+  amount: number;
+}
+
+interface Ascension {
+  ascension: number;
+  level: number;
+  cost: number;
+  mat1: AscensionMaterial;
+  mat2?: AscensionMaterial;
+  mat3: AscensionMaterial;
+  mat4: AscensionMaterial;
+}
+
 export interface Character {
-  // name: string;
-  // id: number;
-  tier: number;
-  tier_overall: number;
-  tier_exploration: number;
-  tier_bosses: number;
-  tier_dungeons: number;
-  tier_abyss: number;
-  role: string;
-  soon: boolean;
-  new: boolean;
-  // region: string;
+  id: string;
+  name: string;
+  region: string;
   description: string;
   location: string;
-  // rarity: number;
-  // type: string;
-  // weapon: string;
-  asc_stat: string;
+  rarity: number;
+  element: string;
+  weapon_type: string;
+  gender: string;
+  titles: string[];
   builds?: Build[];
   skills?: Skill[];
   passives?: Passive[];
   constellations?: Constellation[];
+  ascension?: Ascension[];
 }
 
 export interface Weapon {

@@ -46,7 +46,7 @@ export default class CharactersCrawler extends Connector {
       weaponsLinks = [
         ...weaponsLinks,
         ...this.parseTableLinks(
-          storedContent.get(`List of ${weaponName}`) || "",
+          storedContent.get(`List of ${weaponName}`)?.join() || "",
           this.selectors.urls
         ),
       ];

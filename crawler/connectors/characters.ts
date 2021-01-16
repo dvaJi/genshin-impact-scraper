@@ -1,86 +1,96 @@
-// import { Browser } from "puppeteer";
-// import { Page } from "puppeteer";
-// import { Connector } from "@engine/Connector";
-// import { Character } from "@engine/Types";
+import { Request } from "node-fetch";
+import { Connector } from "@engine/Connector";
+import { Character } from "@engine/Types";
+import { saveImage } from "@helper/save-img";
 
-// export default class CharactersCrawler extends Connector {
-//   BASE_URL = "https://genshin-impact.fandom.com";
-//   selectors = {
-//     urls:
-//       "#gallery-0 > div > div.thumb > div > a, #gallery-1 > div > div.thumb > div > a, #gallery-2 > div > div.thumb > div > a",
-//     name: "#mw-content-text > div > aside > h2",
-//     rarity:
-//       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(1) > img",
-//     type:
-//       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(3) > span",
-//     weapon:
-//       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(2) > span",
-//     region:
-//       "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-section-contents > div.pi-section-content.pi-section-active > div:nth-child(4) > div > a",
-//     description:
-//       "#mw-content-text > div > blockquote:nth-child(13) > p.pull-quote__text",
-//   };
+export default class CharactersCrawler extends Connector {
+  BASE_URL = "https://genshin-impact.fandom.com";
+  selectors = {
+    urls: "table > tbody > tr > td:nth-child(2) > a",
+    name: "#mw-content-text > div > aside > h2",
+    rarity:
+      "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(1) > img",
+    element:
+      "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(3) > span",
+    weapon:
+      "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(2) > span",
+    titles:
+      "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-section-contents > div.pi-section-content.pi-section-active > section > section > section > div",
+    description: "blockquote > p.pull-quote__text",
+    img: "#pi-tab-0 > figure > a > img",
+  };
 
-//   protected async crawl(_: Browser, page: Page) {
-//     let characters: Character[] = [];
-//     await page.goto("https://genshin-impact.fandom.com/wiki/Characters");
+  constructor() {
+    super();
+    super.id = Symbol("eng_weapons");
+    super.label = "eng_weapons";
+  }
 
-//     const charactersLinks = await page.evaluate((resultsSelector) => {
-//       const anchors: HTMLTableRowElement[] = Array.from(
-//         document.querySelectorAll(resultsSelector)
-//       );
-//       return anchors
-//         .filter(
-//           (anchor) =>
-//             anchor.hasAttribute("href") &&
-//             anchor.getAttribute("href") !== "/wiki/Traveler"
-//         )
-//         .map((anchor) => {
-//           return anchor.getAttribute("href") || "";
-//         });
-//     }, this.selectors.urls);
+  protected async crawl() {
+    const request = new Request(
+      `${this.BASE_URL}/wiki/Characters`,
+      this.requestOptions
+    );
+    const dom = await this.fetchDOM(request);
+    const storedContent = this.parseWikiContent(dom.window.document);
 
-//     console.log("charactersLinks", charactersLinks);
-//     let id = 1;
-//     for await (const link of charactersLinks) {
-//       console.log(link);
-//       await page.goto(this.BASE_URL + link);
+    const charactersLinks = this.parseTableLinks(
+      storedContent.get("Playable Characters")?.join() || "",
+      this.selectors.urls
+    );
 
-//       let character: any = {};
+    for await (const link of charactersLinks) {
+      const { window } = await this.fetchDOM(
+        new Request(this.BASE_URL + link, this.requestOptions)
+      );
 
-//       character = await page.evaluate((resultsSelector) => {
-//         let character: any = {};
-//         character.name = document
-//           .querySelector(resultsSelector.name)
-//           .textContent.trim();
-//         character.rarity = Number(
-//           document
-//             .querySelector(resultsSelector.rarity)
-//             .getAttribute("alt")
-//             .trim()
-//             .replace(" Stars", "")
-//         );
-//         character.type = document
-//           .querySelector(resultsSelector.type)
-//           .textContent.trim();
-//         character.weapon = document
-//           .querySelector(resultsSelector.weapon)
-//           .textContent.trim();
-//         character.region = document
-//           .querySelector(resultsSelector.region)
-//           .textContent.trim();
-//         // character.description = document
-//         //   .querySelector(resultsSelector.description)
-//         //   .textContent.trim();
+      const doc = window.document;
+      const characterContent = this.parseWikiContent(doc);
+      const infoboxContent = this.getInfoboxContent(doc);
 
-//         return character;
-//       }, this.selectors);
+      const name = this.getTextContent(doc, this.selectors.name);
+      const id = this.slugify(name);
+      const description = this.getTextContent(
+        characterContent.get("Personality")?.join() || "",
+        this.selectors.description
+      );
+      const weapon_type = this.getTextContent(doc, this.selectors.weapon);
+      const rarity = Number(
+        doc
+          .querySelector(this.selectors.rarity)
+          ?.getAttribute("alt")
+          ?.trim()
+          .replace(/( Stars| Star)/, "")
+      );
+      const element = this.getTextContent(doc, this.selectors.element);
+      const titles = this.getTextContentArray(doc, this.selectors.titles);
 
-//       characters.push({ ...character, id: id++ });
-//       // break;
-//     }
+      const skills = [];
+      const passives = [];
+      const constellations = [];
+      const ascension = [];
 
-//     console.log(characters);
-//     this.saveFile(JSON.stringify(characters), "characters");
-//   }
-// }
+      const character: Character = {
+        id,
+        name,
+        description,
+        weapon_type,
+        element,
+        gender: infoboxContent.get("Sex") || "",
+        region: infoboxContent.get("Nation") || "",
+        rarity,
+        location: infoboxContent.get("How to Obtain")?.includes("Wish")
+          ? "Wish"
+          : "Quest",
+        titles,
+      };
+
+      console.log(character);
+      const img =
+        doc?.querySelector(this.selectors.img)?.getAttribute("src") || "";
+      await saveImage(img, "characters", id + "_card.png");
+      this.saveFile(JSON.stringify(character), "/characters/", id);
+      break;
+    }
+  }
+}

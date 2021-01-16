@@ -27,7 +27,7 @@ export abstract class Connector implements Crawler {
   };
 
   /**
-   * Create CheerioStatic from the given content.
+   * Create JSDOM from the given content.
    */
   protected createDOM(content: string): JSDOM {
     return new JSDOM(content);
@@ -53,19 +53,19 @@ export abstract class Connector implements Crawler {
   protected parseWikiContent(
     document: Document,
     selector = "#mw-content-text > div > *"
-  ): Map<string, string> {
+  ): Map<string, string[]> {
     const content = document.querySelectorAll(selector);
 
-    const storedContent = new Map();
+    const storedContent = new Map<string, string[]>();
 
     let latestHeader: string | null = null;
     content.forEach((value) => {
-      if (value.tagName === "H2") {
+      if (value.tagName === "H2" || value.tagName === "H3") {
         latestHeader = value.textContent;
       } else if (latestHeader) {
         if (storedContent.has(latestHeader)) {
           storedContent.set(latestHeader, [
-            ...storedContent.get(latestHeader),
+            ...(storedContent.get(latestHeader) || []),
             value.outerHTML,
           ]);
         } else {
@@ -82,6 +82,17 @@ export abstract class Connector implements Crawler {
     selector = "#mw-content-text > div > aside > *"
   ): Map<string, string> {
     const storedContent = new Map();
+
+    document
+      .querySelectorAll(
+        "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-section-contents > div.pi-section-content > div"
+      )
+      .forEach((value) => {
+        const key = value.querySelector("div > h3")?.textContent?.trim() || "";
+        const content =
+          value.querySelector("div > div")?.textContent?.trim() || "";
+        storedContent.set(key, content);
+      });
 
     const content = document.querySelectorAll(selector);
 
@@ -115,13 +126,47 @@ export abstract class Connector implements Crawler {
 
     const tableSection = this.createDOM(content);
 
-    tableSection.window.document
-      .querySelectorAll(selector)
-      .forEach((value) => {
-        weaponsLinks.push(value.getAttribute("href") || "");
-      });
+    tableSection.window.document.querySelectorAll(selector).forEach((value) => {
+      weaponsLinks.push(value.getAttribute("href") || "");
+    });
 
     return weaponsLinks.filter((l) => l !== "");
+  }
+
+  protected getTextContent(
+    content: string | Document,
+    selector: string
+  ): string {
+    let dom = null;
+
+    if (typeof content === "string") {
+      dom = this.createDOM(content).window.document;
+    } else {
+      dom = content;
+    }
+
+    return dom.querySelector(selector)?.textContent?.trim() || "";
+  }
+
+  protected getTextContentArray(
+    content: string | Document,
+    selector: string
+  ): string[] {
+    let dom = null;
+
+    if (typeof content === "string") {
+      dom = this.createDOM(content).window.document;
+    } else {
+      dom = content;
+    }
+
+    const values: string[] = [];
+
+    dom.querySelectorAll(selector).forEach((value) => {
+      values.push(value.textContent?.trim() || "");
+    });
+
+    return values;
   }
 
   /**
