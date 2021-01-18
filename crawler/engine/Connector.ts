@@ -58,11 +58,12 @@ export abstract class Connector implements Crawler {
 
     const storedContent = new Map<string, string[]>();
 
-    let latestHeader: string | null = null;
+    let latestHeader: string | null = "Initial";
     content.forEach((value) => {
-      if (value.tagName === "H2" || value.tagName === "H3") {
+      const tagName = value.tagName;
+      if (tagName === "H2" || tagName === "H3") {
         latestHeader = value.textContent;
-      } else if (latestHeader) {
+      } else if (latestHeader && tagName !== "ASIDE") {
         if (storedContent.has(latestHeader)) {
           storedContent.set(latestHeader, [
             ...(storedContent.get(latestHeader) || []),
@@ -73,6 +74,9 @@ export abstract class Connector implements Crawler {
         }
       }
     });
+
+    storedContent.delete("Navigation");
+    storedContent.delete("References");
 
     return storedContent;
   }

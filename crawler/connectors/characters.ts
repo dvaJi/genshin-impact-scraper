@@ -1,7 +1,8 @@
 import { Request } from "node-fetch";
 import { Connector } from "@engine/Connector";
-import { Character } from "@engine/Types";
+import { Character, Passive, Skill } from "@engine/Types";
 import { saveImage } from "@helper/save-img";
+import { tableJson } from "@helper/table-json";
 
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
@@ -65,10 +66,15 @@ export default class CharactersCrawler extends Connector {
       const element = this.getTextContent(doc, this.selectors.element);
       const titles = this.getTextContentArray(doc, this.selectors.titles);
 
-      const skills = [];
-      const passives = [];
-      const constellations = [];
-      const ascension = [];
+      const skills: Skill[] = [];
+      const passives: Passive[] = [];
+
+      const talentsTable = characterContent.get("Talents") || ["", ""];
+      const talents = tableJson(talentsTable[0]);
+      console.log(talents);
+
+      // const constellations = [];
+      // const ascension = [];
 
       const character: Character = {
         id,
@@ -83,6 +89,8 @@ export default class CharactersCrawler extends Connector {
           ? "Wish"
           : "Quest",
         titles,
+        skills,
+        passives,
       };
 
       console.log(character);

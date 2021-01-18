@@ -13,7 +13,7 @@ interface SkillModifier {
   value: string;
 }
 
-interface Skill {
+export interface Skill {
   name: string;
   icon: boolean;
   type: string;
@@ -21,14 +21,14 @@ interface Skill {
   modifiers: SkillModifier[];
 }
 
-interface Passive {
+export interface Passive {
   name: string;
   icon: boolean;
   unlock?: string;
   description: string;
 }
 
-interface Constellation {
+export interface Constellation {
   name: string;
   icon: boolean;
   description: string;
@@ -39,7 +39,7 @@ interface AscensionMaterial {
   amount: number;
 }
 
-interface Ascension {
+export interface Ascension {
   ascension: number;
   level: number;
   cost: number;
