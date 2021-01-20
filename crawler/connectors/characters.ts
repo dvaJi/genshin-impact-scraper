@@ -296,7 +296,7 @@ export default class CharactersCrawler extends Connector {
       return skill;
     } else {
       const passiveType = Number(type.replace("Passive Talent ", ""));
-      let unlock = "";
+      let unlock = undefined;
       if (passiveType === 1) {
         unlock = "Ascension 1";
       } else if (passiveType === 2) {
