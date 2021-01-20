@@ -25,6 +25,7 @@ export abstract class Connector implements Crawler {
     redirect: "follow" as "follow",
     headers: [["accept", "image/webp,image/apng,image/*,*/*"]],
   };
+  STRIP_A_TAGS = /<a.*>(.*?)<\/a>/g;
 
   /**
    * Create JSDOM from the given content.
@@ -152,6 +153,21 @@ export abstract class Connector implements Crawler {
     return dom.querySelector(selector)?.textContent?.trim() || "";
   }
 
+  protected getHtmlContent(
+    content: string | Document,
+    selector: string
+  ): string {
+    let dom = null;
+
+    if (typeof content === "string") {
+      dom = this.createDOM(content).window.document;
+    } else {
+      dom = content;
+    }
+
+    return dom.querySelector(selector)?.innerHTML?.trim() || "";
+  }
+
   protected getTextContentArray(
     content: string | Document,
     selector: string
@@ -171,6 +187,14 @@ export abstract class Connector implements Crawler {
     });
 
     return values;
+  }
+
+  protected stripHtml(data: string, regex: RegExp) {
+    try {
+      return data.replace(regex, "$1");
+    } catch (err) {
+      return data;
+    }
   }
 
   /**

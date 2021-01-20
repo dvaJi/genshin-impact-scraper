@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "fs-extra";
 import path from "path";
 import fetch from "node-fetch";
 
@@ -11,21 +11,15 @@ export async function saveImage(
 ): Promise<string> {
   const response = await fetch(url);
   const buffer = await response.buffer();
-  return new Promise((resolve, reject) => {
-    try {
-      fs.writeFile(
-        path.join(COVERS_PATH, path.normalize(relativePath), filename),
-        buffer,
-        () => {
-          console.log(
-            `${filename} downloaded at:`,
-            path.join(COVERS_PATH, relativePath, filename)
-          );
-          resolve(path.join(relativePath, filename));
-        }
-      );
-    } catch (error) {
-      reject(error);
-    }
-  });
+
+  const filePath = path.join(
+    COVERS_PATH,
+    path.normalize(relativePath),
+    filename
+  );
+  await fs.ensureDir(path.dirname(filePath));
+  await fs.outputFile(filePath, buffer);
+
+  console.log(`${filename} downloaded at:`, filePath);
+  return path.join(relativePath, filename);
 }

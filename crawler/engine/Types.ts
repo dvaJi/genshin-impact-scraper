@@ -8,29 +8,33 @@ interface Build {
   stats: string[];
 }
 
-interface SkillModifier {
+export interface SkillModifier {
   stat: string;
   value: string;
 }
 
 export interface Skill {
+  id: string;
   name: string;
-  icon: boolean;
   type: string;
   description: string;
   modifiers: SkillModifier[];
 }
 
 export interface Passive {
+  id: string;
   name: string;
-  icon: boolean;
   unlock?: string;
   description: string;
 }
 
+export function instanceOfSkill(data: any): data is Skill {
+  return "modifiers" in data;
+}
+
 export interface Constellation {
+  id: string;
   name: string;
-  icon: boolean;
   description: string;
 }
 

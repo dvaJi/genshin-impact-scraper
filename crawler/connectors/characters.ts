@@ -1,6 +1,6 @@
 import { Request } from "node-fetch";
 import { Connector } from "@engine/Connector";
-import { Character, Passive, Skill } from "@engine/Types";
+import { Character, instanceOfSkill, Passive, Skill } from "@engine/Types";
 import { saveImage } from "@helper/save-img";
 import { tableJson } from "@helper/table-json";
 
@@ -23,8 +23,8 @@ export default class CharactersCrawler extends Connector {
 
   constructor() {
     super();
-    super.id = Symbol("eng_weapons");
-    super.label = "eng_weapons";
+    super.id = Symbol("eng_characters");
+    super.label = "eng_characters";
   }
 
   protected async crawl() {
@@ -70,8 +70,50 @@ export default class CharactersCrawler extends Connector {
       const passives: Passive[] = [];
 
       const talentsTable = characterContent.get("Talents") || ["", ""];
-      const talents = tableJson(talentsTable[0]);
-      console.log(talents);
+      const imgs: string[] = [];
+      const talentsUrl: string[] = [];
+      const talents = tableJson(talentsTable[0], {
+        skipHiddenRows: false,
+        cellCb: (el, _, col) => {
+          if (col === "Icon") {
+            const url =
+              el
+                .querySelector("td > a > img")
+                ?.getAttribute("data-src")
+                ?.replace("/45?", "/256?") || "";
+            if (url) {
+              imgs.push(url);
+            }
+          } else if (col === "Name") {
+            const url =
+              el.querySelector("td:nth-child(2) > a")?.getAttribute("href") ||
+              "";
+            if (url) {
+              talentsUrl.push(url);
+            }
+          }
+
+          return el.textContent?.trim() || "";
+        },
+      });
+
+      let count = 0;
+      for await (const value of talents.data.filter((d) => d.length > 1)) {
+        const imgUrl = imgs[count];
+        const talentUrl = talentsUrl[count];
+        const info = await this.getTalent(id, value, talentUrl, imgUrl);
+        if (info) {
+          if (instanceOfSkill(info)) {
+            skills.push(info);
+          } else {
+            passives.push(info);
+          }
+          count++;
+        }
+      }
+
+      // console.log("skills", skills);
+      // console.log("passives", passives);
 
       // const constellations = [];
       // const ascension = [];
@@ -93,12 +135,79 @@ export default class CharactersCrawler extends Connector {
         passives,
       };
 
-      console.log(character);
+      // console.log(character);
       const img =
         doc?.querySelector(this.selectors.img)?.getAttribute("src") || "";
-      await saveImage(img, "characters", id + "_card.png");
+      await saveImage(img, `characters/${id}`, id + "_card.png");
       this.saveFile(JSON.stringify(character), "/characters/", id);
-      break;
+    }
+  }
+
+  async getTalent(
+    characterId: string,
+    talentInfo: string[],
+    link: string,
+    imgUrl: string
+  ): Promise<Skill | Passive | null> {
+    const [_, name, type] = talentInfo;
+
+    if (name === "None") {
+      return null;
+    }
+
+    const { window } = await this.fetchDOM(
+      new Request(this.BASE_URL + link, this.requestOptions)
+    );
+
+    const doc = window.document;
+
+    // const talentContent = this.parseWikiContent(doc);
+    const infoboxContent = this.getInfoboxContent(doc);
+
+    // console.log("talentContent", talentContent);
+
+    const talentId = this.slugify(name);
+    const description = this.stripHtml(
+      this.getHtmlContent(infoboxContent.get("info") || "", "div > div"),
+      this.STRIP_A_TAGS
+    );
+
+    // Save Image
+    await saveImage(imgUrl, `characters/${characterId}`, talentId + ".png");
+
+    if (
+      [
+        "Normal/Charged Attack",
+        "Elemental Skill",
+        "Elemental Burst",
+        "Alternate Sprint",
+      ].includes(type)
+    ) {
+      const skill: Skill = {
+        id: talentId,
+        name,
+        type,
+        description,
+        modifiers: [],
+      };
+      return skill;
+    } else {
+      const passiveType = Number(type.replace("Passive Talent ", ""));
+      let unlock = "";
+      if (passiveType === 1) {
+        unlock = "Ascension 1";
+      } else if (passiveType === 2) {
+        unlock = "Ascension 4";
+      }
+
+      const passive: Passive = {
+        id: talentId,
+        name,
+        description,
+        unlock,
+      };
+
+      return passive;
     }
   }
 }
