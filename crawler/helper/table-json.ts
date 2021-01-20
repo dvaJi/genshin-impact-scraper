@@ -80,7 +80,7 @@ export function tableJson(
 }
 
 function mergeOptions(options?: TableJsonOptions): TableOptions {
-  let opts = defaultToptions;
+  let opts = { ...defaultToptions };
 
   if (options) {
     Object.keys(options).forEach((key) => {

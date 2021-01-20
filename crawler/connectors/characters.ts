@@ -1,6 +1,13 @@
 import { Request } from "node-fetch";
 import { Connector } from "@engine/Connector";
-import { Character, instanceOfSkill, Passive, Skill } from "@engine/Types";
+import {
+  Ascension,
+  Character,
+  Constellation,
+  instanceOfSkill,
+  Passive,
+  Skill,
+} from "@engine/Types";
 import { saveImage } from "@helper/save-img";
 import { tableJson } from "@helper/table-json";
 
@@ -66,6 +73,102 @@ export default class CharactersCrawler extends Connector {
       const element = this.getTextContent(doc, this.selectors.element);
       const titles = this.getTextContentArray(doc, this.selectors.titles);
 
+      const constellations: Constellation[] = [];
+      const constImgs: string[] = [];
+      const constellationsTable = tableJson(
+        characterContent.get("Constellation")?.join() || "",
+        {
+          cellSelector: "tr > td, tr > th",
+          cellCb: (el, _, col) => {
+            if (col === "Icon") {
+              console.log(el.outerHTML);
+              const url =
+                el
+                  .querySelector("td > img")
+                  ?.getAttribute("data-src")
+                  ?.replace("/45?", "/256?") || "";
+              if (url) {
+                constImgs.push(url);
+              }
+            }
+
+            return el.textContent?.trim() || "";
+          },
+        }
+      );
+
+      let count = 0;
+      for await (const value of constellationsTable.data) {
+        const imgUrl = constImgs[count];
+        const [level, _, name, description] = value;
+        if (level === "Level") {
+          continue;
+        }
+        const constId = this.slugify(name);
+
+        constellations.push({
+          id: constId,
+          name,
+          description,
+          level: Number(level),
+        });
+
+        // Save Image
+        await saveImage(imgUrl, `characters/${id}`, constId + ".png");
+        count++;
+      }
+
+      const ascensions: Ascension[] = [];
+      const ascensionTable = tableJson(
+        characterContent.get("Ascensions")?.join() || "",
+        { cellSelector: "tr > td, tr > th" }
+      );
+
+      const separator = "×";
+      for await (const value of ascensionTable.data) {
+        const [ascension, level, cost, elmat1, elmat2, elmat3, elmat4] = value;
+        if (ascension === "AscensionPhase" || ascension === "MAXED") {
+          continue;
+        }
+
+        const mat1 = {
+          id: this.slugify(elmat1.split(separator)[0].trim()),
+          name: elmat1.split(separator)[0].trim(),
+          amount: Number(elmat1.split(separator)[1]),
+        };
+
+        let mat2 = undefined;
+        if (elmat2 !== "None") {
+          mat2 = {
+            id: this.slugify(elmat2.split(separator)[0].trim()),
+            name: elmat2.split(separator)[0].trim(),
+            amount: Number(elmat2.split(separator)[1]),
+          };
+        }
+
+        const mat3 = {
+          id: this.slugify(elmat3.split(separator)[0].trim()),
+          name: elmat3.split(separator)[0].trim(),
+          amount: Number(elmat3.split(separator)[1]),
+        };
+
+        const mat4 = {
+          id: this.slugify(elmat4.split(separator)[0].trim()),
+          name: elmat4.split(separator)[0].trim(),
+          amount: Number(elmat4.split(separator)[1]),
+        };
+
+        ascensions.push({
+          ascension: Number(ascension),
+          level: Number(level),
+          cost: Number(cost.replace(/\D+/, "")),
+          mat1,
+          mat2,
+          mat3,
+          mat4,
+        });
+      }
+
       const skills: Skill[] = [];
       const passives: Passive[] = [];
 
@@ -97,7 +200,7 @@ export default class CharactersCrawler extends Connector {
         },
       });
 
-      let count = 0;
+      count = 0;
       for await (const value of talents.data.filter((d) => d.length > 1)) {
         const imgUrl = imgs[count];
         const talentUrl = talentsUrl[count];
@@ -115,9 +218,6 @@ export default class CharactersCrawler extends Connector {
       // console.log("skills", skills);
       // console.log("passives", passives);
 
-      // const constellations = [];
-      // const ascension = [];
-
       const character: Character = {
         id,
         name,
@@ -133,6 +233,8 @@ export default class CharactersCrawler extends Connector {
         titles,
         skills,
         passives,
+        constellations,
+        ascension: ascensions,
       };
 
       // console.log(character);
@@ -140,6 +242,7 @@ export default class CharactersCrawler extends Connector {
         doc?.querySelector(this.selectors.img)?.getAttribute("src") || "";
       await saveImage(img, `characters/${id}`, id + "_card.png");
       this.saveFile(JSON.stringify(character), "/characters/", id);
+      // break;
     }
   }
 

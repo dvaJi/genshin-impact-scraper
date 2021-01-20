@@ -17,9 +17,15 @@ export async function saveImage(
     path.normalize(relativePath),
     filename
   );
-  await fs.ensureDir(path.dirname(filePath));
-  await fs.outputFile(filePath, buffer);
 
-  console.log(`${filename} downloaded at:`, filePath);
-  return path.join(relativePath, filename);
+  try {
+    await fs.ensureDir(path.dirname(filePath));
+    await fs.outputFile(filePath, buffer);
+
+    console.log(`${filename} downloaded at:`, filePath);
+    return path.join(relativePath, filename);
+  } catch (err) {
+    console.error(err);
+    return "";
+  }
 }

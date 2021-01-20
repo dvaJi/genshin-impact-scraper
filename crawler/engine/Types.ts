@@ -36,9 +36,11 @@ export interface Constellation {
   id: string;
   name: string;
   description: string;
+  level: number;
 }
 
-interface AscensionMaterial {
+export interface AscensionMaterial {
+  id: string;
   name: string;
   amount: number;
 }
