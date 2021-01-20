@@ -25,7 +25,7 @@ export default class CharactersCrawler extends Connector {
     super.label = "eng_artifacts";
   }
 
-  protected async crawl() {
+  protected async crawl(): Promise<void> {
     const request = new Request(
       `${this.BASE_URL}/wiki/Artifacts`,
       this.requestOptions
@@ -57,7 +57,7 @@ export default class CharactersCrawler extends Connector {
         doc?.querySelector(this.selectors.name)?.textContent?.trim() || "";
       const id = this.slugify(name);
 
-      let artifact: Artifact = {
+      const artifact: Artifact = {
         id,
         name:
           doc?.querySelector(this.selectors.name)?.textContent?.trim() || "",
@@ -124,7 +124,9 @@ export default class CharactersCrawler extends Connector {
     }
   }
 
-  getArtifactType(name: string) {
+  getArtifactType(
+    name: string
+  ): "flower" | "plume" | "sands" | "goblet" | "circlet" {
     if (name.toLowerCase().includes("flower")) {
       return "flower";
     } else if (name.toLowerCase().includes("plume")) {

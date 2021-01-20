@@ -27,7 +27,7 @@ export default class CharactersCrawler extends Connector {
     super.label = "eng_characters";
   }
 
-  protected async crawl() {
+  protected async crawl(): Promise<void> {
     const request = new Request(
       `${this.BASE_URL}/wiki/Characters`,
       this.requestOptions

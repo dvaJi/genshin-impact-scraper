@@ -32,7 +32,7 @@ export default class CharactersCrawler extends Connector {
     super.label = "eng_weapons";
   }
 
-  protected async crawl() {
+  protected async crawl(): Promise<void> {
     let weaponsLinks: string[] = [];
 
     for await (const weaponName of this.weapons) {

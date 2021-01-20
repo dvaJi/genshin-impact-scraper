@@ -22,7 +22,7 @@ export default class CharactersCrawler extends Connector {
     super.label = "eng_gems_materials";
   }
 
-  protected async crawl() {
+  protected async crawl(): Promise<void> {
     const request = new Request(
       `${this.BASE_URL}/wiki/Character_Ascension_Materials`,
       this.requestOptions
@@ -45,7 +45,7 @@ export default class CharactersCrawler extends Connector {
       const name =
         doc?.querySelector(this.selectors.name)?.textContent?.trim() || "";
       const id = this.slugify(name);
-      let gem: GemsMaterial = {
+      const gem: GemsMaterial = {
         id,
         name:
           doc?.querySelector(this.selectors.name)?.textContent?.trim() || "",
@@ -101,7 +101,7 @@ export default class CharactersCrawler extends Connector {
           craft: lastCraft ? { ...lastCraft } : undefined,
         });
 
-        lastCraft = this.parseCraftTable(qContent.get("Craft Usage"));
+        lastCraft = this.parseCraftTable(qContent.get("Craft Usage")?.join());
         if (lastCraft) {
           lastCraft.name = name;
         }
@@ -113,9 +113,7 @@ export default class CharactersCrawler extends Connector {
     }
   }
 
-  parseCraftTable(
-    content: string = ""
-  ): { name: string; amount: number } | undefined {
+  parseCraftTable(content = ""): { name: string; amount: number } | undefined {
     try {
       const craftTable = tableJson(content);
       const nameIndex = craftTable.columns.indexOf("Name");

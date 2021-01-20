@@ -28,8 +28,16 @@ const defaultToptions: TableOptions = {
   skipHiddenRows: true,
 };
 
-export function tableJson(html: string, options?: TableJsonOptions) {
-  let opts: TableOptions = mergeOptions(options);
+interface TableJsonResult {
+  columns: string[];
+  data: string[][];
+}
+
+export function tableJson(
+  html: string,
+  options?: TableJsonOptions
+): TableJsonResult {
+  const opts: TableOptions = mergeOptions(options);
 
   const tableDom = new JSDOM(html);
 

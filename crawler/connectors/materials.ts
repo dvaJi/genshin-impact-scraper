@@ -28,7 +28,7 @@ export default class CharactersCrawler extends Connector {
     super.label = "eng_materials";
   }
 
-  protected async crawl() {
+  protected async crawl(): Promise<void> {
     const request = new Request(
       `${this.BASE_URL}/wiki/Character_Ascension_Materials`,
       this.requestOptions
@@ -51,7 +51,7 @@ export default class CharactersCrawler extends Connector {
     await this.getLocalSpecialtiesMaterial(specialitiesLinks);
   }
 
-  async getBossMaterial(links: string[]) {
+  async getBossMaterial(links: string[]): Promise<void> {
     for await (const link of links) {
       const { window } = await this.fetchDOM(
         new Request(this.BASE_URL + link, this.requestOptions)

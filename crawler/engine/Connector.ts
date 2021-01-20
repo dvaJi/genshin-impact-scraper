@@ -189,7 +189,7 @@ export abstract class Connector implements Crawler {
     return values;
   }
 
-  protected stripHtml(data: string, regex: RegExp) {
+  protected stripHtml(data: string, regex: RegExp): string {
     try {
       return data.replace(regex, "$1");
     } catch (err) {
@@ -225,13 +225,13 @@ export abstract class Connector implements Crawler {
 
   async run(): Promise<void> {
     console.log(`Init crawl ${this.id.toString()}`);
-    this.crawl();
+    await this.crawl();
     console.log(`Crawl ${this.id.toString()} has finished.`);
   }
 
-  protected abstract crawl(): any;
+  protected abstract crawl(): Promise<void>;
 
-  protected saveFile(data: string, path: string, filename: string) {
+  protected saveFile(data: string, path: string, filename: string): void {
     fs.writeFile(`${DATA_PATH}${path}${filename}.json`, data, (err) => {
       if (err) {
         console.error(err);
@@ -239,13 +239,13 @@ export abstract class Connector implements Crawler {
     });
   }
 
-  protected slugify(value: string) {
+  protected slugify(value: string): string {
     if (!value) return "";
 
     return value
       .toLowerCase()
       .replace(/\s/g, "_")
       .replace(/\W/g, "")
-      .replace(/\__+/g, "_");
+      .replace(/__+/g, "_");
   }
 }
