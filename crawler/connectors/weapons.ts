@@ -63,8 +63,7 @@ export default class CharactersCrawler extends Connector {
       // const weaponContent = this.parseWikiContent(doc);
       // const infoboxContent = this.getInfoboxContent(doc);
 
-      const name =
-        doc?.querySelector(this.selectors.name)?.textContent?.trim() || "";
+      const name = this.getTextContent(doc, this.selectors.name);
       const id = this.slugify(name);
       const img =
         doc?.querySelector(this.selectors.img)?.getAttribute("src") || "";
@@ -72,16 +71,10 @@ export default class CharactersCrawler extends Connector {
 
       const weapon: Weapon = {
         id,
-        name:
-          doc?.querySelector(this.selectors.name)?.textContent?.trim() || "",
-        description:
-          doc?.querySelector(this.selectors.description)?.textContent?.trim() ||
-          "",
-        location:
-          doc?.querySelector(this.selectors.location)?.textContent?.trim() ||
-          "",
-        type:
-          doc?.querySelector(this.selectors.type)?.textContent?.trim() || "",
+        name,
+        description: this.getTextContent(doc, this.selectors.description),
+        location: this.getTextContent(doc, this.selectors.location),
+        type: this.getTextContent(doc, this.selectors.type),
         rarity: Number(
           doc
             ?.querySelector(this.selectors.rarity)
@@ -89,17 +82,11 @@ export default class CharactersCrawler extends Connector {
             ?.trim()
             .replace(/( Stars| Star)/, "")
         ),
-        base: Number(
-          doc?.querySelector(this.selectors.base_atk)?.textContent?.trim() || ""
-        ),
-        passive:
-          doc?.querySelector(this.selectors.passive)?.textContent?.trim() || "",
-        bonus:
-          doc?.querySelector(this.selectors.bonus)?.textContent?.trim() || "",
-        secondary: doc
-          ?.querySelector(this.selectors.substat)
-          ?.textContent?.trim(),
-        series: doc?.querySelector(this.selectors.series)?.textContent?.trim(),
+        base: Number(this.getTextContent(doc, this.selectors.base_atk)),
+        passive: this.getTextContent(doc, this.selectors.passive),
+        bonus: this.getTextContent(doc, this.selectors.bonus),
+        secondary: this.getTextContent(doc, this.selectors.substat),
+        series: this.getTextContent(doc, this.selectors.series),
       };
 
       // weapons.push({ ...weapon, id: id++ });

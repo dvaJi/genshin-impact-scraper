@@ -31,7 +31,7 @@ export default class CharactersCrawler extends Connector {
     const storedContent = this.parseWikiContent(dom.window.document);
 
     const gemsLinks = this.parseTableLinks(
-      storedContent.get("Ascension Gems") || "",
+      storedContent.get("Ascension Gems")?.join() || "",
       this.selectors.gems_urls
     );
 
@@ -54,7 +54,7 @@ export default class CharactersCrawler extends Connector {
       };
 
       const qualityLinks = this.parseTableLinks(
-        gemContent.get("Quality") || "",
+        gemContent.get("Quality")?.join() || "",
         this.selectors.quality_urls
       );
 

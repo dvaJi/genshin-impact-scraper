@@ -11,7 +11,8 @@ export default class CharactersCrawler extends Connector {
     imgs: "#mw-content-text > div > aside > section > table > tbody > tr > td",
     names: "table > tbody > tr:nth-child(1) > th",
     descriptions: "table > tbody > tr:nth-child(2) > td > i",
-    bonuses: "#mw-content-text > div > aside > section:nth-child(4) > div, #mw-content-text > div > aside > section:nth-child(3) > div",
+    bonuses:
+      "#mw-content-text > div > aside > section:nth-child(4) > div, #mw-content-text > div > aside > section:nth-child(3) > div",
     rarity:
       "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-panel-scroll-wrapper > ul > li",
     drops:
@@ -34,11 +35,11 @@ export default class CharactersCrawler extends Connector {
 
     const artifactsLinks: string[] = [
       ...this.parseTableLinks(
-        storedContent.get("2-4 Piece Artifact Sets") || "",
+        storedContent.get("2-4 Piece Artifact Sets")?.join() || "",
         this.selectors.urls
       ),
       ...this.parseTableLinks(
-        storedContent.get("1-Piece Artifact Sets") || "",
+        storedContent.get("1-Piece Artifact Sets")?.join() || "",
         this.selectors.urls
       ),
     ];
@@ -74,10 +75,6 @@ export default class CharactersCrawler extends Connector {
           piecesKey = "4pc";
         }
 
-        console.log("BONUES",source, value
-          ?.querySelector("div > div")
-          ?.textContent?.trim())
-
         artifact[piecesKey] = value
           ?.querySelector("div > div")
           ?.textContent?.trim();
@@ -102,17 +99,17 @@ export default class CharactersCrawler extends Connector {
 
       const artifactContent = this.parseWikiContent(doc);
       // const infoboxContent = this.getInfoboxContent(doc);
-      const loreContent = artifactContent.get("Lore") || "";
-      const loreEl = this.createDOM(loreContent);
+      const descriptions = this.getTextContentArray(
+        artifactContent.get("Lore")?.join() || "",
+        this.selectors.descriptions
+      );
 
-      loreEl.window.document
-        .querySelectorAll(this.selectors.descriptions)
-        .forEach((value, index) => {
-          sets[index] = {
-            ...sets[index],
-            description: value.textContent?.trim(),
-          };
-        });
+      descriptions.forEach((description, index) => {
+        sets[index] = {
+          ...sets[index],
+          description,
+        };
+      });
 
       sets.forEach(async (set) => {
         (artifact as any)[set.type] = {

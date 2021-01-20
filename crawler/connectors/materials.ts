@@ -11,7 +11,8 @@ export default class CharactersCrawler extends Connector {
     description: "#mw-content-text > div > aside > div:nth-child(4) > div",
     location: "#mw-content-text > div > aside > div:nth-child(3) > div > a",
     sources: "#mw-content-text > div > aside > section > div > div",
-    img: "#pi-tab-0 > figure > a > img, #mw-content-text > div > aside > figure > a > img",
+    img:
+      "#pi-tab-0 > figure > a > img, #mw-content-text > div > aside > figure > a > img",
   };
   boss_selectors = {
     urls: "table > tbody > tr > td:nth-child(2) > span > a",
@@ -36,14 +37,14 @@ export default class CharactersCrawler extends Connector {
     const storedContent = this.parseWikiContent(dom.window.document);
 
     const bossLinks = this.parseTableLinks(
-      storedContent.get("Elite Boss Materials") || "",
+      storedContent.get("Elite Boss Materials")?.join() || "",
       this.boss_selectors.urls
     );
 
     await this.getBossMaterial(bossLinks);
 
     const specialitiesLinks = this.parseTableLinks(
-      storedContent.get("Local Specialities") || "",
+      storedContent.get("Local Specialities")?.join() || "",
       this.specialities_selectors.urls
     );
 
@@ -57,13 +58,12 @@ export default class CharactersCrawler extends Connector {
       );
       const doc = window.document;
 
-      const name =
-        doc?.querySelector(this.boss_selectors.name)?.textContent?.trim() || "";
+      const name = this.getTextContent(doc, this.boss_selectors.name);
       const id = this.slugify(name);
-      const description =
-        doc
-          ?.querySelector(this.boss_selectors.description)
-          ?.textContent?.trim() || "";
+      const description = this.getTextContent(
+        doc,
+        this.boss_selectors.description
+      );
       const rarity = Number(
         doc
           .querySelector(this.boss_selectors.rarity)
@@ -99,20 +99,17 @@ export default class CharactersCrawler extends Connector {
       );
       const doc = window.document;
 
-      const name =
-        doc
-          ?.querySelector(this.specialities_selectors.name)
-          ?.textContent?.trim() || "";
+      const name = this.getTextContent(doc, this.specialities_selectors.name);
       const id = this.slugify(name);
-      const description =
-        doc
-          ?.querySelector(this.specialities_selectors.description)
-          ?.textContent?.trim() || "";
+      const description = this.getTextContent(
+        doc,
+        this.specialities_selectors.description
+      );
 
-      const itemType =
-        doc
-          ?.querySelector(this.specialities_selectors.location)
-          ?.textContent?.trim() || "";
+      const itemType = this.getTextContent(
+        doc,
+        this.specialities_selectors.location
+      );
 
       const sources: string[] = [];
       doc
