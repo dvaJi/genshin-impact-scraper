@@ -1,6 +1,6 @@
 import fetch, { Request, RequestInit } from "node-fetch";
 import { JSDOM } from "jsdom";
-import fs from "fs";
+import fs from "fs-extra";
 import path from "path";
 
 const DATA_PATH = path.join(__dirname, "..", "..", "data");
@@ -231,8 +231,10 @@ export abstract class Connector implements Crawler {
 
   protected abstract crawl(): Promise<void>;
 
-  protected saveFile(data: string, path: string, filename: string): void {
-    fs.writeFile(`${DATA_PATH}${path}${filename}.json`, data, (err) => {
+  protected saveFile(data: string, directory: string, filename: string): void {
+    const filePath = `${DATA_PATH}${directory}${filename}.json`;
+    fs.ensureDirSync(path.dirname(filePath));
+    fs.writeFile(filePath, data, (err) => {
       if (err) {
         console.error(err);
       }

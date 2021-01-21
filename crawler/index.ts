@@ -1,21 +1,38 @@
 import dotenv from "dotenv";
-import CharactersCrawler from "@connectors/characters";
-// import WeaponsCrawler from "@connectors/weapons";
-// import ArtifactsCrawler from "@connectors/artifacts";
-// import MaterialsCrawler from "@connectors/materials";
-// import GemsCrawler from "@connectors/gems";
+
+// English connectors
+import CharactersENCrawler from "@connectors/en/characters";
+import WeaponsENCrawler from "@connectors/en/weapons";
+import ArtifactsENCrawler from "@connectors/en/artifacts";
+import MaterialsENCrawler from "@connectors/en/materials";
+import GemsENCrawler from "@connectors/en/gems";
+
+// Spanish connectors
+import WeaponsESCrawler from "@connectors/es/weapons";
 
 (async () => {
   dotenv.config();
-  const pCrawler = new CharactersCrawler();
-  await pCrawler.run();
-  // const wCrawler = new WeaponsCrawler();
-  // await wCrawler.run();
-  // const aCrawler = new ArtifactsCrawler();
-  // aCrawler.run();
-  // const mCrawler = new MaterialsCrawler();
-  // mCrawler.run();
-  // const gCrawler = new GemsCrawler();
-  // gCrawler.run();
+
+  if (process.env.CRAWL_ENGLISH === "true") {
+    console.log("Starting Crawl English content...");
+    const pCrawler = new CharactersENCrawler();
+    await pCrawler.run();
+    const wCrawler = new WeaponsENCrawler();
+    await wCrawler.run();
+    const aCrawler = new ArtifactsENCrawler();
+    aCrawler.run();
+    const mCrawler = new MaterialsENCrawler();
+    mCrawler.run();
+    const gCrawler = new GemsENCrawler();
+    gCrawler.run();
+  }
+
+  if (process.env.CRAWL_SPANISH === "true") {
+    console.log("Starting Crawl Spanish content...");
+
+    const wCrawler = new WeaponsESCrawler();
+    await wCrawler.run();
+  }
+
   return;
 })();
