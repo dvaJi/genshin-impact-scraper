@@ -80,7 +80,12 @@ export default class CharactersCrawler extends Connector {
           ?.textContent?.trim();
       });
 
-      const sets: any[] = [];
+      const sets: {
+        name: string;
+        type: string;
+        img: string;
+        description?: string;
+      }[] = [];
 
       doc.querySelectorAll(this.selectors.imgs).forEach((value) => {
         const imgDom = value.querySelector("td > a > img");
@@ -89,7 +94,7 @@ export default class CharactersCrawler extends Connector {
             ?.getAttribute("alt")
             ?.replace(".png", "")
             .replace("Item ", "") || "";
-        const type = value.getAttribute("data-source");
+        const type = value.getAttribute("data-source") || "";
         sets.push({
           name: artifactName,
           type,
@@ -118,6 +123,10 @@ export default class CharactersCrawler extends Connector {
           description: set.description,
         };
         await saveImage(set.img, "artifacts", this.slugify(set.name) + ".png");
+
+        if (set.type === "flower") {
+          await saveImage(set.img, "artifacts", id + ".png");
+        }
       });
 
       this.saveFile(JSON.stringify(artifact), "/artifacts/", id);
