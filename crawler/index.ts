@@ -8,8 +8,9 @@ import MaterialsENCrawler from "@connectors/en/character-ascension-materials";
 // import GemsENCrawler from "@connectors/en/gems";
 
 // Spanish connectors
-import WeaponsESCrawler from "@connectors/es/weapons";
-import CharactersESCrawler from "@connectors/es/characters";
+// import WeaponsESCrawler from "@connectors/es/weapons";
+// import CharactersESCrawler from "@connectors/es/characters";
+import ArtifactsESCrawler from "@connectors/es/artifacts";
 
 (async () => {
   dotenv.config();
@@ -31,10 +32,12 @@ import CharactersESCrawler from "@connectors/es/characters";
   if (process.env.CRAWL_SPANISH === "true") {
     console.log("Starting Crawl Spanish content...");
 
-    const cCrawler = new CharactersESCrawler();
-    await cCrawler.run();
-    const wCrawler = new WeaponsESCrawler();
-    await wCrawler.run();
+    // const cCrawler = new CharactersESCrawler();
+    // await cCrawler.run();
+    // const wCrawler = new WeaponsESCrawler();
+    // await wCrawler.run();
+    const aCrawler = new ArtifactsESCrawler();
+    await aCrawler.run();
   }
 
   return;
