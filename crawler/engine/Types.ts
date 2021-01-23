@@ -108,23 +108,19 @@ export interface Artifact {
   drop: Record<string, string[]>;
 }
 
-export interface GemQuality {
-  id: string;
-  name: string;
-  description: string;
-  craft?: {
-    name: string;
-    amount: number;
-  };
-  rarity: number;
-  sources: string[];
-}
-
 export interface GemsMaterial {
   id: string;
   name: string;
+  description: string;
+  type: string;
   material_type: string[];
-  quality: GemQuality[];
+  craft?: {
+    name: string;
+    amount: number;
+    cost: number;
+  };
+  rarity: number;
+  sources: string[];
 }
 
 export interface Material {
