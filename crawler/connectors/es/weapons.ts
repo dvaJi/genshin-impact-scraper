@@ -17,8 +17,8 @@ export default class CharactersCrawler extends Connector {
 
   constructor() {
     super();
-    super.id = Symbol("spanish_weapons");
-    super.label = "spanish_weapons";
+    super.id = Symbol("es_weapons");
+    super.label = "es_weapons";
   }
 
   protected async crawl(): Promise<void> {

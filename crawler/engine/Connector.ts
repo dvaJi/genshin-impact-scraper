@@ -26,6 +26,8 @@ export abstract class Connector implements Crawler {
     headers: [["accept", "image/webp,image/apng,image/*,*/*"]],
   };
   STRIP_A_TAGS = /<a.*>(.*?)<\/a>/g;
+  STRIP_HEAD_TAGS = /<head.*>(.*?)<\/head>/g;
+  STRIP_BODY_TAGS = /<body>(.*?)<\/body>/g;
 
   /**
    * Create JSDOM from the given content.
@@ -84,20 +86,17 @@ export abstract class Connector implements Crawler {
 
   protected getInfoboxContent(
     document: Document,
-    selector = "#mw-content-text > div > aside > *"
+    selector = "#mw-content-text > div > aside > *",
+    sectionsSelector = "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-section-contents > div.pi-section-content > div"
   ): Map<string, string> {
     const storedContent = new Map();
 
-    document
-      .querySelectorAll(
-        "#mw-content-text > div > aside > section.pi-item.pi-panel.pi-border-color > div.pi-section-contents > div.pi-section-content > div"
-      )
-      .forEach((value) => {
-        const key = value.querySelector("div > h3")?.textContent?.trim() || "";
-        const content =
-          value.querySelector("div > div")?.textContent?.trim() || "";
-        storedContent.set(key, content);
-      });
+    document.querySelectorAll(sectionsSelector).forEach((value) => {
+      const key = value.querySelector("div > h3")?.textContent?.trim() || "";
+      const content =
+        value.querySelector("div > div")?.textContent?.trim() || "";
+      storedContent.set(key, content);
+    });
 
     const content = document.querySelectorAll(selector);
 
@@ -189,9 +188,18 @@ export abstract class Connector implements Crawler {
     return values;
   }
 
-  protected stripHtml(data: string, regex: RegExp): string {
+  protected stripHtml(data: string, regex: RegExp | RegExp[]): string {
     try {
-      return data.replace(regex, "$1");
+      if (regex instanceof RegExp) {
+        return data.replace(regex, "$1");
+      } else {
+        let value = "";
+        for (const rgx of regex) {
+          value = data.replace(rgx, "$1");
+          console.log(value, rgx);
+        }
+        return value;
+      }
     } catch (err) {
       return data;
     }
