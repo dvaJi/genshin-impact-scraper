@@ -4,11 +4,6 @@ import { Material } from "@engine/Types";
 
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
-  categories = [
-    "/es/wiki/Categoría:Materiales_de_ascensión",
-    "/es/wiki/Categoría:Objetos_típicos_de_Mondstadt",
-    "/es/wiki/Categoría:Objetos_típicos_de_Liyue",
-  ];
   selectors = {
     urls: "#mw-content-text > div.category-page__members > ul > li > a",
     id:
@@ -25,20 +20,18 @@ export default class CharactersCrawler extends Connector {
   }
 
   protected async crawl(): Promise<void> {
-    const materialsLink: string[] = [];
+    const request = new Request(
+      `${this.BASE_URL}/es/wiki/Categoría:Materiales_de_mejora_de_talento`,
+      this.requestOptions
+    );
+    const dom = await this.fetchDOM(request);
 
-    for await (const category of this.categories) {
-      const request = new Request(
-        `${this.BASE_URL}${category}`,
-        this.requestOptions
-      );
-      const dom = await this.fetchDOM(request);
-      dom.window.document
-        .querySelectorAll(this.selectors.urls)
-        .forEach((value) => {
-          materialsLink.push(value.getAttribute("href") || "");
-        });
-    }
+    const materialsLink: string[] = [];
+    dom.window.document
+      .querySelectorAll(this.selectors.urls)
+      .forEach((value) => {
+        materialsLink.push(value.getAttribute("href") || "");
+      });
 
     for await (const link of materialsLink) {
       const { window } = await this.fetchDOM(

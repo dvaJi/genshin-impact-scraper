@@ -13,6 +13,7 @@ import CommonMaterialsENCrawler from "@connectors/en/common-materials";
 // import CharactersESCrawler from "@connectors/es/characters";
 // import ArtifactsESCrawler from "@connectors/es/artifacts";
 import AscensionMaterialsESCrawler from "@connectors/es/ascension-materials";
+// import TalentMaterialsESCrawler from "@connectors/es/talent-materials";
 
 (async () => {
   dotenv.config();
@@ -44,6 +45,8 @@ import AscensionMaterialsESCrawler from "@connectors/es/ascension-materials";
     // await aCrawler.run();
     const amCrawler = new AscensionMaterialsESCrawler();
     await amCrawler.run();
+    // const tmCrawler = new TalentMaterialsESCrawler();
+    // await tmCrawler.run();
   }
 
   return;
