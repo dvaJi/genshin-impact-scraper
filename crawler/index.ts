@@ -50,5 +50,6 @@ import TalentMaterialsESCrawler from "@connectors/es/talent-materials";
     await tmCrawler.run();
   }
 
-  return;
+  // End
+  process.exit(1);
 })();
