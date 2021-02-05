@@ -1,12 +1,12 @@
 import dotenv from "dotenv";
 
 // English connectors
-// import CharactersENCrawler from "@connectors/en/characters";
+import CharactersENCrawler from "@connectors/en/characters";
 // import WeaponsENCrawler from "@connectors/en/weapons";
 // import ArtifactsENCrawler from "@connectors/en/artifacts";
 // import MaterialsENCrawler from "@connectors/en/character-ascension-materials";
 // import TalentMaterialsENCrawler from "@connectors/en/talent-materials";
-import CommonMaterialsENCrawler from "@connectors/en/common-materials";
+// import CommonMaterialsENCrawler from "@connectors/en/common-materials";
 
 // Spanish connectors
 // import WeaponsESCrawler from "@connectors/es/weapons";
@@ -20,8 +20,8 @@ import AscensionMaterialsESCrawler from "@connectors/es/ascension-materials";
 
   if (process.env.CRAWL_ENGLISH === "true") {
     console.log("Starting Crawl English content...");
-    // const pCrawler = new CharactersENCrawler();
-    // await pCrawler.run();
+    const pCrawler = new CharactersENCrawler();
+    await pCrawler.run();
     // const wCrawler = new WeaponsENCrawler();
     // await wCrawler.run();
     // const aCrawler = new ArtifactsENCrawler();
@@ -30,8 +30,8 @@ import AscensionMaterialsESCrawler from "@connectors/es/ascension-materials";
     // mCrawler.run();
     // const tmCrawler = new TalentMaterialsENCrawler();
     // tmCrawler.run();
-    const cmCrawler = new CommonMaterialsENCrawler();
-    cmCrawler.run();
+    // const cmCrawler = new CommonMaterialsENCrawler();
+    // cmCrawler.run();
   }
 
   if (process.env.CRAWL_SPANISH === "true") {

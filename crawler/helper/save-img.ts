@@ -9,6 +9,7 @@ export async function saveImage(
   relativePath: string,
   filename: string
 ): Promise<string> {
+  console.log("downloading", url);
   const response = await fetch(url);
   const buffer = await response.buffer();
 

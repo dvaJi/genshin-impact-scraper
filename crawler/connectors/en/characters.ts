@@ -15,7 +15,7 @@ export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
   selectors = {
     urls: "table > tbody > tr > td:nth-child(2) > a",
-    name: "#mw-content-text > div > aside > h2",
+    name: "#firstHeading",
     rarity:
       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(1) > img",
     element:
@@ -47,6 +47,8 @@ export default class CharactersCrawler extends Connector {
       this.selectors.urls
     );
 
+    // const charactersLinks = ["/wiki/Xiao"];
+
     for await (const link of charactersLinks) {
       const { window } = await this.fetchDOM(
         new Request(this.BASE_URL + link, this.requestOptions)
@@ -59,7 +61,7 @@ export default class CharactersCrawler extends Connector {
       const name = this.getTextContent(doc, this.selectors.name);
       const id = this.slugify(name);
       const description = this.getTextContent(
-        characterContent.get("Personality")?.join() || "",
+        characterContent.get("Introduction")?.join() || "",
         this.selectors.description
       );
       const weapon_type = this.getTextContent(doc, this.selectors.weapon);
@@ -114,7 +116,11 @@ export default class CharactersCrawler extends Connector {
         });
 
         // Save Image
-        await saveImage(imgUrl, `characters/${id}`, constId + ".png");
+        if (imgUrl) {
+          await saveImage(imgUrl, `characters/${id}`, constId + ".png");
+        } else {
+          console.warn(`Image [${constId}] doesn't exist for ${id}`);
+        }
         count++;
       }
 
@@ -276,7 +282,11 @@ export default class CharactersCrawler extends Connector {
     );
 
     // Save Image
-    await saveImage(imgUrl, `characters/${characterId}`, talentId + ".png");
+    if (imgUrl) {
+      await saveImage(imgUrl, `characters/${characterId}`, talentId + ".png");
+    } else {
+      console.warn(`Image [${talentId}] doesn't exist for ${characterId}`);
+    }
 
     if (
       [
