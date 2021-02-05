@@ -247,7 +247,7 @@ export default class CharactersCrawler extends Connector {
       const img =
         doc?.querySelector(this.selectors.img)?.getAttribute("src") || "";
       await saveImage(img, `characters/${id}`, id + "_card.png");
-      this.saveFile(JSON.stringify(character), "/characters/", id);
+      this.saveFile(JSON.stringify(character, undefined, 2), "/characters/", id);
       // break;
     }
   }

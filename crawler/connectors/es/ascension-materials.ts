@@ -78,7 +78,7 @@ export default class CharactersCrawler extends Connector {
         rarity,
       };
 
-      this.saveFile(JSON.stringify(material), "/es/materials/", id);
+      this.saveFile(JSON.stringify(material, undefined, 2), "/es/materials/", id);
     }
   }
 }

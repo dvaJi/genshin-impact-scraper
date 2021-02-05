@@ -1,1 +1,126 @@
-{"id":"xiao","name":"Xiao","description":"Uno de los poderosos e iluminados Adeptus que custodian Liyue. También llamado \"Guardián Yaksha\". A pesar de tener una apariencia joven, algunas de sus hazañas ya aparecen en libros antiguos de hace miles de años. Le gusta especialmente el tofu de Almendras de la Posada Wangshu. La razón de esto es que el platillo sabe justo como los \"sueños\" que solía devorar.","titles":["Guardián Yaksha","Alatus, el rey de alas doradas"],"skills":[],"passives":[],"constellations":[{"name":"Eón de la Disolución - Destructor de Mundos","description":"","level":1},{"name":"Eón de la Aniquilación  - Florecimiento de Kaleidos","description":"","level":2},{"name":"Conquistador del mal - Deidad de la Ira","description":"","level":3},{"name":"Transcension - Extinción del sufrimiento","description":"","level":4},{"name":"Eón de la Evolución  - Origen de la  Ignorancia","description":"","level":5},{"name":"Conquistador del mal - Vigilante Yaksha","description":"","level":6}],"ascension":[{"mat1":{"name":"Pedacito de turquesa vayuda"},"mat3":{"name":"Flor chingxin"},"mat4":{"name":"Flecha robusta"}},{"mat1":{"name":"Fragmento de turquesa vayuda"},"mat2":{"name":"Semilla de Huracán"},"mat3":{"name":"Flor chingxin"},"mat4":{"name":"Flecha robusta"}},{"mat1":{"name":"Fragmento de turquesa vayuda"},"mat2":{"name":"Semilla de Huracán"},"mat3":{"name":"Flor chingxin"},"mat4":{"name":"Flecha afilada"}},{"mat1":{"name":"Trozo de turquesa vayuda"},"mat2":{"name":"Semilla de Huracán"},"mat3":{"name":"Flor chingxin"},"mat4":{"name":"Flecha afilada"}},{"mat1":{"name":"Trozo de turquesa vayuda"},"mat2":{"name":"Semilla de Huracán"},"mat3":{"name":"Flor chingxin"},"mat4":{"name":"Flecha veterana"}},{"mat1":{"name":"Turquesa vayuda"},"mat2":{"name":"Semilla de Huracán"},"mat3":{"name":"Flor chingxin"},"mat4":{"name":"Flecha veterana"}}]}
+{
+  "id": "xiao",
+  "name": "Xiao",
+  "description": "Uno de los poderosos e iluminados Adeptus que custodian Liyue. También llamado \"Guardián Yaksha\". A pesar de tener una apariencia joven, algunas de sus hazañas ya aparecen en libros antiguos de hace miles de años. Le gusta especialmente el tofu de Almendras de la Posada Wangshu. La razón de esto es que el platillo sabe justo como los \"sueños\" que solía devorar.",
+  "titles": [
+    "El Guardián Yaksha",
+    "Alatus, el rey de alas doradas"
+  ],
+  "skills": [],
+  "passives": [],
+  "constellations": [
+    {
+      "name": "Desintegración: Destructor de mundos",
+      "description": "Aumenta las cargas de Ciclón de viento lemniscático en 1.",
+      "level": 1
+    },
+    {
+      "name": "Aniquilación: Flor de Kaleidos",
+      "description": "Cuando Xiao está en tu equipo pero no en combate, su Recarga de Energía aumenta en un 25%.",
+      "level": 2
+    },
+    {
+      "name": "Conquista del mal: Deidad de la ira",
+      "description": "Aumenta el nivel de habilidad de Ciclón de viento lemniscático +3. Puede ser aumentado hasta Niv. 15.",
+      "level": 3
+    },
+    {
+      "name": "Trascendencia: Fin del sufrimiento",
+      "description": "Cuando la Vida de Xiao cae por debajo del 50%, obtiene un 100% de Bono de DEF.",
+      "level": 4
+    },
+    {
+      "name": "Evolución: Origen de la ignorancia",
+      "description": "Aumenta el nivel de habilidad de Azote de todos los males +3. Puede ser aumentado hasta Niv. 15.",
+      "level": 5
+    },
+    {
+      "name": "Conquista del mal: Guardián Yaksha",
+      "description": "Mientras Xiao está bajo los efectos de Azote de todos los males, golpear a 2 o más enemigos con Ataque Descendente otorga a Ciclón de viento lemniscático 1 carga adicional y elimina su TdE durante 1 s.",
+      "level": 6
+    }
+  ],
+  "ascension": [
+    {
+      "mat1": {
+        "name": "Pedacito de turquesa vayuda"
+      },
+      "mat3": {
+        "name": "Flor chingxin"
+      },
+      "mat4": {
+        "name": "Condensado de Slime"
+      }
+    },
+    {
+      "mat1": {
+        "name": "Fragmento de turquesa vayuda"
+      },
+      "mat2": {
+        "name": "Jade inmaduro"
+      },
+      "mat3": {
+        "name": "Flor chingxin"
+      },
+      "mat4": {
+        "name": "Condensado de Slime"
+      }
+    },
+    {
+      "mat1": {
+        "name": "Fragmento de turquesa vayuda"
+      },
+      "mat2": {
+        "name": "Jade inmaduro"
+      },
+      "mat3": {
+        "name": "Flor chingxin"
+      },
+      "mat4": {
+        "name": "Babas de Slime"
+      }
+    },
+    {
+      "mat1": {
+        "name": "Trozo de turquesa vayuda"
+      },
+      "mat2": {
+        "name": "Jade inmaduro"
+      },
+      "mat3": {
+        "name": "Flor chingxin"
+      },
+      "mat4": {
+        "name": "Babas de Slime"
+      }
+    },
+    {
+      "mat1": {
+        "name": "Trozo de turquesa vayuda"
+      },
+      "mat2": {
+        "name": "Jade inmaduro"
+      },
+      "mat3": {
+        "name": "Flor chingxin"
+      },
+      "mat4": {
+        "name": "Esencia de Slime"
+      }
+    },
+    {
+      "mat1": {
+        "name": "Turquesa vayuda"
+      },
+      "mat2": {
+        "name": "Jade inmaduro"
+      },
+      "mat3": {
+        "name": "Flor chingxin"
+      },
+      "mat4": {
+        "name": "Esencia de Slime"
+      }
+    }
+  ]
+}

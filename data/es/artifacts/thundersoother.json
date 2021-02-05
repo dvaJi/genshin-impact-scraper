@@ -1,1 +1,7 @@
-{"id":"thundersoother","name":"Domador de Truenos","drop":{},"2pc":"Aumenta la RES Electro un 40%","4pc":"Aumenta el daño contra enemigos afectados por Electro un 35%"}
+{
+  "id": "thundersoother",
+  "name": "Domador de Truenos",
+  "drop": {},
+  "2pc": "Aumenta la RES Electro un 40%",
+  "4pc": "Aumenta el daño contra enemigos afectados por Electro un 35%"
+}

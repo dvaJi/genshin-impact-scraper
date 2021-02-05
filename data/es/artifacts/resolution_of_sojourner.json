@@ -1,1 +1,7 @@
-{"id":"resolution_of_sojourner","name":"Corazón del Viajero","drop":{},"2pc":"ATQ +18%","4pc":"Prob. CRIT de Ataque Cargado +30%"}
+{
+  "id": "resolution_of_sojourner",
+  "name": "Corazón del Viajero",
+  "drop": {},
+  "2pc": "ATQ +18%",
+  "4pc": "Prob. CRIT de Ataque Cargado +30%"
+}

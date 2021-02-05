@@ -1,1 +1,6 @@
-{"id":"damaged_mask","name":"Máscara dañada","description":"","rarity":0}
+{
+  "id": "damaged_mask",
+  "name": "Máscara dañada",
+  "description": "",
+  "rarity": 0
+}

@@ -1,1 +1,6 @@
-{"id":"chaos_device","name":"Dispositivo del caos","description":"","rarity":null}
+{
+  "id": "chaos_device",
+  "name": "Dispositivo del caos",
+  "description": "",
+  "rarity": null
+}

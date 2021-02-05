@@ -129,7 +129,7 @@ export default class CharactersCrawler extends Connector {
         }
       });
 
-      this.saveFile(JSON.stringify(artifact), "/artifacts/", id);
+      this.saveFile(JSON.stringify(artifact, undefined, 2), "/artifacts/", id);
     }
   }
 

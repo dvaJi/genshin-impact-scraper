@@ -1,1 +1,6 @@
-{"id":"ebony_bow","name":"Ebony Bow","description":"","bonus":"Aumenta el daño contra enemigos mecánicos un 40%."}
+{
+  "id": "ebony_bow",
+  "name": "Ebony Bow",
+  "description": "",
+  "bonus": "Aumenta el daño contra enemigos mecánicos un 40%."
+}

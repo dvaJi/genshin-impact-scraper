@@ -56,9 +56,9 @@ export default class CharactersCrawler extends Connector {
       const name = this.getTextContent(doc, this.selectors.name);
       const englishLink =
         doc.querySelector(this.selectors.id)?.getAttribute("href") || "";
-      const id = this.slugify(
-        decodeURI(englishLink.replace(/.*\/wiki\/(.*)/g, "$1"))
-      );
+      const id =
+        this.slugify(decodeURI(englishLink.replace(/.*\/wiki\/(.*)/g, "$1"))) ||
+        name.toUpperCase();
       const description = this.getTextContent(
         characterContent.get("Perfil[editar | editar código]")?.join() || "",
         this.selectors.description
@@ -183,7 +183,11 @@ export default class CharactersCrawler extends Connector {
       };
 
       // console.log(character);
-      this.saveFile(JSON.stringify(character), "/es/characters/", id);
+      this.saveFile(
+        JSON.stringify(character, undefined, 2),
+        "/es/characters/",
+        id
+      );
     }
   }
 

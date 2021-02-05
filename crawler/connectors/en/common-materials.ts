@@ -91,7 +91,7 @@ export default class CharactersCrawler extends Connector {
       };
 
       await saveImage(imgSrc, "materials", id + ".png");
-      this.saveFile(JSON.stringify(material), "/materials/", id);
+      this.saveFile(JSON.stringify(material, undefined, 2), "/materials/", id);
     }
   }
 }

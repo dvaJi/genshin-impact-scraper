@@ -127,7 +127,7 @@ export default class CharactersCrawler extends Connector {
         };
       });
 
-      this.saveFile(JSON.stringify(artifact), "/es/artifacts/", id);
+      this.saveFile(JSON.stringify(artifact, undefined, 2), "/es/artifacts/", id);
       // break;
     }
   }
