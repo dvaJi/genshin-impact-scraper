@@ -55,10 +55,7 @@ export default class CharactersCrawler extends Connector {
     );
 
     //Bow
-    await this.generateWeapons(
-      storedContent.get(`弓`)?.join() || "",
-      "catalyst"
-    );
+    await this.generateWeapons(storedContent.get(`弓`)?.join() || "", "bow");
   }
 
   async generateWeapons(content: string, weaponType: string): Promise<void> {
