@@ -241,12 +241,13 @@ export abstract class Connector implements Crawler {
 
   protected saveFile(data: string, directory: string, filename: string): void {
     const filePath = `${DATA_PATH}${directory}${filename}.json`;
-    fs.ensureDirSync(path.dirname(filePath));
-    fs.writeFile(filePath, data, (err) => {
-      if (err) {
-        console.error(err);
-      }
-    });
+
+    try {
+      fs.ensureDirSync(path.dirname(filePath));
+      fs.writeFileSync(filePath, data);
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   protected slugify(value: string): string {
