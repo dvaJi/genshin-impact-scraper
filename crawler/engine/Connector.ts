@@ -55,7 +55,8 @@ export abstract class Connector implements Crawler {
 
   protected parseWikiContent(
     document: Document,
-    selector = "#mw-content-text > div > *"
+    selector = "#mw-content-text > div > *",
+    tags = ["H2", "H3"]
   ): Map<string, string[]> {
     const content = document.querySelectorAll(selector);
 
@@ -64,7 +65,7 @@ export abstract class Connector implements Crawler {
     let latestHeader: string | null = "Initial";
     content.forEach((value) => {
       const tagName = value.tagName;
-      if (tagName === "H2" || tagName === "H3") {
+      if (tags.includes(tagName)) {
         latestHeader = value.textContent;
       } else if (latestHeader && tagName !== "ASIDE") {
         if (storedContent.has(latestHeader)) {

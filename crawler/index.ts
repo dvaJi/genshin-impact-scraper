@@ -18,7 +18,7 @@ import TalentMaterialsESCrawler from "@connectors/es/talent-materials";
 
 // Spanish connectors
 import WeaponsJPCrawler from "@connectors/jp/weapons";
-// import CharactersJPCrawler from "@connectors/jp/characters";
+import CharactersJPCrawler from "@connectors/jp/characters";
 // import ArtifactsJPCrawler from "@connectors/jp/artifacts";
 // import AscensionMaterialsJPCrawler from "@connectors/jp/ascension-materials";
 // import TalentMaterialsJPCrawler from "@connectors/jp/talent-materials";
@@ -60,10 +60,10 @@ import WeaponsJPCrawler from "@connectors/jp/weapons";
   if (process.env.CRAWL_JAPANESE === "true") {
     console.log("Starting Crawl Japanese content...");
 
-    // const cCrawler = new CharactersJPCrawler();
-    // await cCrawler.run();
-    const wCrawler = new WeaponsJPCrawler();
-    await wCrawler.run();
+    const cCrawler = new CharactersJPCrawler();
+    await cCrawler.run();
+    // const wCrawler = new WeaponsJPCrawler();
+    // await wCrawler.run();
     // const aCrawler = new ArtifactsJPCrawler();
     // await aCrawler.run();
     // const amCrawler = new AscensionMaterialsJPCrawler();
