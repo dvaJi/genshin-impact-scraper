@@ -1,6 +1,6 @@
 {
   "id": "lithic_blade",
   "name": "Espada Lítica",
-  "description": "Una pesado mandoble forjado a partir de rocas primigenias de Liyue. ».",
+  "description": "Una pesado mandoble forjado a partir de rocas primigenias de Liyue.",
   "bonus": "Por cada personaje de Liyue que haya en el equipo, el ATQ del personaje que lleve esta arma equipada aumenta en un 7%, y su Prob. CRIT aumenta en 3%. Este efecto solo puede acumularse un máximo de 4 veces."
 }

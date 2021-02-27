@@ -63,6 +63,7 @@ export default class CharactersCrawler extends Connector {
         name,
         description: this.getTextContent(doc, this.selectors.description)
           .replace(/(«|»)/, "")
+          .replace(" ».", "")
           .trim(),
         bonus: this.getTextContent(
           weaponContent.get("Efecto pasivo[editar | editar código]")?.join() ||
