@@ -6,8 +6,46 @@
     "El Guardián Yaksha",
     "Alatus, el rey de alas doradas"
   ],
-  "skills": [],
-  "passives": [],
+  "skills": [
+    {
+      "id": "whirlwind_thrust",
+      "name": "Impulso de torbellino",
+      "type": "Ataque normal",
+      "description": "<p><b>Ataque Normal:</b> Ejecuta hasta 6 ataques rápidos con lanza.</p><p><b>Ataque Cargado:</b> Consume una cierta cantidad de Aguante para atacar alzando su lanza.</p><p><b>Ataque Descendente:</b> Se lanza desde el aire para golpear el suelo, dañando a los enemigos cercanos e infligiendo Daño en el AdE en el momento del impacto. Xiao no recibirá daño al caer con un Ataque Descendente.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "lemniscatic_wind_cycling",
+      "name": "Ciclón de viento lemniscático",
+      "type": "Habilidad elemental",
+      "description": "<p>Xiao se lanza hacia adelante e inflinge Daño Anemo a todos los enemigos que se crucen en su camino. Puede activarse en el aire y empieza con un total de 2 cargas.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "bane_of_all_evil",
+      "name": "Azote de todos los males",
+      "type": "Impulso elemental",
+      "description": "<p>Xiao se pone la máscara de Yaksha que aterrorizó tanto a los demonios como a los arcontes hace miles de años.</p><p><b>Máscara de Yaksha</b></p><ul><li>Mejora la capacidad de salto de Xiao.</li><li>Mientras dura la habilidad, aumenta el alcance y el daño de los ataques de Xiao.</li><li>Convierte su daño de ataque en Daño Anemo. Este cambio elemental no puede sustituirse imbuyéndose de otro elemento.</li></ul><p>Estar en esta forma consume la Vida de Xiao de manera continua.</p>",
+      "modifiers": []
+    }
+  ],
+  "passives": [
+    {
+      "id": "evil_conqueror_tamer_of_demons",
+      "name": "Conquista del mal: Domademonios",
+      "description": "<p>Al estar bajo los efectos de Azote de todos los males, el daño infligido por Xiao se incrementa en un 5%. Después, su daño continúa aumentando en un 5% cada 3 s hasta el fin de la habilidad. Solo se puede alcanzar un 25% de bono de daño máximo.</p>"
+    },
+    {
+      "id": "dissolution_eon_heaven_fall",
+      "name": "Desintegración: Caída celestial",
+      "description": "<p>Usar Ciclón de viento lemniscático aumenta en un 15% el daño infligido por los siguientes Ciclones de viento lemniscático durante 7 s.</p><p>Este efecto puede acumularse un máximo de 3 veces y, cada vez que se obtenga una nueva carga, la duración de este efecto se reiniciará.</p>"
+    },
+    {
+      "id": "transcension_gravity_defier",
+      "name": "Trascendencia: Desafío a la gravedad",
+      "description": "<p>Disminuye en un 20% el Coste de Aguante al escalar de todos los miembros de tu equipo.</p><p>No se puede acumular con otros talentos pasivos que tengan los mismos efectos.</p>"
+    }
+  ],
   "constellations": [
     {
       "name": "Desintegración: Destructor de mundos",

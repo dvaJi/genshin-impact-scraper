@@ -24,7 +24,7 @@
       "id": "celestial_shower",
       "name": "Diluvio celestial",
       "type": "Impulso elemental",
-      "description": "<p>Fusiona nieve y escarcha en la atmósfera para invocar una perla de hielo sagrada que exorciza el mal.</p><pre>Mientras dure la habilidad, la perla hará llover continuamente fragmentos de hielo que golpean a los enemigos dentro de un AdE e infligen Daño Cryo.</pre>",
+      "description": "<p>Fusiona nieve y escarcha en la atmósfera para invocar una perla de hielo sagrada que exorciza el mal.Mientras dure la habilidad, la perla hará llover continuamente fragmentos de hielo que golpean a los enemigos dentro de un AdE e infligen Daño Cryo.</p>",
       "modifiers": []
     }
   ],

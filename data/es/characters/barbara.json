@@ -18,7 +18,7 @@
       "id": "let_the_show_begin",
       "name": "Que empiece el concierto ♪",
       "type": "Habilidad elemental",
-      "description": "<p>Invoca gotas de agua que se asemejan a notas musicales que forman círculos melódicos. Estas infligen Daño Hydro a los enemigos alrededor y los afecta con el estado Mojado.</p><p><b>Círculos melódicos:</b></p><ul><li>Los Ataques Normales de Bárbara curan a todos los miembros del grupo y a los personajes aliados cercanos una cierta cantidad de Vida, que aumenta con la Vida Máx. de Bárbara.</li><li>Su Ataque Cargado puede generar 4 veces la cantidad de curación.</li><li>Regenera una cierta cantidad de Vida del personaje actual a intervalos regulares.</li><li>Aplica el estado Mojado al personaje y a los enemigos que entren e ncontacto con él.</li></ul>",
+      "description": "<p>Invoca gotas de agua que se asemejan a notas musicales que forman círculos melódicos. Estas infligen Daño Hydro a los enemigos alrededor y los afecta con el estado Mojado.</p><p><b>Círculos melódicos:</b></p><ul><li>Los Ataques Normales de Bárbara curan a todos los miembros del grupo y a los personajes aliados cercanos una cierta cantidad de Vida, que aumenta con la Vida Máx. de Bárbara.</li><li>Su Ataque Cargado puede generar 4 veces la cantidad de curación.</li><li>Regenera una cierta cantidad de Vida del personaje actual a intervalos regulares.</li><li>Aplica el estado Mojado al personaje y a los enemigos que entren en contacto con él.</li></ul>",
       "modifiers": []
     },
     {
