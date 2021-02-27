@@ -1,1 +1,13 @@
-{"id":"dragons_bane","name":"Dragon's Bane","description":"A polearm decorated with an entwining golden dragon. Light and sharp, this weapon may very well kill dragons with ease.","location":"Gacha","type":"Polearm","rarity":4,"base":41,"passive":"","bonus":"","secondary":"Elemental Mastery","series":"Independent"}
+{
+  "id": "dragons_bane",
+  "name": "Dragon's Bane",
+  "description": "A polearm decorated with an entwining golden dragon. Light and sharp, this weapon may very well kill dragons with ease.",
+  "location": "Gacha",
+  "type": "Polearm",
+  "rarity": 4,
+  "base": 41,
+  "passive": "Bane of Flame and Water",
+  "bonus": "Increases DMG against opponents affected by Hydro or Pyro by 20%.",
+  "secondary": "Elemental Mastery",
+  "series": "Independent"
+}

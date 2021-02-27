@@ -1,1 +1,13 @@
-{"id":"aquila_favonia","name":"Aquila Favonia","description":"The sword of the Knights of Favonius. Millennia later, it still calls on the winds of swift justice to vanquish all evil—just like the last heroine who wielded it.","location":"Gacha","type":"Sword","rarity":5,"base":48,"passive":"","bonus":"","secondary":"Physical DMG Bonus","series":"Independent"}
+{
+  "id": "aquila_favonia",
+  "name": "Aquila Favonia",
+  "description": "The soul of the Knights of Favonius. Millennia later, it still calls on the winds of swift justice to vanquish all evil—just like the last heroine who wielded it.",
+  "location": "Gacha",
+  "type": "Sword",
+  "rarity": 5,
+  "base": 48,
+  "passive": "Falcon's Defiance",
+  "bonus": "ATK is increased by 20%. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of the resistance aloft, regenerating HP equal to 100% of ATK and dealing 200% of ATK as DMG to surrounding opponents. This effect can only occur once every 15s.",
+  "secondary": "Physical DMG Bonus",
+  "series": "Independent"
+}

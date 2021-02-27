@@ -9,7 +9,7 @@ export default class CharactersCrawler extends Connector {
   selectors = {
     urls: "table > tbody > tr > td:nth-child(1) > a",
     name: "#mw-content-text > div > aside > h2",
-    img: "#mw-content-text > div > aside > figure > a > img",
+    img: "#mw-content-text > div > aside > div.pi-image-collection > div.pi-image-collection-tab-content.current > figure > a > img",
     rarity: "#mw-content-text > div > aside > div:nth-child(4) > div > img",
     type: "#mw-content-text > div > aside > div:nth-child(3) > div > a",
     description: "#mw-content-text > div > p:nth-child(6) > i",
@@ -19,9 +19,9 @@ export default class CharactersCrawler extends Connector {
       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(2)",
     substat_value:
       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(3)",
-    passive: "#mw-content-text > div > aside > div:nth-child(10) > div",
+    passive: "#mw-content-text > div > aside > section:nth-child(10) > div.pi-section-contents > div.pi-section-content.pi-section-active > section > table > thead > tr > th",
     bonus:
-      "#mw-content-text > div > aside > section:nth-child(11) > div.pi-section-contents > div.pi-section-content.pi-section-active > div:nth-child(1) > div",
+      "#mw-content-text > div > aside > section:nth-child(10) > div.pi-section-contents > div.pi-section-content.pi-section-active > section > table > tbody > tr > td",
     location: "#mw-content-text > div > aside > div:nth-child(6) > div > a",
     series: "#mw-content-text > div > aside > div:nth-child(5) > div",
   };
@@ -67,7 +67,11 @@ export default class CharactersCrawler extends Connector {
       const id = this.slugify(name);
       const img =
         doc?.querySelector(this.selectors.img)?.getAttribute("src") || "";
-      await saveImage(img, "weapons", id + ".png");
+      if (img) {
+        await saveImage(img, "weapons", id + ".png");
+      } else {
+        console.warn("Could not save image for " + id);
+      }
 
       const weapon: Weapon = {
         id,

@@ -1,1 +1,13 @@
-{"id":"pocket_grimoire","name":"Pocket Grimoire","description":"A carefully compiled notebook featuring the essentials needed to pass a magic exam.","location":"Chests","type":"Catalyst","rarity":2,"base":33,"passive":"None","bonus":"","secondary":"None","series":"2-Star Series"}
+{
+  "id": "pocket_grimoire",
+  "name": "Pocket Grimoire",
+  "description": "A carefully compiled notebook featuring the essentials needed to pass a magic exam.",
+  "location": "Chests",
+  "type": "Catalyst",
+  "rarity": 2,
+  "base": 33,
+  "passive": "",
+  "bonus": "",
+  "secondary": "None",
+  "series": "2-Star Series"
+}

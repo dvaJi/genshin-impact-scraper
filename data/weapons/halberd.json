@@ -1,1 +1,13 @@
-{"id":"halberd","name":"Halberd","description":"A polearm with an axe blade mounted on top that can deal quite a lot of damage. It's favored by the Millelith officers.","location":"Chests","type":"Polearm","rarity":3,"base":40,"passive":"","bonus":"","secondary":"ATK","series":"Independent"}
+{
+  "id": "halberd",
+  "name": "Halberd",
+  "description": "A polearm with an axe blade mounted on top that can deal quite a lot of damage. It's favored by the Millelith officers.",
+  "location": "Chests",
+  "type": "Polearm",
+  "rarity": 3,
+  "base": 40,
+  "passive": "Heavy",
+  "bonus": "Normal Attacks deal an additional 160% DMG. Can only occur once every 10s.",
+  "secondary": "ATK",
+  "series": "Independent"
+}

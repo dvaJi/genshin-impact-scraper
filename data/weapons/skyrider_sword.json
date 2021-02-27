@@ -1,1 +1,13 @@
-{"id":"skyrider_sword","name":"Skyrider Sword","description":"A reliable steel sword. The legendary Skyrider once tried to ride it as a flying sword...","location":"Gacha","type":"Sword","rarity":3,"base":38,"passive":"","bonus":"","secondary":"Energy Recharge","series":"Independent"}
+{
+  "id": "skyrider_sword",
+  "name": "Skyrider Sword",
+  "description": "A reliable steel sword. The legendary Skyrider once tried to ride it as a flying sword...",
+  "location": "Gacha",
+  "type": "Sword",
+  "rarity": 3,
+  "base": 38,
+  "passive": "Determination",
+  "bonus": "Using an Elemental Burst grants a 12% increase in ATK and Movement SPD for 15s.",
+  "secondary": "Energy Recharge",
+  "series": "Independent"
+}
