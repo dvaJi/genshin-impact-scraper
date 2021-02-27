@@ -59,7 +59,14 @@ export default class CharactersCrawler extends Connector {
   }
 
   async generateWeapons(content: string, weaponType: string): Promise<void> {
-    const weaponsTable = tableJson(content);
+    const weaponsTable = tableJson(content, {
+      cellCb: (cell, index, col) => {
+        if (col === "性能/スキル効果") {
+          return cell.innerHTML.split("<hr>")[1];
+        }
+        return cell.textContent?.trim() || "";
+      },
+    });
     for await (const value of weaponsTable.data) {
       const [name, info] = value;
 

@@ -60,10 +60,10 @@ import MaterialsJPCrawler from "@connectors/jp/materials";
   if (process.env.CRAWL_JAPANESE === "true") {
     console.log("Starting Crawl Japanese content...");
 
-    // const cCrawler = new CharactersJPCrawler();
-    // await cCrawler.run();
-    // const wCrawler = new WeaponsJPCrawler();
-    // await wCrawler.run();
+    const cCrawler = new CharactersJPCrawler();
+    await cCrawler.run();
+    const wCrawler = new WeaponsJPCrawler();
+    await wCrawler.run();
     // const aCrawler = new ArtifactsJPCrawler();
     // await aCrawler.run();
     const amCrawler = new MaterialsJPCrawler();

@@ -206,7 +206,6 @@ export abstract class Connector implements Crawler {
         let value = "";
         for (const rgx of regex) {
           value = data.replace(rgx, "$1");
-          console.log(value, rgx);
         }
         return value;
       }
@@ -225,7 +224,7 @@ export abstract class Connector implements Crawler {
     if (request instanceof URL) {
       request = new Request(request.href, this.requestOptions);
     }
-    console.debug(request);
+    console.debug(`>> ${request.url}`);
     const response = await fetch(request);
     if (response.status >= 500 && retries > 0) {
       return this.wait(2500).then(() => this.fetchDOM(request, retries - 1));
