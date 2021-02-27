@@ -28,18 +28,18 @@ import MaterialsJPCrawler from "@connectors/jp/materials";
 
   if (process.env.CRAWL_ENGLISH === "true") {
     console.log("Starting Crawl English content...");
-    // const pCrawler = new CharactersENCrawler();
-    // await pCrawler.run();
+    const pCrawler = new CharactersENCrawler();
+    await pCrawler.run();
     const wCrawler = new WeaponsENCrawler();
     await wCrawler.run();
     const aCrawler = new ArtifactsENCrawler();
-    aCrawler.run();
+    await aCrawler.run();
     const mCrawler = new MaterialsENCrawler();
-    mCrawler.run();
+    await mCrawler.run();
     const tmCrawler = new TalentMaterialsENCrawler();
-    tmCrawler.run();
+    await tmCrawler.run();
     const cmCrawler = new CommonMaterialsENCrawler();
-    cmCrawler.run();
+    await cmCrawler.run();
   }
 
   if (process.env.CRAWL_SPANISH === "true") {

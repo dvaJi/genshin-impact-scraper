@@ -126,12 +126,21 @@ export abstract class Connector implements Crawler {
     return storedContent;
   }
 
-  protected parseTableLinks(content: string, selector: string): string[] {
+  protected parseTableLinks(
+    content: string | Document,
+    selector: string
+  ): string[] {
+    let dom = null;
     const weaponsLinks: string[] = [];
 
-    const tableSection = this.createDOM(content);
+    if (typeof content === "string") {
+      const tableSection = this.createDOM(content);
+      dom = tableSection.window.document;
+    } else {
+      dom = content;
+    }
 
-    tableSection.window.document.querySelectorAll(selector).forEach((value) => {
+    dom.querySelectorAll(selector).forEach((value) => {
       weaponsLinks.push(value.getAttribute("href") || "");
     });
 

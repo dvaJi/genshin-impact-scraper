@@ -1,1 +1,19 @@
-{"id":"prithiva_topaz_sliver","name":"Prithiva Topaz Sliver","description":"Character Ascension Material.","material_type":["Character Ascension"],"type":"Ascension Gems","rarity":2,"sources":["Dropped by Geo Hypostasis","Wolf of the North Challenge Reward","Purchased from the Souvenir Shop"]}
+{
+  "id": "prithiva_topaz_sliver",
+  "name": "Prithiva Topaz Sliver",
+  "description": "Character Ascension Material.",
+  "material_type": [
+    "Character Ascension"
+  ],
+  "type": "Ascension Gems",
+  "rarity": 2,
+  "craft": {
+    "name": "Dust of Azoth",
+    "amount": 1
+  },
+  "sources": [
+    "Dropped by Geo Hypostasis",
+    "Wolf of the North Challenge Reward",
+    "Purchased from the Souvenir Shop"
+  ]
+}

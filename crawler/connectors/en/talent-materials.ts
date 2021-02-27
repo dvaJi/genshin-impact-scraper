@@ -7,9 +7,9 @@ export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
   selectors = {
     table_urls:
-      "table > tbody > tr > td:nth-child(2) > span > a, table > tbody > tr > td:nth-child(3) > span > a, table > tbody > tr > td:nth-child(4) > span > a",
-    boss_drop_urls: `table > tbody > tr > td:nth-child(2) > span:not([class^="hidden"]):not([style^="display: none;"]) > a,table > tbody > tr > td:nth-child(1):not([rowspan^="3"]) > span > a`,
-    limited_urls: "table > tbody > tr > td:nth-child(1) > span > a",
+      "table > tbody > tr > td:nth-child(2) > div > div > div.card_caption > a",
+    boss_drop_urls: `table > tbody > tr > td > div > div > div.card_caption > a`,
+    limited_urls: "table > tbody > tr > td:nth-child(1) > div > div > div.card_caption > a",
     name: "#mw-content-text > div > aside > h2",
     description: "div > div",
     location: "#mw-content-text > div > aside > div:nth-child(3) > div > a",

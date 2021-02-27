@@ -6,7 +6,8 @@ import { GemsMaterial, Material } from "@engine/Types";
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
   specialities_selectors = {
-    urls: "table > tbody > tr > td:nth-child(1) > span > a",
+    urls:
+      "table > tbody > tr > td:nth-child(1) > div > div > div.card_caption > a",
     name: "#mw-content-text > div > aside > h2",
     description: "#mw-content-text > div > aside > div:nth-child(4) > div",
     location: "#mw-content-text > div > aside > div:nth-child(3) > div > a",
@@ -15,15 +16,14 @@ export default class CharactersCrawler extends Connector {
       "#pi-tab-0 > figure > a > img, #mw-content-text > div > aside > figure > a > img",
   };
   boss_selectors = {
-    urls: "table > tbody > tr > td:nth-child(2) > span > a",
+    urls: "table > tbody > tr > td > div > div > div.card_caption > a",
     name: "#mw-content-text > div > aside > h2",
     description: "#mw-content-text > div > aside > div:nth-child(5) > div",
     rarity: "#mw-content-text > div > aside > div:nth-child(4) > div > img",
     img: "#mw-content-text > div > aside > figure > a > img",
   };
   gems_selectors = {
-    urls:
-      "table > tbody > tr > td:nth-child(3) > span > a, table > tbody > tr > td:nth-child(4) > span > a, table > tbody > tr > td:nth-child(5) > span > a, table > tbody > tr > td:nth-child(6) > span > a",
+    urls: "table > tbody > tr > td > div > div > div.card_caption > a",
     name: "#mw-content-text > div > aside > h2",
     description: "#mw-content-text > div > aside > div:nth-child(5) > div",
     rarity: "#mw-content-text > div > aside > div:nth-child(4) > div > img",
@@ -54,7 +54,7 @@ export default class CharactersCrawler extends Connector {
     await this.getGems(gemsLinks);
 
     const bossLinks = this.parseTableLinks(
-      storedContent.get("Elite Boss Materials")?.join() || "",
+      storedContent.get("Normal Boss Materials")?.join() || "",
       this.boss_selectors.urls
     );
 

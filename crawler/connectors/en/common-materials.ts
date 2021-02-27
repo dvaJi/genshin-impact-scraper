@@ -6,8 +6,7 @@ import { Material } from "@engine/Types";
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
   selectors = {
-    urls:
-      "table > tbody > tr > td:nth-child(2) > span > a, table > tbody > tr > td:nth-child(3) > span > a, table > tbody > tr > td:nth-child(4) > span > a",
+    urls: "#mw-content-text > div.category-page__members > ul > li > a",
     name: "#mw-content-text > div > aside > h2",
     description: "div > div",
     location: "#mw-content-text > div > aside > div:nth-child(3) > div > a",
@@ -24,21 +23,13 @@ export default class CharactersCrawler extends Connector {
 
   protected async crawl(): Promise<void> {
     const request = new Request(
-      `${this.BASE_URL}/wiki/Common_Ascension_Material`,
+      `${this.BASE_URL}/wiki/Category:Common_Ascension_Material`,
       this.requestOptions
     );
     const dom = await this.fetchDOM(request);
-    const storedContent = this.parseWikiContent(dom.window.document);
 
     const links = [
-      ...this.parseTableLinks(
-        storedContent.get("Common Enemy Group")?.join() || "",
-        this.selectors.urls
-      ),
-      ...this.parseTableLinks(
-        storedContent.get("Elite Enemy Group")?.join() || "",
-        this.selectors.urls
-      ),
+      ...this.parseTableLinks(dom.window.document, this.selectors.urls),
     ];
 
     await this.getMaterials(links);
