@@ -1,1 +1,244 @@
-{"id":"diluc","name":"Diluc","description":"As the wealthiest gentleman in Mondstadt, the ever-dapper Diluc always presents himself as the epitome of perfection. But behind the courteous visage burns a zealous soul that has sworn to protect Mondstadt at all costs, allowing him to mercilessly vanquish all who threaten his city.","weapon_type":"Claymore","element":"Pyro","gender":"Male","region":"Mondstadt","rarity":5,"location":"Wish","titles":["The Dark Side of Dawn","Darknight Hero","The Uncrowned King of Mondstadt","Captain Pyro  (by Paimon)"],"skills":[{"id":"tempered_sword","name":"Tempered Sword","type":"Normal/Charged Attack","description":"<b>Normal Attack:</b> Perform up to 4 consecutive strikes.<br><p><b>Charged Attack:</b> Drains Stamina over time to perform continuous slashes. At the end of the sequence, perform a more powerful slash.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.</p>","modifiers":[]},{"id":"searing_onslaught","name":"Searing Onslaught","type":"Elemental Skill","description":"Performs a forward slash that deals <span style=\"color:#bf2818\"><b>Pyro DMG</b></span>.<br><p>This skill can be used 3 times consecutively. Enters CD if not cast again within a short period (5s).</p>","modifiers":[]},{"id":"dawn","name":"Dawn","type":"Elemental Burst","description":"Releases intense flames to knock nearby opponents back, dealing <span style=\"color:#bf2818\"><b>Pyro DMG</b></span>. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <span style=\"color:#bf2818\"><b>Pyro DMG</b></span> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of <span style=\"color:#bf2818\"><b>AoE Pyro DMG</b></span>.<br>The searing flames that run down his blade cause it to be infused with <span style=\"color:#bf2818\"><b>Pyro</b></span>.","modifiers":[]}],"passives":[{"id":"relentless","name":"Relentless","description":"Diluc's Charged Attack Stamina Cost is decreased by 50%, and its duration is increased by 3s.","unlock":"Ascension 1"},{"id":"blessing_of_phoenix","name":"Blessing of Phoenix","description":"The <span style=\"color:#bf2818\"><b>Pyro Enchantment</b></span> provided by Dawn lasts for 4s longer. Additionally. Diluc gains 20% <span style=\"color:#bf2818\"><b>Pyro DMG Bonus</b></span> during the duration of this effect.","unlock":"Ascension 4"},{"id":"tradition_of_the_dawn_knight","name":"Tradition of the Dawn Knight","description":"Refunds 15% of the ores used when Claymore-type weapons."}],"constellations":[{"id":"conviction","name":"Conviction","description":"Diluc deals 15% more DMG to opponents whose HP is above 50%.","level":1},{"id":"searing_ember","name":"Searing Ember","description":"When Diluc takes DMG, his ATK increases by 10%, and his ATK SPD increases by 5%. Last for 10s.\nThis effect can stack up to 3 times and can only occur once every 1.5s.","level":2},{"id":"fire_and_steel","name":"Fire and Steel","description":"Increases Searing Onslaught's skill level by 3. Maximum upgrade level is 15.","level":3},{"id":"flowing_flame","name":"Flowing Flame","description":"Casting Searing Onslaught in sequence greatly increases damage dealt.\nWithin 2s of using Searing Onslaught, casting the next Searing Onslaught in the combo deals 40% additional DMG. This effect lasts for the next 2s.","level":4},{"id":"phoenix_harbinger_of_dawn","name":"Phoenix, Harbinger of Dawn","description":"Increases Dawn's skill level by 3. Maximum upgrade level is 15.","level":5},{"id":"flaming_sword_nemesis_of_dark","name":"Flaming Sword, Nemesis of Dark","description":"After casting Searing Onslaught, the next 2 Normal Attacks within the next 6s will have their DMG and ATK SPD increased by 30%.\nAdditionally, Searing Onslaught will not interrupt the Normal Attack combo.","level":6}],"ascension":[{"ascension":1,"level":2040,"cost":20000,"mat1":{"id":"agnidus_agate_sliver","name":"Agnidus Agate Sliver","amount":1},"mat3":{"id":"small_lamp_grass","name":"Small Lamp Grass","amount":3},"mat4":{"id":"recruits_insignia","name":"Recruit's Insignia","amount":3}},{"ascension":2,"level":4050,"cost":40000,"mat1":{"id":"agnidus_agate_fragment","name":"Agnidus Agate Fragment","amount":3},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":2},"mat3":{"id":"small_lamp_grass","name":"Small Lamp Grass","amount":10},"mat4":{"id":"recruits_insignia","name":"Recruit's Insignia","amount":15}},{"ascension":3,"level":5060,"cost":60000,"mat1":{"id":"agnidus_agate_fragment","name":"Agnidus Agate Fragment","amount":6},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":4},"mat3":{"id":"small_lamp_grass","name":"Small Lamp Grass","amount":20},"mat4":{"id":"sergeants_insignia","name":"Sergeant's Insignia","amount":12}},{"ascension":4,"level":6070,"cost":80000,"mat1":{"id":"agnidus_agate_chunk","name":"Agnidus Agate Chunk","amount":3},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":8},"mat3":{"id":"small_lamp_grass","name":"Small Lamp Grass","amount":30},"mat4":{"id":"sergeants_insignia","name":"Sergeant's Insignia","amount":18}},{"ascension":5,"level":7080,"cost":100000,"mat1":{"id":"agnidus_agate_chunk","name":"Agnidus Agate Chunk","amount":6},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":12},"mat3":{"id":"small_lamp_grass","name":"Small Lamp Grass","amount":45},"mat4":{"id":"lieutenants_insignia","name":"Lieutenant's Insignia","amount":12}},{"ascension":null,"level":8090,"cost":120000,"mat1":{"id":"agnidus_agate_gemstone","name":"Agnidus Agate Gemstone","amount":6},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":20},"mat3":{"id":"small_lamp_grass","name":"Small Lamp Grass","amount":60},"mat4":{"id":"lieutenants_insignia","name":"Lieutenant's Insignia","amount":24}}]}
+{
+  "id": "diluc",
+  "name": "Diluc",
+  "description": "As the wealthiest gentleman in Mondstadt, the ever-dapper Diluc always presents himself as the epitome of perfection. But behind the courteous visage burns a zealous soul that has sworn to protect Mondstadt at all costs, allowing him to mercilessly vanquish all who threaten his city.",
+  "weapon_type": "Claymore",
+  "element": "Pyro",
+  "gender": "Male",
+  "region": "Mondstadt",
+  "rarity": 5,
+  "location": "Wish",
+  "titles": [
+    "The Dark Side of Dawn",
+    "Darknight Hero",
+    "The Uncrowned King of Mondstadt",
+    "Captain Pyro  (by Paimon)"
+  ],
+  "skills": [
+    {
+      "id": "tempered_sword",
+      "name": "Tempered Sword",
+      "type": "Normal/Charged Attack",
+      "description": "<b>Normal Attack:</b> Perform up to 4 consecutive strikes.<br><p><b>Charged Attack:</b> Drains Stamina over time to perform continuous slashes. At the end of the sequence, perform a more powerful slash.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "searing_onslaught",
+      "name": "Searing Onslaught",
+      "type": "Elemental Skill",
+      "description": "Performs a forward slash that deals <span style=\"color:#bf2818\"><b>Pyro DMG</b></span>.<br><p>This skill can be used 3 times consecutively. Enters CD if not cast again within a short period (5s).</p>",
+      "modifiers": []
+    },
+    {
+      "id": "dawn",
+      "name": "Dawn",
+      "type": "Elemental Burst",
+      "description": "Releases intense flames to knock nearby opponents back, dealing <span style=\"color:#bf2818\"><b>Pyro DMG</b></span>. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <span style=\"color:#bf2818\"><b>Pyro DMG</b></span> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of <span style=\"color:#bf2818\"><b>AoE Pyro DMG</b></span>.<br>The searing flames that run down his blade cause it to be infused with <span style=\"color:#bf2818\"><b>Pyro</b></span>.",
+      "modifiers": []
+    }
+  ],
+  "passives": [
+    {
+      "id": "relentless",
+      "name": "Relentless",
+      "description": "Diluc's Charged Attack Stamina Cost is decreased by 50%, and its duration is increased by 3s.",
+      "unlock": "Ascension 1"
+    },
+    {
+      "id": "blessing_of_phoenix",
+      "name": "Blessing of Phoenix",
+      "description": "The <span style=\"color:#bf2818\"><b>Pyro Enchantment</b></span> provided by Dawn lasts for 4s longer. Additionally. Diluc gains 20% <span style=\"color:#bf2818\"><b>Pyro DMG Bonus</b></span> during the duration of this effect.",
+      "unlock": "Ascension 4"
+    },
+    {
+      "id": "tradition_of_the_dawn_knight",
+      "name": "Tradition of the Dawn Knight",
+      "description": "Refunds 15% of the ores used when Claymore-type weapons."
+    }
+  ],
+  "constellations": [
+    {
+      "id": "conviction",
+      "name": "Conviction",
+      "description": "Diluc deals 15% more DMG to opponents whose HP is above 50%.",
+      "level": 1
+    },
+    {
+      "id": "searing_ember",
+      "name": "Searing Ember",
+      "description": "When Diluc takes DMG, his ATK increases by 10%, and his ATK SPD increases by 5%. Last for 10s.\nThis effect can stack up to 3 times and can only occur once every 1.5s.",
+      "level": 2
+    },
+    {
+      "id": "fire_and_steel",
+      "name": "Fire and Steel",
+      "description": "Increases Searing Onslaught's skill level by 3. Maximum upgrade level is 15.",
+      "level": 3
+    },
+    {
+      "id": "flowing_flame",
+      "name": "Flowing Flame",
+      "description": "Casting Searing Onslaught in rhythm greatly increases damage dealt.\n2s after casting Searing Onslaught, casting the next Searing Onslaught in the combo deals 40% additional DMG. This effect lasts for 2s.",
+      "level": 4
+    },
+    {
+      "id": "phoenix_harbinger_of_dawn",
+      "name": "Phoenix, Harbinger of Dawn",
+      "description": "Increases Dawn's skill level by 3. Maximum upgrade level is 15.",
+      "level": 5
+    },
+    {
+      "id": "flaming_sword_nemesis_of_dark",
+      "name": "Flaming Sword, Nemesis of Dark",
+      "description": "After casting Searing Onslaught, the next 2 Normal Attacks within the next 6s will have their DMG and ATK SPD increased by 30%.\nAdditionally, Searing Onslaught will not interrupt the Normal Attack combo.",
+      "level": 6
+    }
+  ],
+  "ascension": [
+    {
+      "ascension": 1,
+      "level": 2040,
+      "cost": 20000,
+      "mat1": {
+        "id": "1agnidus_agate_sliver_1_agnidus_agate_sliver",
+        "name": "1Agnidus Agate Sliver 1 Agnidus Agate Sliver",
+        "amount": null
+      },
+      "mat3": {
+        "id": "3small_lamp_grass_3_small_lamp_grass",
+        "name": "3Small Lamp Grass 3 Small Lamp Grass",
+        "amount": null
+      },
+      "mat4": {
+        "id": "3recruits_insignia_3_recruits_insignia",
+        "name": "3Recruit's Insignia 3 Recruit's Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 2,
+      "level": 4050,
+      "cost": 40000,
+      "mat1": {
+        "id": "3agnidus_agate_fragment_3_agnidus_agate_fragment",
+        "name": "3Agnidus Agate Fragment 3 Agnidus Agate Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "2everflame_seed_2_everflame_seed",
+        "name": "2Everflame Seed 2 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "10small_lamp_grass_10_small_lamp_grass",
+        "name": "10Small Lamp Grass 10 Small Lamp Grass",
+        "amount": null
+      },
+      "mat4": {
+        "id": "15recruits_insignia_15_recruits_insignia",
+        "name": "15Recruit's Insignia 15 Recruit's Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 3,
+      "level": 5060,
+      "cost": 60000,
+      "mat1": {
+        "id": "6agnidus_agate_fragment_6_agnidus_agate_fragment",
+        "name": "6Agnidus Agate Fragment 6 Agnidus Agate Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "4everflame_seed_4_everflame_seed",
+        "name": "4Everflame Seed 4 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "20small_lamp_grass_20_small_lamp_grass",
+        "name": "20Small Lamp Grass 20 Small Lamp Grass",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12sergeants_insignia_12_sergeants_insignia",
+        "name": "12Sergeant's Insignia 12 Sergeant's Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 4,
+      "level": 6070,
+      "cost": 80000,
+      "mat1": {
+        "id": "3agnidus_agate_chunk_3_agnidus_agate_chunk",
+        "name": "3Agnidus Agate Chunk 3 Agnidus Agate Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "8everflame_seed_8_everflame_seed",
+        "name": "8Everflame Seed 8 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "30small_lamp_grass_30_small_lamp_grass",
+        "name": "30Small Lamp Grass 30 Small Lamp Grass",
+        "amount": null
+      },
+      "mat4": {
+        "id": "18sergeants_insignia_18_sergeants_insignia",
+        "name": "18Sergeant's Insignia 18 Sergeant's Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 5,
+      "level": 7080,
+      "cost": 100000,
+      "mat1": {
+        "id": "6agnidus_agate_chunk_6_agnidus_agate_chunk",
+        "name": "6Agnidus Agate Chunk 6 Agnidus Agate Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "12everflame_seed_12_everflame_seed",
+        "name": "12Everflame Seed 12 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "45small_lamp_grass_45_small_lamp_grass",
+        "name": "45Small Lamp Grass 45 Small Lamp Grass",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12lieutenants_insignia_12_lieutenants_insignia",
+        "name": "12Lieutenant's Insignia 12 Lieutenant's Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": null,
+      "level": 8090,
+      "cost": 120000,
+      "mat1": {
+        "id": "6agnidus_agate_gemstone_6_agnidus_agate_gemstone",
+        "name": "6Agnidus Agate Gemstone 6 Agnidus Agate Gemstone",
+        "amount": null
+      },
+      "mat2": {
+        "id": "20everflame_seed_20_everflame_seed",
+        "name": "20Everflame Seed 20 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "60small_lamp_grass_60_small_lamp_grass",
+        "name": "60Small Lamp Grass 60 Small Lamp Grass",
+        "amount": null
+      },
+      "mat4": {
+        "id": "24lieutenants_insignia_24_lieutenants_insignia",
+        "name": "24Lieutenant's Insignia 24 Lieutenant's Insignia",
+        "amount": null
+      }
+    }
+  ]
+}

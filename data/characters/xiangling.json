@@ -1,1 +1,242 @@
-{"id":"xiangling","name":"Xiangling","description":"The Head Chef at the Wanmin Restaurant and also a waitress there, Xiangling is extremely passionate about cooking and excels at her signature hot and spicy dishes. Though still young, Xiangling is a true master of the culinary arts with all the skills of a kitchen veteran. She enjoys a good reputation among the hearty eaters at Chihu Rock. There's absolutely no need to be nervous if she wants you to sample her latest creation. It will not disappoint. Promise.","weapon_type":"Polearm","element":"Pyro","gender":"Female","region":"Liyue","rarity":4,"location":"Wish","titles":["Exquisite Delicacy","Chef de Cuisine"],"skills":[{"id":"doughfu","name":"Dough-Fu","type":"Normal/Charged Attack","description":"<b>Normal Attack</b>: Performs up to five consecutive spear strikes.<br><p><b>Charged Attack</b>: Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.<br><b>Plunging Attack</b>: Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>","modifiers":[]},{"id":"guoba_attack","name":"Guoba Attack","type":"Elemental Skill","description":"Summons Guoba the Panda. After 2 seconds, Guoba starts breathing fire at an opponent, dealing <span style=\"color:#bf2818\"><b>AoE Pyro DMG</b></span> every 1.5 seconds 4 times. <br> Each breath generates 1 elemental particle when it hits at least 1 target.","modifiers":[]},{"id":"pyronado","name":"Pyronado","type":"Elemental Burst","description":"Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her. The Pyronado will move with your character for so long as the ability persists, dealing <span style=\"color:#bf2818\"><b>Pyro DMG</b></span> to all opponents in its path.","modifiers":[]}],"passives":[{"id":"crossfire","name":"Crossfire","description":"Increases the flame range of Guoba by 20%.","unlock":"Ascension 1"},{"id":"beware_its_super_hot","name":"Beware, It's Super Hot!","description":"When Guoba Attack's effects end, Guoba leaves a chili pepper on the spot where it disappeared. Picking up a chili pepper increases ATK by 10% for 10s.","unlock":"Ascension 4"},{"id":"chef_de_cuisine","name":"Chef de Cuisine","description":"When a Perfect Cooking is achieved on an ATK-boosting dish, Xiangling has a 12% chance to receive double the product."}],"constellations":[{"id":"crispy_outside_tender_inside","name":"Crispy Outside, Tender Inside","description":"Opponents hit by Guoba's attacks have their Pyro RES reduced by 15% for 6s.","level":1},{"id":"oil_meets_fire","name":"Oil Meets Fire","description":"The last attack in Normal Attack sequence applies the Implode status onto the opponent for 2s. An explosion will occur once this duration ends, dealing 75% of Xiangling's ATK as AoE Pyro DMG.","level":2},{"id":"deepfry","name":"Deepfry","description":"Increases the level of Pyronado by 3. Maximum upgrade level is 15.","level":3},{"id":"slowbake","name":"Slowbake","description":"Pyronado's duration is increased by 40%.","level":4},{"id":"guoba_mad","name":"Guoba Mad","description":"Increases the level of Guoba Attack by 3. Maximum upgrade level is 15.","level":5},{"id":"condensed_pyronado","name":"Condensed Pyronado","description":"For the duration of Pyronado, all party members receive a 15% Pyro DMG Bonus.","level":6}],"ascension":[{"ascension":1,"level":2040,"cost":20000,"mat1":{"id":"agnidus_agate_sliver","name":"Agnidus Agate Sliver","amount":1},"mat3":{"id":"jueyun_chili","name":"Jueyun Chili","amount":3},"mat4":{"id":"slime_condensate","name":"Slime Condensate","amount":3}},{"ascension":2,"level":4050,"cost":40000,"mat1":{"id":"agnidus_agate_fragment","name":"Agnidus Agate Fragment","amount":3},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":2},"mat3":{"id":"jueyun_chili","name":"Jueyun Chili","amount":10},"mat4":{"id":"slime_condensate","name":"Slime Condensate","amount":15}},{"ascension":3,"level":5060,"cost":60000,"mat1":{"id":"agnidus_agate_fragment","name":"Agnidus Agate Fragment","amount":6},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":4},"mat3":{"id":"jueyun_chili","name":"Jueyun Chili","amount":20},"mat4":{"id":"slime_secretions","name":"Slime Secretions","amount":12}},{"ascension":4,"level":6070,"cost":80000,"mat1":{"id":"agnidus_agate_chunk","name":"Agnidus Agate Chunk","amount":3},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":8},"mat3":{"id":"jueyun_chili","name":"Jueyun Chili","amount":30},"mat4":{"id":"slime_secretions","name":"Slime Secretions","amount":18}},{"ascension":5,"level":7080,"cost":100000,"mat1":{"id":"agnidus_agate_chunk","name":"Agnidus Agate Chunk","amount":6},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":12},"mat3":{"id":"jueyun_chili","name":"Jueyun Chili","amount":45},"mat4":{"id":"slime_concentrate","name":"Slime Concentrate","amount":12}},{"ascension":null,"level":8090,"cost":120000,"mat1":{"id":"agnidus_agate_gemstone","name":"Agnidus Agate Gemstone","amount":6},"mat2":{"id":"everflame_seed","name":"Everflame Seed","amount":20},"mat3":{"id":"jueyun_chili","name":"Jueyun Chili","amount":60},"mat4":{"id":"slime_concentrate","name":"Slime Concentrate","amount":24}}]}
+{
+  "id": "xiangling",
+  "name": "Xiangling",
+  "description": "The Head Chef at the Wanmin Restaurant and also a waitress there, Xiangling is extremely passionate about cooking and excels at her signature hot and spicy dishes. Though still young, Xiangling is a true master of the culinary arts with all the skills of a kitchen veteran. She enjoys a good reputation among the hearty eaters at Chihu Rock. There's absolutely no need to be nervous if she wants you to sample her latest creation. It will not disappoint. Promise.",
+  "weapon_type": "Polearm",
+  "element": "Pyro",
+  "gender": "Female",
+  "region": "Liyue",
+  "rarity": 4,
+  "location": "Wish",
+  "titles": [
+    "Exquisite Delicacy",
+    "Chef de Cuisine"
+  ],
+  "skills": [
+    {
+      "id": "doughfu",
+      "name": "Dough-Fu",
+      "type": "Normal/Charged Attack",
+      "description": "<b>Normal Attack</b>: Performs up to five consecutive spear strikes.<br><p><b>Charged Attack</b>: Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.<br><b>Plunging Attack</b>: Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "guoba_attack",
+      "name": "Guoba Attack",
+      "type": "Elemental Skill",
+      "description": "Summons Guoba the Panda. After 2 seconds, Guoba starts breathing fire at an opponent, dealing <span style=\"color:#bf2818\"><b>AoE Pyro DMG</b></span> every 1.5 seconds 4 times.",
+      "modifiers": []
+    },
+    {
+      "id": "pyronado",
+      "name": "Pyronado",
+      "type": "Elemental Burst",
+      "description": "Displaying her mastery over both fire and polearms, Xiangling sends a Pyronado whirling around her. The Pyronado will move with your character for so long as the ability persists, dealing <span style=\"color:#bf2818\"><b>Pyro DMG</b></span> to all opponents in its path.",
+      "modifiers": []
+    }
+  ],
+  "passives": [
+    {
+      "id": "crossfire",
+      "name": "Crossfire",
+      "description": "Increases the flame range of Guoba by 20%.",
+      "unlock": "Ascension 1"
+    },
+    {
+      "id": "beware_its_super_hot",
+      "name": "Beware, It's Super Hot!",
+      "description": "When Guoba Attack's effects end, Guoba leaves a chili pepper on the spot where it disappeared. Picking up a chili pepper increases ATK by 10% for 10s.",
+      "unlock": "Ascension 4"
+    },
+    {
+      "id": "chef_de_cuisine",
+      "name": "Chef de Cuisine",
+      "description": "When a Perfect Cooking is achieved on an ATK-boosting dish, Xiangling has a 12% chance to receive double the product."
+    }
+  ],
+  "constellations": [
+    {
+      "id": "crispy_outside_tender_inside",
+      "name": "Crispy Outside, Tender Inside",
+      "description": "Opponents hit by Guoba's attacks have their Pyro RES reduced by 15% for 6s.",
+      "level": 1
+    },
+    {
+      "id": "oil_meets_fire",
+      "name": "Oil Meets Fire",
+      "description": "The last attack in Normal Attack sequence applies the Implode status onto the opponent for 2s. An explosion will occur once this duration ends, dealing 75% of Xiangling's ATK as AoE Pyro DMG.",
+      "level": 2
+    },
+    {
+      "id": "deepfry",
+      "name": "Deepfry",
+      "description": "Increases the level of Pyronado by 3. Maximum upgrade level is 15.",
+      "level": 3
+    },
+    {
+      "id": "slowbake",
+      "name": "Slowbake",
+      "description": "Pyronado's duration is increased by 40%.",
+      "level": 4
+    },
+    {
+      "id": "guoba_mad",
+      "name": "Guoba Mad",
+      "description": "Increases the level of Guoba Attack by 3. Maximum upgrade level is 15.",
+      "level": 5
+    },
+    {
+      "id": "condensed_pyronado",
+      "name": "Condensed Pyronado",
+      "description": "For the duration of Pyronado, all party members receive a 15% Pyro DMG Bonus.",
+      "level": 6
+    }
+  ],
+  "ascension": [
+    {
+      "ascension": 1,
+      "level": 2040,
+      "cost": 20000,
+      "mat1": {
+        "id": "1agnidus_agate_sliver_1_agnidus_agate_sliver",
+        "name": "1Agnidus Agate Sliver 1 Agnidus Agate Sliver",
+        "amount": null
+      },
+      "mat3": {
+        "id": "3jueyun_chili_3_jueyun_chili",
+        "name": "3Jueyun Chili 3 Jueyun Chili",
+        "amount": null
+      },
+      "mat4": {
+        "id": "3slime_condensate_3_slime_condensate",
+        "name": "3Slime Condensate 3 Slime Condensate",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 2,
+      "level": 4050,
+      "cost": 40000,
+      "mat1": {
+        "id": "3agnidus_agate_fragment_3_agnidus_agate_fragment",
+        "name": "3Agnidus Agate Fragment 3 Agnidus Agate Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "2everflame_seed_2_everflame_seed",
+        "name": "2Everflame Seed 2 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "10jueyun_chili_10_jueyun_chili",
+        "name": "10Jueyun Chili 10 Jueyun Chili",
+        "amount": null
+      },
+      "mat4": {
+        "id": "15slime_condensate_15_slime_condensate",
+        "name": "15Slime Condensate 15 Slime Condensate",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 3,
+      "level": 5060,
+      "cost": 60000,
+      "mat1": {
+        "id": "6agnidus_agate_fragment_6_agnidus_agate_fragment",
+        "name": "6Agnidus Agate Fragment 6 Agnidus Agate Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "4everflame_seed_4_everflame_seed",
+        "name": "4Everflame Seed 4 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "20jueyun_chili_20_jueyun_chili",
+        "name": "20Jueyun Chili 20 Jueyun Chili",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12slime_secretions_12_slime_secretions",
+        "name": "12Slime Secretions 12 Slime Secretions",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 4,
+      "level": 6070,
+      "cost": 80000,
+      "mat1": {
+        "id": "3agnidus_agate_chunk_3_agnidus_agate_chunk",
+        "name": "3Agnidus Agate Chunk 3 Agnidus Agate Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "8everflame_seed_8_everflame_seed",
+        "name": "8Everflame Seed 8 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "30jueyun_chili_30_jueyun_chili",
+        "name": "30Jueyun Chili 30 Jueyun Chili",
+        "amount": null
+      },
+      "mat4": {
+        "id": "18slime_secretions_18_slime_secretions",
+        "name": "18Slime Secretions 18 Slime Secretions",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 5,
+      "level": 7080,
+      "cost": 100000,
+      "mat1": {
+        "id": "6agnidus_agate_chunk_6_agnidus_agate_chunk",
+        "name": "6Agnidus Agate Chunk 6 Agnidus Agate Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "12everflame_seed_12_everflame_seed",
+        "name": "12Everflame Seed 12 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "45jueyun_chili_45_jueyun_chili",
+        "name": "45Jueyun Chili 45 Jueyun Chili",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12slime_concentrate_12_slime_concentrate",
+        "name": "12Slime Concentrate 12 Slime Concentrate",
+        "amount": null
+      }
+    },
+    {
+      "ascension": null,
+      "level": 8090,
+      "cost": 120000,
+      "mat1": {
+        "id": "6agnidus_agate_gemstone_6_agnidus_agate_gemstone",
+        "name": "6Agnidus Agate Gemstone 6 Agnidus Agate Gemstone",
+        "amount": null
+      },
+      "mat2": {
+        "id": "20everflame_seed_20_everflame_seed",
+        "name": "20Everflame Seed 20 Everflame Seed",
+        "amount": null
+      },
+      "mat3": {
+        "id": "60jueyun_chili_60_jueyun_chili",
+        "name": "60Jueyun Chili 60 Jueyun Chili",
+        "amount": null
+      },
+      "mat4": {
+        "id": "24slime_concentrate_24_slime_concentrate",
+        "name": "24Slime Concentrate 24 Slime Concentrate",
+        "amount": null
+      }
+    }
+  ]
+}

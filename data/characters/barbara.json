@@ -1,1 +1,242 @@
-{"id":"barbara","name":"Barbara","description":"The Deaconess of the Favonius Church and a shining starlet adored by all. Although the concept of a starlet is rather novel in a city of bards, the people of Mondstadt love Barbara nonetheless. \"I owe everything to the city's spirit of freedom\" — Barbara, regarding her popularity.","weapon_type":"Catalyst","element":"Hydro","gender":"Female","region":"Mondstadt","rarity":4,"location":"Wish","titles":["Shining Idol","Deaconess"],"skills":[{"id":"whisper_of_water","name":"Whisper of Water","type":"Normal/Charged Attack","description":"<b>Normal Attack:</b> Perform up to 4 water splash attacks that deal <span style=\"color:#0b4dda\"><b>Hydro DMG</b></span>.<br><p><b>Charged Attack:</b> Consumes a certain amount of Stamina to deal <span style=\"color:#0b4dda\"><b>AoE Hydro DMG</b></span> after a short casting time.<br><b>Plunging Attack:</b> Gathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color:#0b4dda\"><b>AoE Hydro DMG</b></span> upon impact with the ground.</p>","modifiers":[]},{"id":"let_the_show_begin","name":"Let the Show Begin♪","type":"Elemental Skill","description":"Summons water droplets resembling musical notes that form a Melody Loop, dealing <span style=\"color:#0b4dda\"><b>Hydro DMG</b></span> to surrounding opponents and afflicting them with the <span style=\"color:#0b4dda\"><b>Wet</b></span> status.<br><p><b>Melody Loop:</b></p><ul><li>Barbara's Normal Attacks heal your characters in the party and nearby allied characters for a certain amount of HP, which scales with Barbara's Max HP.</li><li>Her Charged Attack generates 4 times the amount of healing.</li><li>Regenerates a certain amount of HP at regular intervals for your active character.</li><li>Applies the <span style=\"color:#0b4dda\"><b>Wet</b></span> status to the character and opponents who come in contact with them.</li></ul>","modifiers":[]},{"id":"shining_miracle","name":"Shining Miracle♪","type":"Elemental Burst","description":"Heals nearby allied characters and your characters in the party for a large amount of HP that scales with Barbara's Max HP.","modifiers":[]}],"passives":[{"id":"glorious_season","name":"Glorious Season","description":"The Stamina Consumption of characters within Let the Show Begin's Melody Loop is reduced by 12%.","unlock":"Ascension 1"},{"id":"encore","name":"Encore","description":"When your active character gains an Elemental Orb/Particle, the duration of Let the Show Begin's Melody Loop is extended by 1s. The maximum extension is 5s.","unlock":"Ascension 4"},{"id":"with_my_whole_heart","name":"With My Whole Heart♪","description":"When a Perfect Cooking is achieved on a dish with restorative effects, Barbara has a 12% chance to obtain double the product."}],"constellations":[{"id":"gleeful_songs","name":"Gleeful Songs","description":"Barbara regenerates 1 Energy every 10s.","level":1},{"id":"vitality_burst","name":"Vitality Burst","description":"Decreases the CD of Let the Show Begin by 15%. During the ability's duration, your active character gains 15% Hydro DMG Bonus.","level":2},{"id":"star_of_tomorrow","name":"Star of Tomorrow","description":"Increases the level of Shining Miracle by 3. Maximum upgrade level is 15.","level":3},{"id":"attentiveness_be_my_power","name":"Attentiveness be My Power","description":"Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her. A maximum of 5 energy can be regenerated in this manner with any one Charged Attack.","level":4},{"id":"the_purest_companionship","name":"The Purest Companionship","description":"Increases the level of Let the Show Begin by 3. Maximum upgrade level is 15.","level":5},{"id":"dedicating_everything_to_you","name":"Dedicating Everything to You","description":"When Barbara is not on the field, and one of your characters in the party falls:\nAutomatically revives this character.\nFully regenerates this character's HP to 100%.\nThis effect can only occur once every 15 mins.","level":6}],"ascension":[{"ascension":1,"level":2040,"cost":20000,"mat1":{"id":"varunada_lazurite_sliver","name":"Varunada Lazurite Sliver","amount":1},"mat3":{"id":"philanemo_mushroom","name":"Philanemo Mushroom","amount":3},"mat4":{"id":"divining_scroll","name":"Divining Scroll","amount":3}},{"ascension":2,"level":4050,"cost":40000,"mat1":{"id":"varunada_lazurite_fragment","name":"Varunada Lazurite Fragment","amount":3},"mat2":{"id":"cleansing_heart","name":"Cleansing Heart","amount":2},"mat3":{"id":"philanemo_mushroom","name":"Philanemo Mushroom","amount":10},"mat4":{"id":"divining_scroll","name":"Divining Scroll","amount":15}},{"ascension":3,"level":5060,"cost":60000,"mat1":{"id":"varunada_lazurite_fragment","name":"Varunada Lazurite Fragment","amount":6},"mat2":{"id":"cleansing_heart","name":"Cleansing Heart","amount":4},"mat3":{"id":"philanemo_mushroom","name":"Philanemo Mushroom","amount":20},"mat4":{"id":"sealed_scroll","name":"Sealed Scroll","amount":12}},{"ascension":4,"level":6070,"cost":80000,"mat1":{"id":"varunada_lazurite_chunk","name":"Varunada Lazurite Chunk","amount":3},"mat2":{"id":"cleansing_heart","name":"Cleansing Heart","amount":8},"mat3":{"id":"philanemo_mushroom","name":"Philanemo Mushroom","amount":30},"mat4":{"id":"sealed_scroll","name":"Sealed Scroll","amount":18}},{"ascension":5,"level":7080,"cost":100000,"mat1":{"id":"varunada_lazurite_chunk","name":"Varunada Lazurite Chunk","amount":6},"mat2":{"id":"cleansing_heart","name":"Cleansing Heart","amount":12},"mat3":{"id":"philanemo_mushroom","name":"Philanemo Mushroom","amount":45},"mat4":{"id":"forbidden_curse_scroll","name":"Forbidden Curse Scroll","amount":12}},{"ascension":null,"level":8090,"cost":120000,"mat1":{"id":"varunada_lazurite_gemstone","name":"Varunada Lazurite Gemstone","amount":6},"mat2":{"id":"cleansing_heart","name":"Cleansing Heart","amount":20},"mat3":{"id":"philanemo_mushroom","name":"Philanemo Mushroom","amount":60},"mat4":{"id":"forbidden_curse_scroll","name":"Forbidden Curse Scroll","amount":24}}]}
+{
+  "id": "barbara",
+  "name": "Barbara",
+  "description": "The Deaconess of the Favonius Church and a shining starlet adored by all. Although the concept of a starlet is rather novel in a city of bards, the people of Mondstadt love Barbara nonetheless. \"I owe everything to the city's spirit of freedom\" — Barbara, regarding her popularity.",
+  "weapon_type": "Catalyst",
+  "element": "Hydro",
+  "gender": "Female",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "location": "Wish",
+  "titles": [
+    "Shining Idol",
+    "Deaconess"
+  ],
+  "skills": [
+    {
+      "id": "whisper_of_water",
+      "name": "Whisper of Water",
+      "type": "Normal/Charged Attack",
+      "description": "<b>Normal Attack:</b> Perform up to 4 water splash attacks that deal <span style=\"color:#0b4dda\"><b>Hydro DMG</b></span>.<br><p><b>Charged Attack:</b> Consumes a certain amount of Stamina to deal <span style=\"color:#0b4dda\"><b>AoE Hydro DMG</b></span> after a short casting time.<br><b>Plunging Attack:</b> Gathering the might of Hydro, Barbara plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color:#0b4dda\"><b>AoE Hydro DMG</b></span> upon impact with the ground.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "let_the_show_begin",
+      "name": "Let the Show Begin♪",
+      "type": "Elemental Skill",
+      "description": "Summons water droplets resembling musical notes that form a Melody Loop, dealing <span style=\"color:#0b4dda\"><b>Hydro DMG</b></span> to surrounding opponents and afflicting them with the <span style=\"color:#0b4dda\"><b>Wet</b></span> status.<br><p><b>Melody Loop:</b></p><ul><li>Barbara's Normal Attacks heal your characters in the party and nearby allied characters for a certain amount of HP, which scales with Barbara's Max HP.</li><li>Her Charged Attack generates 4 times the amount of healing.</li><li>Regenerates a certain amount of HP at regular intervals for your active character.</li><li>Applies the <span style=\"color:#0b4dda\"><b>Wet</b></span> status to the character and opponents who come in contact with them.</li></ul>",
+      "modifiers": []
+    },
+    {
+      "id": "shining_miracle",
+      "name": "Shining Miracle♪",
+      "type": "Elemental Burst",
+      "description": "Heals nearby allied characters and your characters in the party for a large amount of HP that scales with Barbara's Max HP.",
+      "modifiers": []
+    }
+  ],
+  "passives": [
+    {
+      "id": "glorious_season",
+      "name": "Glorious Season",
+      "description": "The Stamina Consumption of characters within Let the Show Begin's Melody Loop is reduced by 12%.",
+      "unlock": "Ascension 1"
+    },
+    {
+      "id": "encore",
+      "name": "Encore",
+      "description": "When your active character gains an Elemental Orb/Particle, the duration of Let the Show Begin's Melody Loop is extended by 1s. The maximum extension is 5s.",
+      "unlock": "Ascension 4"
+    },
+    {
+      "id": "with_my_whole_heart",
+      "name": "With My Whole Heart♪",
+      "description": "When a Perfect Cooking is achieved on a dish with restorative effects, Barbara has a 12% chance to obtain double the product."
+    }
+  ],
+  "constellations": [
+    {
+      "id": "gleeful_songs",
+      "name": "Gleeful Songs",
+      "description": "Barbara regenerates 1 Energy every 10s.",
+      "level": 1
+    },
+    {
+      "id": "vitality_burst",
+      "name": "Vitality Burst",
+      "description": "Decreases the CD of Let the Show Begin by 15%. During the ability's duration, your active character gains 15% Hydro DMG Bonus.",
+      "level": 2
+    },
+    {
+      "id": "star_of_tomorrow",
+      "name": "Star of Tomorrow",
+      "description": "Increases the level of Shining Miracle by 3. Maximum upgrade level is 15.",
+      "level": 3
+    },
+    {
+      "id": "attentiveness_be_my_power",
+      "name": "Attentiveness be My Power",
+      "description": "Every opponent Barbara hits with her Charged Attack regenerates 1 Energy for her. A maximum of 5 energy can be regenerated in this manner with any one Charged Attack.",
+      "level": 4
+    },
+    {
+      "id": "the_purest_companionship",
+      "name": "The Purest Companionship",
+      "description": "Increases the level of Let the Show Begin by 3. Maximum upgrade level is 15.",
+      "level": 5
+    },
+    {
+      "id": "dedicating_everything_to_you",
+      "name": "Dedicating Everything to You",
+      "description": "When Barbara is not on the field, and one of your characters in the party falls:\nAutomatically revives this character.\nFully regenerates this character's HP to 100%.\nThis effect can only occur once every 15 mins.",
+      "level": 6
+    }
+  ],
+  "ascension": [
+    {
+      "ascension": 1,
+      "level": 2040,
+      "cost": 20000,
+      "mat1": {
+        "id": "1varunada_lazurite_sliver_1_varunada_lazurite_sliver",
+        "name": "1Varunada Lazurite Sliver 1 Varunada Lazurite Sliver",
+        "amount": null
+      },
+      "mat3": {
+        "id": "3philanemo_mushroom_3_philanemo_mushroom",
+        "name": "3Philanemo Mushroom 3 Philanemo Mushroom",
+        "amount": null
+      },
+      "mat4": {
+        "id": "3divining_scroll_3_divining_scroll",
+        "name": "3Divining Scroll 3 Divining Scroll",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 2,
+      "level": 4050,
+      "cost": 40000,
+      "mat1": {
+        "id": "3varunada_lazurite_fragment_3_varunada_lazurite_fragment",
+        "name": "3Varunada Lazurite Fragment 3 Varunada Lazurite Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "2cleansing_heart_2_cleansing_heart",
+        "name": "2Cleansing Heart 2 Cleansing Heart",
+        "amount": null
+      },
+      "mat3": {
+        "id": "10philanemo_mushroom_10_philanemo_mushroom",
+        "name": "10Philanemo Mushroom 10 Philanemo Mushroom",
+        "amount": null
+      },
+      "mat4": {
+        "id": "15divining_scroll_15_divining_scroll",
+        "name": "15Divining Scroll 15 Divining Scroll",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 3,
+      "level": 5060,
+      "cost": 60000,
+      "mat1": {
+        "id": "6varunada_lazurite_fragment_6_varunada_lazurite_fragment",
+        "name": "6Varunada Lazurite Fragment 6 Varunada Lazurite Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "4cleansing_heart_4_cleansing_heart",
+        "name": "4Cleansing Heart 4 Cleansing Heart",
+        "amount": null
+      },
+      "mat3": {
+        "id": "20philanemo_mushroom_20_philanemo_mushroom",
+        "name": "20Philanemo Mushroom 20 Philanemo Mushroom",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12sealed_scroll_12_sealed_scroll",
+        "name": "12Sealed Scroll 12 Sealed Scroll",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 4,
+      "level": 6070,
+      "cost": 80000,
+      "mat1": {
+        "id": "3varunada_lazurite_chunk_3_varunada_lazurite_chunk",
+        "name": "3Varunada Lazurite Chunk 3 Varunada Lazurite Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "8cleansing_heart_8_cleansing_heart",
+        "name": "8Cleansing Heart 8 Cleansing Heart",
+        "amount": null
+      },
+      "mat3": {
+        "id": "30philanemo_mushroom_30_philanemo_mushroom",
+        "name": "30Philanemo Mushroom 30 Philanemo Mushroom",
+        "amount": null
+      },
+      "mat4": {
+        "id": "18sealed_scroll_18_sealed_scroll",
+        "name": "18Sealed Scroll 18 Sealed Scroll",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 5,
+      "level": 7080,
+      "cost": 100000,
+      "mat1": {
+        "id": "6varunada_lazurite_chunk_6_varunada_lazurite_chunk",
+        "name": "6Varunada Lazurite Chunk 6 Varunada Lazurite Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "12cleansing_heart_12_cleansing_heart",
+        "name": "12Cleansing Heart 12 Cleansing Heart",
+        "amount": null
+      },
+      "mat3": {
+        "id": "45philanemo_mushroom_45_philanemo_mushroom",
+        "name": "45Philanemo Mushroom 45 Philanemo Mushroom",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12forbidden_curse_scroll_12_forbidden_curse_scroll",
+        "name": "12Forbidden Curse Scroll 12 Forbidden Curse Scroll",
+        "amount": null
+      }
+    },
+    {
+      "ascension": null,
+      "level": 8090,
+      "cost": 120000,
+      "mat1": {
+        "id": "6varunada_lazurite_gemstone_6_varunada_lazurite_gemstone",
+        "name": "6Varunada Lazurite Gemstone 6 Varunada Lazurite Gemstone",
+        "amount": null
+      },
+      "mat2": {
+        "id": "20cleansing_heart_20_cleansing_heart",
+        "name": "20Cleansing Heart 20 Cleansing Heart",
+        "amount": null
+      },
+      "mat3": {
+        "id": "60philanemo_mushroom_60_philanemo_mushroom",
+        "name": "60Philanemo Mushroom 60 Philanemo Mushroom",
+        "amount": null
+      },
+      "mat4": {
+        "id": "24forbidden_curse_scroll_24_forbidden_curse_scroll",
+        "name": "24Forbidden Curse Scroll 24 Forbidden Curse Scroll",
+        "amount": null
+      }
+    }
+  ]
+}

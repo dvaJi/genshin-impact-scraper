@@ -1,1 +1,243 @@
-{"id":"kaeya","name":"Kaeya","description":"In the Knights of Favonius, Kaeya is the most trusted aide for the Acting Grand Master Jean. You can always count on him to solve any intractable problems. Everyone in Mondstadt loves Kaeya, but no one knows what secrets this witty, charming knight has...","weapon_type":"Sword","element":"Cryo","gender":"Male","region":"MondstadtKhaenri'ah","rarity":4,"location":"Wish","titles":["Frostwind Swordsman","Cavalry Captain","Quartermaster"],"skills":[{"id":"ceremonial_bladework","name":"Ceremonial Bladework","type":"Normal/Charged Attack","description":"<b>Normal Attack:</b> Performs up to 5 rapid strikes.<br><p><b>Charged Attack:</b> Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>","modifiers":[]},{"id":"frostgnaw","name":"Frostgnaw","type":"Elemental Skill","description":"Unleashes a frigid blast, dealing <span style=\"color:#4878a8\"><b>Cryo DMG</b></span> to opponents in front of Kaeya. <br><p>Generates <b>2.5</b> elemental particles when it hits at least 1 target.</p>","modifiers":[]},{"id":"glacial_waltz","name":"Glacial Waltz","type":"Elemental Burst","description":"Coalescing the frost in the air, Kaeya summons 3 icicles that revolve 4 times around him for 8 seconds.<br>These icicles will follow the character around and deal <span style=\"color:#4878a8\"><b>Cryo DMG</b></span> to opponents in their path for so long as they persist.","modifiers":[]}],"passives":[{"id":"coldblooded_strike","name":"Cold-Blooded Strike","description":"Every hit with Frostgnaw regenerates HP for Kaeya equal to 15% of his ATK.","unlock":"Ascension 1"},{"id":"glacial_heart","name":"Glacial Heart","description":"Opponents <span style=\"color:#4878a8\"><b>Frozen</b></span> by Frostgnaw will drop additional Elemental Particles. Frostgnaw may only produce a maximum of 2 additional Elemental Particles per use.","unlock":"Ascension 4"},{"id":"hidden_strength","name":"Hidden Strength","description":"Decreases sprinting Stamina consumption of your characters in the party by 20%.<p>Not stackable with Passive Talents that provide the exact same effects.</p>"}],"constellations":[{"id":"excellent_blood","name":"Excellent Blood","description":"The CRIT Rate of Kaeya's Normal Attack and Charge Attacks against opponents affected by the Cryo is increased by 15%.","level":1},{"id":"neverending_performance","name":"Never-Ending Performance","description":"Every time Glacial Waltz defeats an opponent, its duration is increased by 2.5s, up to a maximum of 15s. *The description is incorrect, duration extension takes effect on any enemy defeat, not just enemies defeated by Glacial Waltz.","level":2},{"id":"dance_of_frost","name":"Dance of Frost","description":"Increases the Level of Frostgnaw by 3. Maximum upgrade level is 15.","level":3},{"id":"frozen_kiss","name":"Frozen Kiss","description":"Triggers automatically when Kaeya's HP falls below 20%:\nCreates a shield that absorbs damage equal to 30% of Kaeya's Max HP. Lasts for 20s.\nThis shield absorbs Cryo DMG with 250% efficiency.\nCan only occur once every 60s.","level":4},{"id":"frostbiting_embrace","name":"Frostbiting Embrace","description":"Increases the level of Glacial Waltz by 3. Max upgrade level is 15.","level":5},{"id":"glacial_whirlwind","name":"Glacial Whirlwind","description":"Glacial Waltz will generate 1 additional icicle, and will regenerate 15 Energy when cast.","level":6}],"ascension":[{"ascension":1,"level":2040,"cost":20000,"mat1":{"id":"shivada_jade_sliver","name":"Shivada Jade Sliver","amount":1},"mat3":{"id":"calla_lily","name":"Calla Lily","amount":3},"mat4":{"id":"treasure_hoarder_insignia","name":"Treasure Hoarder Insignia","amount":3}},{"ascension":2,"level":4050,"cost":40000,"mat1":{"id":"shivada_jade_fragment","name":"Shivada Jade Fragment","amount":3},"mat2":{"id":"hoarfrost_core","name":"Hoarfrost Core","amount":2},"mat3":{"id":"calla_lily","name":"Calla Lily","amount":10},"mat4":{"id":"treasure_hoarder_insignia","name":"Treasure Hoarder Insignia","amount":15}},{"ascension":3,"level":5060,"cost":60000,"mat1":{"id":"shivada_jade_fragment","name":"Shivada Jade Fragment","amount":6},"mat2":{"id":"hoarfrost_core","name":"Hoarfrost Core","amount":4},"mat3":{"id":"calla_lily","name":"Calla Lily","amount":20},"mat4":{"id":"silver_raven_insignia","name":"Silver Raven Insignia","amount":12}},{"ascension":4,"level":6070,"cost":80000,"mat1":{"id":"shivada_jade_chunk","name":"Shivada Jade Chunk","amount":3},"mat2":{"id":"hoarfrost_core","name":"Hoarfrost Core","amount":8},"mat3":{"id":"calla_lily","name":"Calla Lily","amount":30},"mat4":{"id":"silver_raven_insignia","name":"Silver Raven Insignia","amount":18}},{"ascension":5,"level":7080,"cost":100000,"mat1":{"id":"shivada_jade_chunk","name":"Shivada Jade Chunk","amount":6},"mat2":{"id":"hoarfrost_core","name":"Hoarfrost Core","amount":12},"mat3":{"id":"calla_lily","name":"Calla Lily","amount":45},"mat4":{"id":"golden_raven_insignia","name":"Golden Raven Insignia","amount":12}},{"ascension":null,"level":8090,"cost":120000,"mat1":{"id":"shivada_jade_gemstone","name":"Shivada Jade Gemstone","amount":6},"mat2":{"id":"hoarfrost_core","name":"Hoarfrost Core","amount":20},"mat3":{"id":"calla_lily","name":"Calla Lily","amount":60},"mat4":{"id":"golden_raven_insignia","name":"Golden Raven Insignia","amount":24}}]}
+{
+  "id": "kaeya",
+  "name": "Kaeya",
+  "description": "In the Knights of Favonius, Kaeya is the most trusted aide for the Acting Grand Master Jean. You can always count on him to solve any intractable problems. Everyone in Mondstadt loves Kaeya, but no one knows what secrets this witty, charming knight has...",
+  "weapon_type": "Sword",
+  "element": "Cryo",
+  "gender": "Male",
+  "region": "MondstadtKhaenri'ah",
+  "rarity": 4,
+  "location": "Wish",
+  "titles": [
+    "Frostwind Swordsman",
+    "Cavalry Captain",
+    "Quartermaster"
+  ],
+  "skills": [
+    {
+      "id": "ceremonial_bladework",
+      "name": "Ceremonial Bladework",
+      "type": "Normal/Charged Attack",
+      "description": "<b>Normal Attack:</b> Performs up to 5 rapid strikes.<br><p><b>Charged Attack:</b> Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "frostgnaw",
+      "name": "Frostgnaw",
+      "type": "Elemental Skill",
+      "description": "Unleashes a frigid blast, dealing <span style=\"color:#4878a8\"><b>Cryo DMG</b></span> to opponents in front of Kaeya.",
+      "modifiers": []
+    },
+    {
+      "id": "glacial_waltz",
+      "name": "Glacial Waltz",
+      "type": "Elemental Burst",
+      "description": "Coalescing the frost in the air, Kaeya summons 3 icicles that revolve 4 times around him for 8 seconds.<br>These icicles will follow the character around and deal <span style=\"color:#4878a8\"><b>Cryo DMG</b></span> to opponents in their path for so long as they persist.",
+      "modifiers": []
+    }
+  ],
+  "passives": [
+    {
+      "id": "coldblooded_strike",
+      "name": "Cold-Blooded Strike",
+      "description": "Every hit with Frostgnaw regenerates HP for Kaeya equal to 15% of his ATK.",
+      "unlock": "Ascension 1"
+    },
+    {
+      "id": "glacial_heart",
+      "name": "Glacial Heart",
+      "description": "Opponents <span style=\"color:#4878a8\"><b>Frozen</b></span> by Frostgnaw will drop additional Elemental Particles. Frostgnaw may only produce a maximum of 2 additional Elemental Particles per use.",
+      "unlock": "Ascension 4"
+    },
+    {
+      "id": "hidden_strength",
+      "name": "Hidden Strength",
+      "description": "Decreases sprinting Stamina consumption of your characters in the party by 20%.<p>Not stackable with Passive Talents that provide the exact same effects.</p>"
+    }
+  ],
+  "constellations": [
+    {
+      "id": "excellent_blood",
+      "name": "Excellent Blood",
+      "description": "The CRIT Rate of Kaeya's Normal Attack and Charge Attacks against opponents affected by the Cryo is increased by 15%.",
+      "level": 1
+    },
+    {
+      "id": "neverending_performance",
+      "name": "Never-Ending Performance",
+      "description": "Every time Glacial Waltz defeats an opponent, its duration is increased by 2.5s, up to a maximum of 15s. *The description is incorrect, duration extension takes effect on any enemy defeat, not just enemies defeated by Glacial Waltz.",
+      "level": 2
+    },
+    {
+      "id": "dance_of_frost",
+      "name": "Dance of Frost",
+      "description": "Increases the Level of Frostgnaw by 3. Maximum upgrade level is 15.",
+      "level": 3
+    },
+    {
+      "id": "frozen_kiss",
+      "name": "Frozen Kiss",
+      "description": "Triggers automatically when Kaeya's HP falls below 20%:\nCreates a shield that absorbs damage equal to 30% of Kaeya's Max HP. Lasts for 20s.\nThis shield absorbs Cryo DMG with 250% efficiency.\nCan only occur once every 60s.",
+      "level": 4
+    },
+    {
+      "id": "frostbiting_embrace",
+      "name": "Frostbiting Embrace",
+      "description": "Increases the level of Glacial Waltz by 3. Max upgrade level is 15.",
+      "level": 5
+    },
+    {
+      "id": "glacial_whirlwind",
+      "name": "Glacial Whirlwind",
+      "description": "Glacial Waltz will generate 1 additional icicle, and will regenerate 15 Energy when cast.",
+      "level": 6
+    }
+  ],
+  "ascension": [
+    {
+      "ascension": 1,
+      "level": 2040,
+      "cost": 20000,
+      "mat1": {
+        "id": "1shivada_jade_sliver_1_shivada_jade_sliver",
+        "name": "1Shivada Jade Sliver 1 Shivada Jade Sliver",
+        "amount": null
+      },
+      "mat3": {
+        "id": "3calla_lily_3_calla_lily",
+        "name": "3Calla Lily 3 Calla Lily",
+        "amount": null
+      },
+      "mat4": {
+        "id": "3treasure_hoarder_insignia_3_treasure_hoarder_insignia",
+        "name": "3Treasure Hoarder Insignia 3 Treasure Hoarder Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 2,
+      "level": 4050,
+      "cost": 40000,
+      "mat1": {
+        "id": "3shivada_jade_fragment_3_shivada_jade_fragment",
+        "name": "3Shivada Jade Fragment 3 Shivada Jade Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "2hoarfrost_core_2_hoarfrost_core",
+        "name": "2Hoarfrost Core 2 Hoarfrost Core",
+        "amount": null
+      },
+      "mat3": {
+        "id": "10calla_lily_10_calla_lily",
+        "name": "10Calla Lily 10 Calla Lily",
+        "amount": null
+      },
+      "mat4": {
+        "id": "15treasure_hoarder_insignia_15_treasure_hoarder_insignia",
+        "name": "15Treasure Hoarder Insignia 15 Treasure Hoarder Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 3,
+      "level": 5060,
+      "cost": 60000,
+      "mat1": {
+        "id": "6shivada_jade_fragment_6_shivada_jade_fragment",
+        "name": "6Shivada Jade Fragment 6 Shivada Jade Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "4hoarfrost_core_4_hoarfrost_core",
+        "name": "4Hoarfrost Core 4 Hoarfrost Core",
+        "amount": null
+      },
+      "mat3": {
+        "id": "20calla_lily_20_calla_lily",
+        "name": "20Calla Lily 20 Calla Lily",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12silver_raven_insignia_12_silver_raven_insignia",
+        "name": "12Silver Raven Insignia 12 Silver Raven Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 4,
+      "level": 6070,
+      "cost": 80000,
+      "mat1": {
+        "id": "3shivada_jade_chunk_3_shivada_jade_chunk",
+        "name": "3Shivada Jade Chunk 3 Shivada Jade Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "8hoarfrost_core_8_hoarfrost_core",
+        "name": "8Hoarfrost Core 8 Hoarfrost Core",
+        "amount": null
+      },
+      "mat3": {
+        "id": "30calla_lily_30_calla_lily",
+        "name": "30Calla Lily 30 Calla Lily",
+        "amount": null
+      },
+      "mat4": {
+        "id": "18silver_raven_insignia_18_silver_raven_insignia",
+        "name": "18Silver Raven Insignia 18 Silver Raven Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 5,
+      "level": 7080,
+      "cost": 100000,
+      "mat1": {
+        "id": "6shivada_jade_chunk_6_shivada_jade_chunk",
+        "name": "6Shivada Jade Chunk 6 Shivada Jade Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "12hoarfrost_core_12_hoarfrost_core",
+        "name": "12Hoarfrost Core 12 Hoarfrost Core",
+        "amount": null
+      },
+      "mat3": {
+        "id": "45calla_lily_45_calla_lily",
+        "name": "45Calla Lily 45 Calla Lily",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12golden_raven_insignia_12_golden_raven_insignia",
+        "name": "12Golden Raven Insignia 12 Golden Raven Insignia",
+        "amount": null
+      }
+    },
+    {
+      "ascension": null,
+      "level": 8090,
+      "cost": 120000,
+      "mat1": {
+        "id": "6shivada_jade_gemstone_6_shivada_jade_gemstone",
+        "name": "6Shivada Jade Gemstone 6 Shivada Jade Gemstone",
+        "amount": null
+      },
+      "mat2": {
+        "id": "20hoarfrost_core_20_hoarfrost_core",
+        "name": "20Hoarfrost Core 20 Hoarfrost Core",
+        "amount": null
+      },
+      "mat3": {
+        "id": "60calla_lily_60_calla_lily",
+        "name": "60Calla Lily 60 Calla Lily",
+        "amount": null
+      },
+      "mat4": {
+        "id": "24golden_raven_insignia_24_golden_raven_insignia",
+        "name": "24Golden Raven Insignia 24 Golden Raven Insignia",
+        "amount": null
+      }
+    }
+  ]
+}

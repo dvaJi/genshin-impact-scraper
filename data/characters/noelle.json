@@ -1,1 +1,242 @@
-{"id":"noelle","name":"Noelle","description":"Like most of Mondstadt's young people, Noelle always dreamed of being a knight of Favonius when she grew up. She may not have what it takes to be a knight just yet, but she is learning. Working as a maid at the Knights' headquarters, she is constantly taking notes on what constitutes knightly speech, knightly conduct, and knightly customs. She holds firm to her belief that one day she will join their ranks - she just needs to keep trying her hardest at everything she does.","weapon_type":"Claymore","element":"Geo","gender":"Female","region":"Mondstadt","rarity":4,"location":"Wish","titles":["Chivalric Blossom","Maid of Favonius"],"skills":[{"id":"favonius_bladework_maid","name":"Favonius Bladework - Maid","type":"Normal/Charged Attack","description":"<b>Normal Attack:</b> Performs up to 4 consecutive slashes<br><p><b>Charged Attack:</b> Drains Stamina over time to perform continuous swirling attack on all nearby opponents. At the end of the sequence, performs an additional powerful slash.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>","modifiers":[]},{"id":"breastplate","name":"Breastplate","type":"Elemental Skill","description":"Summons protective stone armor, dealing <span style=\"color:#b67607\"><b>Geo DMG</b></span> to surrounding opponents and creating a shield. The shield's DMG Absorption scales based on Noelle's DEF.<br>The shield has the following properties:<ul><li>When Noelle's Normal and Charged Attacks hit a target, they have a certain chance to regenerate HP for all characters.</li><li>Possesses 150% DMG Absorption efficiency against all Elemental and Physical DMG.<br></li></ul><p>The amount of HP healed when regeneration is triggered scales based on Noelle's DEF.</p>","modifiers":[]},{"id":"sweeping_time","name":"Sweeping Time","type":"Elemental Burst","description":"Gathering the strength of stone around her weapon, Noelle strikes the opponents surrounding her within a large AoE, dealing <span style=\"color:#b67607\"><b>Geo DMG</b></span>.<br>Afterwards, Noelle gains the following effects:<br><ul><li>Larger attack AoE</li><li>Converts attack DMG to <span style=\"color:#b67607\"><b>Geo DMG</b></span> that cannot be overridden by any other elemental infusion.</li><li>Increased ATK that scales based on her DEF.</li></ul>","modifiers":[]}],"passives":[{"id":"devotion","name":"Devotion","description":"When Noelle is in the party but not on the field, this ability triggers automatically when your active character's HP falls below 30%:<p>Creates a shield for your active character that lasts for 20s and absorbs DMG equal to 400% of Noelle's DEF. The shield has a 250% DMG Absorption effectiveness against <span style=\"color:#b67607\"><b>Geo DMG</b></span>. This effect can only occur once every 60s.</p>","unlock":"Ascension 1"},{"id":"nice_and_clean","name":"Nice and Clean","description":"Every 4 Breastplate by 1s.<br>Hitting multiple opponents with a single attack is only counted as 1 hit.","unlock":"Ascension 4"},{"id":"maids_knighthood","name":"Maid's Knighthood","description":"When a Perfect Cooking is achieved on a DEF-boosting dish, Noelle has a 12% chance to obtain double the product."}],"constellations":[{"id":"i_got_your_back","name":"I Got Your Back","description":"While Sweeping Time and Breastplate are both in effect, attacks hits have a 100% chance to trigger Breastplate's healing effects.","level":1},{"id":"combat_maid","name":"Combat Maid","description":"Decreases Noelle's Stamina Consumption of Charged Attacks by 20% and increases Charged Attack DMG by 15%.","level":2},{"id":"invulnerable_maid","name":"Invulnerable Maid","description":"Increases Breastplate's skill level by 3. Max level is 15","level":3},{"id":"to_be_cleaned","name":"To Be Cleaned","description":"When Breastplate ends or shatters, it deals 400% of ATK as Geo DMG to surrounding opponents.","level":4},{"id":"favonius_sweeper_master","name":"Favonius Sweeper Master","description":"Increases Sweeping Time's skill level by 3. Max level is 15.","level":5},{"id":"must_be_spotless","name":"Must Be Spotless","description":"Sweeping Time increases ATK by an additional 50% of Noelle's DEF. For the skill's duration, adds 1s duration time per opponent defeated, up to 10s.","level":6}],"ascension":[{"ascension":1,"level":2040,"cost":20000,"mat1":{"id":"prithiva_topaz_sliver","name":"Prithiva Topaz Sliver","amount":1},"mat3":{"id":"valberry","name":"Valberry","amount":3},"mat4":{"id":"damaged_mask","name":"Damaged Mask","amount":3}},{"ascension":2,"level":4050,"cost":40000,"mat1":{"id":"prithiva_topaz_fragment","name":"Prithiva Topaz Fragment","amount":3},"mat2":{"id":"basalt_pillar","name":"Basalt Pillar","amount":2},"mat3":{"id":"valberry","name":"Valberry","amount":10},"mat4":{"id":"damaged_mask","name":"Damaged Mask","amount":15}},{"ascension":3,"level":5060,"cost":60000,"mat1":{"id":"prithiva_topaz_fragment","name":"Prithiva Topaz Fragment","amount":6},"mat2":{"id":"basalt_pillar","name":"Basalt Pillar","amount":4},"mat3":{"id":"valberry","name":"Valberry","amount":20},"mat4":{"id":"stained_mask","name":"Stained Mask","amount":12}},{"ascension":4,"level":6070,"cost":80000,"mat1":{"id":"prithiva_topaz_chunk","name":"Prithiva Topaz Chunk","amount":3},"mat2":{"id":"basalt_pillar","name":"Basalt Pillar","amount":8},"mat3":{"id":"valberry","name":"Valberry","amount":30},"mat4":{"id":"stained_mask","name":"Stained Mask","amount":18}},{"ascension":5,"level":7080,"cost":100000,"mat1":{"id":"prithiva_topaz_chunk","name":"Prithiva Topaz Chunk","amount":6},"mat2":{"id":"basalt_pillar","name":"Basalt Pillar","amount":12},"mat3":{"id":"valberry","name":"Valberry","amount":45},"mat4":{"id":"ominous_mask","name":"Ominous Mask","amount":12}},{"ascension":null,"level":8090,"cost":120000,"mat1":{"id":"prithiva_topaz_gemstone","name":"Prithiva Topaz Gemstone","amount":6},"mat2":{"id":"basalt_pillar","name":"Basalt Pillar","amount":20},"mat3":{"id":"valberry","name":"Valberry","amount":60},"mat4":{"id":"ominous_mask","name":"Ominous Mask","amount":24}}]}
+{
+  "id": "noelle",
+  "name": "Noelle",
+  "description": "Like most of Mondstadt's young people, Noelle always dreamed of being a knight of Favonius when she grew up. She may not have what it takes to be a knight just yet, but she is learning. Working as a maid at the Knights' headquarters, she is constantly taking notes on what constitutes knightly speech, knightly conduct, and knightly customs. She holds firm to her belief that one day she will join their ranks - she just needs to keep trying her hardest at everything she does.",
+  "weapon_type": "Claymore",
+  "element": "Geo",
+  "gender": "Female",
+  "region": "Mondstadt",
+  "rarity": 4,
+  "location": "Wish",
+  "titles": [
+    "Chivalric Blossom",
+    "Maid of Favonius"
+  ],
+  "skills": [
+    {
+      "id": "favonius_bladework_maid",
+      "name": "Favonius Bladework - Maid",
+      "type": "Normal/Charged Attack",
+      "description": "<b>Normal Attack:</b> Performs up to 4 consecutive slashes<br><p><b>Charged Attack:</b> Drains Stamina over time to perform continuous swirling attack on all nearby opponents. At the end of the sequence, performs an additional powerful slash.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "breastplate",
+      "name": "Breastplate",
+      "type": "Elemental Skill",
+      "description": "Summons protective stone armor, dealing <span style=\"color:#b67607\"><b>Geo DMG</b></span> to surrounding opponents and creating a shield. The shield's DMG Absorption scales based on Noelle's DEF.<br>The shield has the following properties:<ul><li>When Noelle's Normal and Charged Attacks hit a target, they have a certain chance to regenerate HP for all characters.</li><li>Possesses 150% DMG Absorption efficiency against all Elemental and Physical DMG.<br></li></ul><p>The amount of HP healed when regeneration is triggered scales based on Noelle's DEF.</p>",
+      "modifiers": []
+    },
+    {
+      "id": "sweeping_time",
+      "name": "Sweeping Time",
+      "type": "Elemental Burst",
+      "description": "Gathering the strength of stone around her weapon, Noelle strikes the opponents surrounding her within a large AoE, dealing <span style=\"color:#b67607\"><b>Geo DMG</b></span>.<br>Afterwards, Noelle gains the following effects:<br><ul><li>Larger attack AoE</li><li>Converts attack DMG to <span style=\"color:#b67607\"><b>Geo DMG</b></span> that cannot be overridden by any other elemental infusion.</li><li>Increased ATK that scales based on her DEF.</li></ul>",
+      "modifiers": []
+    }
+  ],
+  "passives": [
+    {
+      "id": "devotion",
+      "name": "Devotion",
+      "description": "When Noelle is in the party but not on the field, this ability triggers automatically when your active character's HP falls below 30%:<p>Creates a shield for your active character that lasts for 20s and absorbs DMG equal to 400% of Noelle's DEF. The shield has a 150% DMG Absorption effectiveness against all Elemental and Physical DMG. This effect can only occur once every 60s.</p>",
+      "unlock": "Ascension 1"
+    },
+    {
+      "id": "nice_and_clean",
+      "name": "Nice and Clean",
+      "description": "Every 4 Breastplate by 1s.<br>Hitting multiple opponents with a single attack is only counted as 1 hit.",
+      "unlock": "Ascension 4"
+    },
+    {
+      "id": "maids_knighthood",
+      "name": "Maid's Knighthood",
+      "description": "When a Perfect Cooking is achieved on a DEF-boosting dish, Noelle has a 12% chance to obtain double the product."
+    }
+  ],
+  "constellations": [
+    {
+      "id": "i_got_your_back",
+      "name": "I Got Your Back",
+      "description": "While Sweeping Time and Breastplate are both in effect, attacks hits have a 100% chance to trigger Breastplate's healing effects.",
+      "level": 1
+    },
+    {
+      "id": "combat_maid",
+      "name": "Combat Maid",
+      "description": "Decreases Noelle's Stamina Consumption of Charged Attacks by 20% and increases Charged Attack DMG by 15%.",
+      "level": 2
+    },
+    {
+      "id": "invulnerable_maid",
+      "name": "Invulnerable Maid",
+      "description": "Increases Breastplate's skill level by 3. Max level is 15",
+      "level": 3
+    },
+    {
+      "id": "to_be_cleaned",
+      "name": "To Be Cleaned",
+      "description": "When Breastplate ends or shatters, it deals 400% of ATK as Geo DMG to surrounding opponents.",
+      "level": 4
+    },
+    {
+      "id": "favonius_sweeper_master",
+      "name": "Favonius Sweeper Master",
+      "description": "Increases Sweeping Time's skill level by 3. Max level is 15.",
+      "level": 5
+    },
+    {
+      "id": "must_be_spotless",
+      "name": "Must Be Spotless",
+      "description": "Sweeping Time increases ATK by an additional 50% of Noelle's DEF. For the skill's duration, adds 1s duration time per opponent defeated, up to 10s.",
+      "level": 6
+    }
+  ],
+  "ascension": [
+    {
+      "ascension": 1,
+      "level": 2040,
+      "cost": 20000,
+      "mat1": {
+        "id": "1prithiva_topaz_sliver_1_prithiva_topaz_sliver",
+        "name": "1Prithiva Topaz Sliver 1 Prithiva Topaz Sliver",
+        "amount": null
+      },
+      "mat3": {
+        "id": "3valberry_3_valberry",
+        "name": "3Valberry 3 Valberry",
+        "amount": null
+      },
+      "mat4": {
+        "id": "3damaged_mask_3_damaged_mask",
+        "name": "3Damaged Mask 3 Damaged Mask",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 2,
+      "level": 4050,
+      "cost": 40000,
+      "mat1": {
+        "id": "3prithiva_topaz_fragment_3_prithiva_topaz_fragment",
+        "name": "3Prithiva Topaz Fragment 3 Prithiva Topaz Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "2basalt_pillar_2_basalt_pillar",
+        "name": "2Basalt Pillar 2 Basalt Pillar",
+        "amount": null
+      },
+      "mat3": {
+        "id": "10valberry_10_valberry",
+        "name": "10Valberry 10 Valberry",
+        "amount": null
+      },
+      "mat4": {
+        "id": "15damaged_mask_15_damaged_mask",
+        "name": "15Damaged Mask 15 Damaged Mask",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 3,
+      "level": 5060,
+      "cost": 60000,
+      "mat1": {
+        "id": "6prithiva_topaz_fragment_6_prithiva_topaz_fragment",
+        "name": "6Prithiva Topaz Fragment 6 Prithiva Topaz Fragment",
+        "amount": null
+      },
+      "mat2": {
+        "id": "4basalt_pillar_4_basalt_pillar",
+        "name": "4Basalt Pillar 4 Basalt Pillar",
+        "amount": null
+      },
+      "mat3": {
+        "id": "20valberry_20_valberry",
+        "name": "20Valberry 20 Valberry",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12stained_mask_12_stained_mask",
+        "name": "12Stained Mask 12 Stained Mask",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 4,
+      "level": 6070,
+      "cost": 80000,
+      "mat1": {
+        "id": "3prithiva_topaz_chunk_3_prithiva_topaz_chunk",
+        "name": "3Prithiva Topaz Chunk 3 Prithiva Topaz Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "8basalt_pillar_8_basalt_pillar",
+        "name": "8Basalt Pillar 8 Basalt Pillar",
+        "amount": null
+      },
+      "mat3": {
+        "id": "30valberry_30_valberry",
+        "name": "30Valberry 30 Valberry",
+        "amount": null
+      },
+      "mat4": {
+        "id": "18stained_mask_18_stained_mask",
+        "name": "18Stained Mask 18 Stained Mask",
+        "amount": null
+      }
+    },
+    {
+      "ascension": 5,
+      "level": 7080,
+      "cost": 100000,
+      "mat1": {
+        "id": "6prithiva_topaz_chunk_6_prithiva_topaz_chunk",
+        "name": "6Prithiva Topaz Chunk 6 Prithiva Topaz Chunk",
+        "amount": null
+      },
+      "mat2": {
+        "id": "12basalt_pillar_12_basalt_pillar",
+        "name": "12Basalt Pillar 12 Basalt Pillar",
+        "amount": null
+      },
+      "mat3": {
+        "id": "45valberry_45_valberry",
+        "name": "45Valberry 45 Valberry",
+        "amount": null
+      },
+      "mat4": {
+        "id": "12ominous_mask_12_ominous_mask",
+        "name": "12Ominous Mask 12 Ominous Mask",
+        "amount": null
+      }
+    },
+    {
+      "ascension": null,
+      "level": 8090,
+      "cost": 120000,
+      "mat1": {
+        "id": "6prithiva_topaz_gemstone_6_prithiva_topaz_gemstone",
+        "name": "6Prithiva Topaz Gemstone 6 Prithiva Topaz Gemstone",
+        "amount": null
+      },
+      "mat2": {
+        "id": "20basalt_pillar_20_basalt_pillar",
+        "name": "20Basalt Pillar 20 Basalt Pillar",
+        "amount": null
+      },
+      "mat3": {
+        "id": "60valberry_60_valberry",
+        "name": "60Valberry 60 Valberry",
+        "amount": null
+      },
+      "mat4": {
+        "id": "24ominous_mask_24_ominous_mask",
+        "name": "24Ominous Mask 24 Ominous Mask",
+        "amount": null
+      }
+    }
+  ]
+}
