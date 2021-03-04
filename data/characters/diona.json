@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1shivada_jade_sliver_1_shivada_jade_sliver",
-        "name": "1Shivada Jade Sliver 1 Shivada Jade Sliver",
-        "amount": null
+        "id": "shivada_jade_sliver",
+        "name": "Shivada Jade Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3calla_lily_3_calla_lily",
-        "name": "3Calla Lily 3 Calla Lily",
-        "amount": null
+        "id": "calla_lily",
+        "name": "Calla Lily",
+        "amount": 3
       },
       "mat4": {
-        "id": "3firm_arrowhead_3_firm_arrowhead",
-        "name": "3Firm Arrowhead 3 Firm Arrowhead",
-        "amount": null
+        "id": "firm_arrowhead",
+        "name": "Firm Arrowhead",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3shivada_jade_fragment_3_shivada_jade_fragment",
-        "name": "3Shivada Jade Fragment 3 Shivada Jade Fragment",
-        "amount": null
+        "id": "shivada_jade_fragment",
+        "name": "Shivada Jade Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2hoarfrost_core_2_hoarfrost_core",
-        "name": "2Hoarfrost Core 2 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 2
       },
       "mat3": {
-        "id": "10calla_lily_10_calla_lily",
-        "name": "10Calla Lily 10 Calla Lily",
-        "amount": null
+        "id": "calla_lily",
+        "name": "Calla Lily",
+        "amount": 10
       },
       "mat4": {
-        "id": "15firm_arrowhead_15_firm_arrowhead",
-        "name": "15Firm Arrowhead 15 Firm Arrowhead",
-        "amount": null
+        "id": "firm_arrowhead",
+        "name": "Firm Arrowhead",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6shivada_jade_fragment_6_shivada_jade_fragment",
-        "name": "6Shivada Jade Fragment 6 Shivada Jade Fragment",
-        "amount": null
+        "id": "shivada_jade_fragment",
+        "name": "Shivada Jade Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4hoarfrost_core_4_hoarfrost_core",
-        "name": "4Hoarfrost Core 4 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 4
       },
       "mat3": {
-        "id": "20calla_lily_20_calla_lily",
-        "name": "20Calla Lily 20 Calla Lily",
-        "amount": null
+        "id": "calla_lily",
+        "name": "Calla Lily",
+        "amount": 20
       },
       "mat4": {
-        "id": "12sharp_arrowhead_12_sharp_arrowhead",
-        "name": "12Sharp Arrowhead 12 Sharp Arrowhead",
-        "amount": null
+        "id": "sharp_arrowhead",
+        "name": "Sharp Arrowhead",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3shivada_jade_chunk_3_shivada_jade_chunk",
-        "name": "3Shivada Jade Chunk 3 Shivada Jade Chunk",
-        "amount": null
+        "id": "shivada_jade_chunk",
+        "name": "Shivada Jade Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8hoarfrost_core_8_hoarfrost_core",
-        "name": "8Hoarfrost Core 8 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 8
       },
       "mat3": {
-        "id": "30calla_lily_30_calla_lily",
-        "name": "30Calla Lily 30 Calla Lily",
-        "amount": null
+        "id": "calla_lily",
+        "name": "Calla Lily",
+        "amount": 30
       },
       "mat4": {
-        "id": "18sharp_arrowhead_18_sharp_arrowhead",
-        "name": "18Sharp Arrowhead 18 Sharp Arrowhead",
-        "amount": null
+        "id": "sharp_arrowhead",
+        "name": "Sharp Arrowhead",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6shivada_jade_chunk_6_shivada_jade_chunk",
-        "name": "6Shivada Jade Chunk 6 Shivada Jade Chunk",
-        "amount": null
+        "id": "shivada_jade_chunk",
+        "name": "Shivada Jade Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12hoarfrost_core_12_hoarfrost_core",
-        "name": "12Hoarfrost Core 12 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 12
       },
       "mat3": {
-        "id": "45calla_lily_45_calla_lily",
-        "name": "45Calla Lily 45 Calla Lily",
-        "amount": null
+        "id": "calla_lily",
+        "name": "Calla Lily",
+        "amount": 45
       },
       "mat4": {
-        "id": "12weathered_arrowhead_12_weathered_arrowhead",
-        "name": "12Weathered Arrowhead 12 Weathered Arrowhead",
-        "amount": null
+        "id": "weathered_arrowhead",
+        "name": "Weathered Arrowhead",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6shivada_jade_gemstone_6_shivada_jade_gemstone",
-        "name": "6Shivada Jade Gemstone 6 Shivada Jade Gemstone",
-        "amount": null
+        "id": "shivada_jade_gemstone",
+        "name": "Shivada Jade Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20hoarfrost_core_20_hoarfrost_core",
-        "name": "20Hoarfrost Core 20 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 20
       },
       "mat3": {
-        "id": "60calla_lily_60_calla_lily",
-        "name": "60Calla Lily 60 Calla Lily",
-        "amount": null
+        "id": "calla_lily",
+        "name": "Calla Lily",
+        "amount": 60
       },
       "mat4": {
-        "id": "24weathered_arrowhead_24_weathered_arrowhead",
-        "name": "24Weathered Arrowhead 24 Weathered Arrowhead",
-        "amount": null
+        "id": "weathered_arrowhead",
+        "name": "Weathered Arrowhead",
+        "amount": 24
       }
     }
   ]

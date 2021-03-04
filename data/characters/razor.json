@@ -99,19 +99,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1vajrada_amethyst_sliver_1_vajrada_amethyst_sliver",
-        "name": "1Vajrada Amethyst Sliver 1 Vajrada Amethyst Sliver",
-        "amount": null
+        "id": "vajrada_amethyst_sliver",
+        "name": "Vajrada Amethyst Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3wolfhook_3_wolfhook",
-        "name": "3Wolfhook 3 Wolfhook",
-        "amount": null
+        "id": "wolfhook",
+        "name": "Wolfhook",
+        "amount": 3
       },
       "mat4": {
-        "id": "3damaged_mask_3_damaged_mask",
-        "name": "3Damaged Mask 3 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 3
       }
     },
     {
@@ -119,24 +119,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3vajrada_amethyst_fragment_3_vajrada_amethyst_fragment",
-        "name": "3Vajrada Amethyst Fragment 3 Vajrada Amethyst Fragment",
-        "amount": null
+        "id": "vajrada_amethyst_fragment",
+        "name": "Vajrada Amethyst Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2lightning_prism_2_lightning_prism",
-        "name": "2Lightning Prism 2 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 2
       },
       "mat3": {
-        "id": "10wolfhook_10_wolfhook",
-        "name": "10Wolfhook 10 Wolfhook",
-        "amount": null
+        "id": "wolfhook",
+        "name": "Wolfhook",
+        "amount": 10
       },
       "mat4": {
-        "id": "15damaged_mask_15_damaged_mask",
-        "name": "15Damaged Mask 15 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 15
       }
     },
     {
@@ -144,24 +144,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6vajrada_amethyst_fragment_6_vajrada_amethyst_fragment",
-        "name": "6Vajrada Amethyst Fragment 6 Vajrada Amethyst Fragment",
-        "amount": null
+        "id": "vajrada_amethyst_fragment",
+        "name": "Vajrada Amethyst Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4lightning_prism_4_lightning_prism",
-        "name": "4Lightning Prism 4 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 4
       },
       "mat3": {
-        "id": "20wolfhook_20_wolfhook",
-        "name": "20Wolfhook 20 Wolfhook",
-        "amount": null
+        "id": "wolfhook",
+        "name": "Wolfhook",
+        "amount": 20
       },
       "mat4": {
-        "id": "12stained_mask_12_stained_mask",
-        "name": "12Stained Mask 12 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 12
       }
     },
     {
@@ -169,24 +169,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3vajrada_amethyst_chunk_3_vajrada_amethyst_chunk",
-        "name": "3Vajrada Amethyst Chunk 3 Vajrada Amethyst Chunk",
-        "amount": null
+        "id": "vajrada_amethyst_chunk",
+        "name": "Vajrada Amethyst Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8lightning_prism_8_lightning_prism",
-        "name": "8Lightning Prism 8 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 8
       },
       "mat3": {
-        "id": "30wolfhook_30_wolfhook",
-        "name": "30Wolfhook 30 Wolfhook",
-        "amount": null
+        "id": "wolfhook",
+        "name": "Wolfhook",
+        "amount": 30
       },
       "mat4": {
-        "id": "18stained_mask_18_stained_mask",
-        "name": "18Stained Mask 18 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 18
       }
     },
     {
@@ -194,24 +194,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6vajrada_amethyst_chunk_6_vajrada_amethyst_chunk",
-        "name": "6Vajrada Amethyst Chunk 6 Vajrada Amethyst Chunk",
-        "amount": null
+        "id": "vajrada_amethyst_chunk",
+        "name": "Vajrada Amethyst Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12lightning_prism_12_lightning_prism",
-        "name": "12Lightning Prism 12 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 12
       },
       "mat3": {
-        "id": "45wolfhook_45_wolfhook",
-        "name": "45Wolfhook 45 Wolfhook",
-        "amount": null
+        "id": "wolfhook",
+        "name": "Wolfhook",
+        "amount": 45
       },
       "mat4": {
-        "id": "12ominous_mask_12_ominous_mask",
-        "name": "12Ominous Mask 12 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 12
       }
     },
     {
@@ -219,24 +219,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6vajrada_amethyst_gemstone_6_vajrada_amethyst_gemstone",
-        "name": "6Vajrada Amethyst Gemstone 6 Vajrada Amethyst Gemstone",
-        "amount": null
+        "id": "vajrada_amethyst_gemstone",
+        "name": "Vajrada Amethyst Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20lightning_prism_20_lightning_prism",
-        "name": "20Lightning Prism 20 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 20
       },
       "mat3": {
-        "id": "60wolfhook_60_wolfhook",
-        "name": "60Wolfhook 60 Wolfhook",
-        "amount": null
+        "id": "wolfhook",
+        "name": "Wolfhook",
+        "amount": 60
       },
       "mat4": {
-        "id": "24ominous_mask_24_ominous_mask",
-        "name": "24Ominous Mask 24 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 24
       }
     }
   ]

@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1shivada_jade_sliver_1_shivada_jade_sliver",
-        "name": "1Shivada Jade Sliver 1 Shivada Jade Sliver",
-        "amount": null
+        "id": "shivada_jade_sliver",
+        "name": "Shivada Jade Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3cor_lapis_3_cor_lapis",
-        "name": "3Cor Lapis 3 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 3
       },
       "mat4": {
-        "id": "3damaged_mask_3_damaged_mask",
-        "name": "3Damaged Mask 3 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3shivada_jade_fragment_3_shivada_jade_fragment",
-        "name": "3Shivada Jade Fragment 3 Shivada Jade Fragment",
-        "amount": null
+        "id": "shivada_jade_fragment",
+        "name": "Shivada Jade Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2hoarfrost_core_2_hoarfrost_core",
-        "name": "2Hoarfrost Core 2 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 2
       },
       "mat3": {
-        "id": "10cor_lapis_10_cor_lapis",
-        "name": "10Cor Lapis 10 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 10
       },
       "mat4": {
-        "id": "15damaged_mask_15_damaged_mask",
-        "name": "15Damaged Mask 15 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6shivada_jade_fragment_6_shivada_jade_fragment",
-        "name": "6Shivada Jade Fragment 6 Shivada Jade Fragment",
-        "amount": null
+        "id": "shivada_jade_fragment",
+        "name": "Shivada Jade Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4hoarfrost_core_4_hoarfrost_core",
-        "name": "4Hoarfrost Core 4 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 4
       },
       "mat3": {
-        "id": "20cor_lapis_20_cor_lapis",
-        "name": "20Cor Lapis 20 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 20
       },
       "mat4": {
-        "id": "12stained_mask_12_stained_mask",
-        "name": "12Stained Mask 12 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3shivada_jade_chunk_3_shivada_jade_chunk",
-        "name": "3Shivada Jade Chunk 3 Shivada Jade Chunk",
-        "amount": null
+        "id": "shivada_jade_chunk",
+        "name": "Shivada Jade Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8hoarfrost_core_8_hoarfrost_core",
-        "name": "8Hoarfrost Core 8 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 8
       },
       "mat3": {
-        "id": "30cor_lapis_30_cor_lapis",
-        "name": "30Cor Lapis 30 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 30
       },
       "mat4": {
-        "id": "18stained_mask_18_stained_mask",
-        "name": "18Stained Mask 18 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6shivada_jade_chunk_6_shivada_jade_chunk",
-        "name": "6Shivada Jade Chunk 6 Shivada Jade Chunk",
-        "amount": null
+        "id": "shivada_jade_chunk",
+        "name": "Shivada Jade Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12hoarfrost_core_12_hoarfrost_core",
-        "name": "12Hoarfrost Core 12 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 12
       },
       "mat3": {
-        "id": "45cor_lapis_45_cor_lapis",
-        "name": "45Cor Lapis 45 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 45
       },
       "mat4": {
-        "id": "12ominous_mask_12_ominous_mask",
-        "name": "12Ominous Mask 12 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6shivada_jade_gemstone_6_shivada_jade_gemstone",
-        "name": "6Shivada Jade Gemstone 6 Shivada Jade Gemstone",
-        "amount": null
+        "id": "shivada_jade_gemstone",
+        "name": "Shivada Jade Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20hoarfrost_core_20_hoarfrost_core",
-        "name": "20Hoarfrost Core 20 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 20
       },
       "mat3": {
-        "id": "60cor_lapis_60_cor_lapis",
-        "name": "60Cor Lapis 60 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 60
       },
       "mat4": {
-        "id": "24ominous_mask_24_ominous_mask",
-        "name": "24Ominous Mask 24 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 24
       }
     }
   ]

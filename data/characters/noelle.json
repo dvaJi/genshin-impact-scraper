@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1prithiva_topaz_sliver_1_prithiva_topaz_sliver",
-        "name": "1Prithiva Topaz Sliver 1 Prithiva Topaz Sliver",
-        "amount": null
+        "id": "prithiva_topaz_sliver",
+        "name": "Prithiva Topaz Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3valberry_3_valberry",
-        "name": "3Valberry 3 Valberry",
-        "amount": null
+        "id": "valberry",
+        "name": "Valberry",
+        "amount": 3
       },
       "mat4": {
-        "id": "3damaged_mask_3_damaged_mask",
-        "name": "3Damaged Mask 3 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3prithiva_topaz_fragment_3_prithiva_topaz_fragment",
-        "name": "3Prithiva Topaz Fragment 3 Prithiva Topaz Fragment",
-        "amount": null
+        "id": "prithiva_topaz_fragment",
+        "name": "Prithiva Topaz Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2basalt_pillar_2_basalt_pillar",
-        "name": "2Basalt Pillar 2 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 2
       },
       "mat3": {
-        "id": "10valberry_10_valberry",
-        "name": "10Valberry 10 Valberry",
-        "amount": null
+        "id": "valberry",
+        "name": "Valberry",
+        "amount": 10
       },
       "mat4": {
-        "id": "15damaged_mask_15_damaged_mask",
-        "name": "15Damaged Mask 15 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6prithiva_topaz_fragment_6_prithiva_topaz_fragment",
-        "name": "6Prithiva Topaz Fragment 6 Prithiva Topaz Fragment",
-        "amount": null
+        "id": "prithiva_topaz_fragment",
+        "name": "Prithiva Topaz Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4basalt_pillar_4_basalt_pillar",
-        "name": "4Basalt Pillar 4 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 4
       },
       "mat3": {
-        "id": "20valberry_20_valberry",
-        "name": "20Valberry 20 Valberry",
-        "amount": null
+        "id": "valberry",
+        "name": "Valberry",
+        "amount": 20
       },
       "mat4": {
-        "id": "12stained_mask_12_stained_mask",
-        "name": "12Stained Mask 12 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3prithiva_topaz_chunk_3_prithiva_topaz_chunk",
-        "name": "3Prithiva Topaz Chunk 3 Prithiva Topaz Chunk",
-        "amount": null
+        "id": "prithiva_topaz_chunk",
+        "name": "Prithiva Topaz Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8basalt_pillar_8_basalt_pillar",
-        "name": "8Basalt Pillar 8 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 8
       },
       "mat3": {
-        "id": "30valberry_30_valberry",
-        "name": "30Valberry 30 Valberry",
-        "amount": null
+        "id": "valberry",
+        "name": "Valberry",
+        "amount": 30
       },
       "mat4": {
-        "id": "18stained_mask_18_stained_mask",
-        "name": "18Stained Mask 18 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6prithiva_topaz_chunk_6_prithiva_topaz_chunk",
-        "name": "6Prithiva Topaz Chunk 6 Prithiva Topaz Chunk",
-        "amount": null
+        "id": "prithiva_topaz_chunk",
+        "name": "Prithiva Topaz Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12basalt_pillar_12_basalt_pillar",
-        "name": "12Basalt Pillar 12 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 12
       },
       "mat3": {
-        "id": "45valberry_45_valberry",
-        "name": "45Valberry 45 Valberry",
-        "amount": null
+        "id": "valberry",
+        "name": "Valberry",
+        "amount": 45
       },
       "mat4": {
-        "id": "12ominous_mask_12_ominous_mask",
-        "name": "12Ominous Mask 12 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6prithiva_topaz_gemstone_6_prithiva_topaz_gemstone",
-        "name": "6Prithiva Topaz Gemstone 6 Prithiva Topaz Gemstone",
-        "amount": null
+        "id": "prithiva_topaz_gemstone",
+        "name": "Prithiva Topaz Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20basalt_pillar_20_basalt_pillar",
-        "name": "20Basalt Pillar 20 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 20
       },
       "mat3": {
-        "id": "60valberry_60_valberry",
-        "name": "60Valberry 60 Valberry",
-        "amount": null
+        "id": "valberry",
+        "name": "Valberry",
+        "amount": 60
       },
       "mat4": {
-        "id": "24ominous_mask_24_ominous_mask",
-        "name": "24Ominous Mask 24 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 24
       }
     }
   ]

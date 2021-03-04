@@ -100,19 +100,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1agnidus_agate_sliver_1_agnidus_agate_sliver",
-        "name": "1Agnidus Agate Sliver 1 Agnidus Agate Sliver",
-        "amount": null
+        "id": "agnidus_agate_sliver",
+        "name": "Agnidus Agate Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3silk_flower_3_silk_flower",
-        "name": "3Silk Flower 3 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 3
       },
       "mat4": {
-        "id": "3whopperflower_nectar_3_whopperflower_nectar",
-        "name": "3Whopperflower Nectar 3 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 3
       }
     },
     {
@@ -120,24 +120,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3agnidus_agate_fragment_3_agnidus_agate_fragment",
-        "name": "3Agnidus Agate Fragment 3 Agnidus Agate Fragment",
-        "amount": null
+        "id": "agnidus_agate_fragment",
+        "name": "Agnidus Agate Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2juvenile_jade_2_juvenile_jade",
-        "name": "2Juvenile Jade 2 Juvenile Jade",
-        "amount": null
+        "id": "juvenile_jade",
+        "name": "Juvenile Jade",
+        "amount": 2
       },
       "mat3": {
-        "id": "10silk_flower_10_silk_flower",
-        "name": "10Silk Flower 10 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 10
       },
       "mat4": {
-        "id": "15whopperflower_nectar_15_whopperflower_nectar",
-        "name": "15Whopperflower Nectar 15 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 15
       }
     },
     {
@@ -145,24 +145,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6agnidus_agate_fragment_6_agnidus_agate_fragment",
-        "name": "6Agnidus Agate Fragment 6 Agnidus Agate Fragment",
-        "amount": null
+        "id": "agnidus_agate_fragment",
+        "name": "Agnidus Agate Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4juvenile_jade_4_juvenile_jade",
-        "name": "4Juvenile Jade 4 Juvenile Jade",
-        "amount": null
+        "id": "juvenile_jade",
+        "name": "Juvenile Jade",
+        "amount": 4
       },
       "mat3": {
-        "id": "20silk_flower_20_silk_flower",
-        "name": "20Silk Flower 20 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 20
       },
       "mat4": {
-        "id": "12shimmering_nectar_12_shimmering_nectar",
-        "name": "12Shimmering Nectar 12 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 12
       }
     },
     {
@@ -170,24 +170,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3agnidus_agate_chunk_3_agnidus_agate_chunk",
-        "name": "3Agnidus Agate Chunk 3 Agnidus Agate Chunk",
-        "amount": null
+        "id": "agnidus_agate_chunk",
+        "name": "Agnidus Agate Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8juvenile_jade_8_juvenile_jade",
-        "name": "8Juvenile Jade 8 Juvenile Jade",
-        "amount": null
+        "id": "juvenile_jade",
+        "name": "Juvenile Jade",
+        "amount": 8
       },
       "mat3": {
-        "id": "30silk_flower_30_silk_flower",
-        "name": "30Silk Flower 30 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 30
       },
       "mat4": {
-        "id": "18shimmering_nectar_18_shimmering_nectar",
-        "name": "18Shimmering Nectar 18 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 18
       }
     },
     {
@@ -195,24 +195,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6agnidus_agate_chunk_6_agnidus_agate_chunk",
-        "name": "6Agnidus Agate Chunk 6 Agnidus Agate Chunk",
-        "amount": null
+        "id": "agnidus_agate_chunk",
+        "name": "Agnidus Agate Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12juvenile_jade_12_juvenile_jade",
-        "name": "12Juvenile Jade 12 Juvenile Jade",
-        "amount": null
+        "id": "juvenile_jade",
+        "name": "Juvenile Jade",
+        "amount": 12
       },
       "mat3": {
-        "id": "45silk_flower_45_silk_flower",
-        "name": "45Silk Flower 45 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 45
       },
       "mat4": {
-        "id": "12energy_nectar_12_energy_nectar",
-        "name": "12Energy Nectar 12 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 12
       }
     },
     {
@@ -220,24 +220,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6agnidus_agate_gemstone_6_agnidus_agate_gemstone",
-        "name": "6Agnidus Agate Gemstone 6 Agnidus Agate Gemstone",
-        "amount": null
+        "id": "agnidus_agate_gemstone",
+        "name": "Agnidus Agate Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20juvenile_jade_20_juvenile_jade",
-        "name": "20Juvenile Jade 20 Juvenile Jade",
-        "amount": null
+        "id": "juvenile_jade",
+        "name": "Juvenile Jade",
+        "amount": 20
       },
       "mat3": {
-        "id": "60silk_flower_60_silk_flower",
-        "name": "60Silk Flower 60 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 60
       },
       "mat4": {
-        "id": "24energy_nectar_24_energy_nectar",
-        "name": "24Energy Nectar 24 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 24
       }
     }
   ]

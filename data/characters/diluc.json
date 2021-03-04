@@ -100,19 +100,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1agnidus_agate_sliver_1_agnidus_agate_sliver",
-        "name": "1Agnidus Agate Sliver 1 Agnidus Agate Sliver",
-        "amount": null
+        "id": "agnidus_agate_sliver",
+        "name": "Agnidus Agate Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3small_lamp_grass_3_small_lamp_grass",
-        "name": "3Small Lamp Grass 3 Small Lamp Grass",
-        "amount": null
+        "id": "small_lamp_grass",
+        "name": "Small Lamp Grass",
+        "amount": 3
       },
       "mat4": {
-        "id": "3recruits_insignia_3_recruits_insignia",
-        "name": "3Recruit's Insignia 3 Recruit's Insignia",
-        "amount": null
+        "id": "recruits_insignia",
+        "name": "Recruit's Insignia",
+        "amount": 3
       }
     },
     {
@@ -120,24 +120,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3agnidus_agate_fragment_3_agnidus_agate_fragment",
-        "name": "3Agnidus Agate Fragment 3 Agnidus Agate Fragment",
-        "amount": null
+        "id": "agnidus_agate_fragment",
+        "name": "Agnidus Agate Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2everflame_seed_2_everflame_seed",
-        "name": "2Everflame Seed 2 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 2
       },
       "mat3": {
-        "id": "10small_lamp_grass_10_small_lamp_grass",
-        "name": "10Small Lamp Grass 10 Small Lamp Grass",
-        "amount": null
+        "id": "small_lamp_grass",
+        "name": "Small Lamp Grass",
+        "amount": 10
       },
       "mat4": {
-        "id": "15recruits_insignia_15_recruits_insignia",
-        "name": "15Recruit's Insignia 15 Recruit's Insignia",
-        "amount": null
+        "id": "recruits_insignia",
+        "name": "Recruit's Insignia",
+        "amount": 15
       }
     },
     {
@@ -145,24 +145,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6agnidus_agate_fragment_6_agnidus_agate_fragment",
-        "name": "6Agnidus Agate Fragment 6 Agnidus Agate Fragment",
-        "amount": null
+        "id": "agnidus_agate_fragment",
+        "name": "Agnidus Agate Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4everflame_seed_4_everflame_seed",
-        "name": "4Everflame Seed 4 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 4
       },
       "mat3": {
-        "id": "20small_lamp_grass_20_small_lamp_grass",
-        "name": "20Small Lamp Grass 20 Small Lamp Grass",
-        "amount": null
+        "id": "small_lamp_grass",
+        "name": "Small Lamp Grass",
+        "amount": 20
       },
       "mat4": {
-        "id": "12sergeants_insignia_12_sergeants_insignia",
-        "name": "12Sergeant's Insignia 12 Sergeant's Insignia",
-        "amount": null
+        "id": "sergeants_insignia",
+        "name": "Sergeant's Insignia",
+        "amount": 12
       }
     },
     {
@@ -170,24 +170,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3agnidus_agate_chunk_3_agnidus_agate_chunk",
-        "name": "3Agnidus Agate Chunk 3 Agnidus Agate Chunk",
-        "amount": null
+        "id": "agnidus_agate_chunk",
+        "name": "Agnidus Agate Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8everflame_seed_8_everflame_seed",
-        "name": "8Everflame Seed 8 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 8
       },
       "mat3": {
-        "id": "30small_lamp_grass_30_small_lamp_grass",
-        "name": "30Small Lamp Grass 30 Small Lamp Grass",
-        "amount": null
+        "id": "small_lamp_grass",
+        "name": "Small Lamp Grass",
+        "amount": 30
       },
       "mat4": {
-        "id": "18sergeants_insignia_18_sergeants_insignia",
-        "name": "18Sergeant's Insignia 18 Sergeant's Insignia",
-        "amount": null
+        "id": "sergeants_insignia",
+        "name": "Sergeant's Insignia",
+        "amount": 18
       }
     },
     {
@@ -195,24 +195,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6agnidus_agate_chunk_6_agnidus_agate_chunk",
-        "name": "6Agnidus Agate Chunk 6 Agnidus Agate Chunk",
-        "amount": null
+        "id": "agnidus_agate_chunk",
+        "name": "Agnidus Agate Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12everflame_seed_12_everflame_seed",
-        "name": "12Everflame Seed 12 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 12
       },
       "mat3": {
-        "id": "45small_lamp_grass_45_small_lamp_grass",
-        "name": "45Small Lamp Grass 45 Small Lamp Grass",
-        "amount": null
+        "id": "small_lamp_grass",
+        "name": "Small Lamp Grass",
+        "amount": 45
       },
       "mat4": {
-        "id": "12lieutenants_insignia_12_lieutenants_insignia",
-        "name": "12Lieutenant's Insignia 12 Lieutenant's Insignia",
-        "amount": null
+        "id": "lieutenants_insignia",
+        "name": "Lieutenant's Insignia",
+        "amount": 12
       }
     },
     {
@@ -220,24 +220,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6agnidus_agate_gemstone_6_agnidus_agate_gemstone",
-        "name": "6Agnidus Agate Gemstone 6 Agnidus Agate Gemstone",
-        "amount": null
+        "id": "agnidus_agate_gemstone",
+        "name": "Agnidus Agate Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20everflame_seed_20_everflame_seed",
-        "name": "20Everflame Seed 20 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 20
       },
       "mat3": {
-        "id": "60small_lamp_grass_60_small_lamp_grass",
-        "name": "60Small Lamp Grass 60 Small Lamp Grass",
-        "amount": null
+        "id": "small_lamp_grass",
+        "name": "Small Lamp Grass",
+        "amount": 60
       },
       "mat4": {
-        "id": "24lieutenants_insignia_24_lieutenants_insignia",
-        "name": "24Lieutenant's Insignia 24 Lieutenant's Insignia",
-        "amount": null
+        "id": "lieutenants_insignia",
+        "name": "Lieutenant's Insignia",
+        "amount": 24
       }
     }
   ]

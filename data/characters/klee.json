@@ -99,19 +99,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1agnidus_agate_sliver_1_agnidus_agate_sliver",
-        "name": "1Agnidus Agate Sliver 1 Agnidus Agate Sliver",
-        "amount": null
+        "id": "agnidus_agate_sliver",
+        "name": "Agnidus Agate Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3philanemo_mushroom_3_philanemo_mushroom",
-        "name": "3Philanemo Mushroom 3 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 3
       },
       "mat4": {
-        "id": "3divining_scroll_3_divining_scroll",
-        "name": "3Divining Scroll 3 Divining Scroll",
-        "amount": null
+        "id": "divining_scroll",
+        "name": "Divining Scroll",
+        "amount": 3
       }
     },
     {
@@ -119,24 +119,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3agnidus_agate_fragment_3_agnidus_agate_fragment",
-        "name": "3Agnidus Agate Fragment 3 Agnidus Agate Fragment",
-        "amount": null
+        "id": "agnidus_agate_fragment",
+        "name": "Agnidus Agate Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2everflame_seed_2_everflame_seed",
-        "name": "2Everflame Seed 2 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 2
       },
       "mat3": {
-        "id": "10philanemo_mushroom_10_philanemo_mushroom",
-        "name": "10Philanemo Mushroom 10 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 10
       },
       "mat4": {
-        "id": "15divining_scroll_15_divining_scroll",
-        "name": "15Divining Scroll 15 Divining Scroll",
-        "amount": null
+        "id": "divining_scroll",
+        "name": "Divining Scroll",
+        "amount": 15
       }
     },
     {
@@ -144,24 +144,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6agnidus_agate_fragment_6_agnidus_agate_fragment",
-        "name": "6Agnidus Agate Fragment 6 Agnidus Agate Fragment",
-        "amount": null
+        "id": "agnidus_agate_fragment",
+        "name": "Agnidus Agate Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4everflame_seed_4_everflame_seed",
-        "name": "4Everflame Seed 4 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 4
       },
       "mat3": {
-        "id": "20philanemo_mushroom_20_philanemo_mushroom",
-        "name": "20Philanemo Mushroom 20 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 20
       },
       "mat4": {
-        "id": "12sealed_scroll_12_sealed_scroll",
-        "name": "12Sealed Scroll 12 Sealed Scroll",
-        "amount": null
+        "id": "sealed_scroll",
+        "name": "Sealed Scroll",
+        "amount": 12
       }
     },
     {
@@ -169,24 +169,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3agnidus_agate_chunk_3_agnidus_agate_chunk",
-        "name": "3Agnidus Agate Chunk 3 Agnidus Agate Chunk",
-        "amount": null
+        "id": "agnidus_agate_chunk",
+        "name": "Agnidus Agate Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8everflame_seed_8_everflame_seed",
-        "name": "8Everflame Seed 8 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 8
       },
       "mat3": {
-        "id": "30philanemo_mushroom_30_philanemo_mushroom",
-        "name": "30Philanemo Mushroom 30 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 30
       },
       "mat4": {
-        "id": "18sealed_scroll_18_sealed_scroll",
-        "name": "18Sealed Scroll 18 Sealed Scroll",
-        "amount": null
+        "id": "sealed_scroll",
+        "name": "Sealed Scroll",
+        "amount": 18
       }
     },
     {
@@ -194,24 +194,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6agnidus_agate_chunk_6_agnidus_agate_chunk",
-        "name": "6Agnidus Agate Chunk 6 Agnidus Agate Chunk",
-        "amount": null
+        "id": "agnidus_agate_chunk",
+        "name": "Agnidus Agate Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12everflame_seed_12_everflame_seed",
-        "name": "12Everflame Seed 12 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 12
       },
       "mat3": {
-        "id": "45philanemo_mushroom_45_philanemo_mushroom",
-        "name": "45Philanemo Mushroom 45 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 45
       },
       "mat4": {
-        "id": "12forbidden_curse_scroll_12_forbidden_curse_scroll",
-        "name": "12Forbidden Curse Scroll 12 Forbidden Curse Scroll",
-        "amount": null
+        "id": "forbidden_curse_scroll",
+        "name": "Forbidden Curse Scroll",
+        "amount": 12
       }
     },
     {
@@ -219,24 +219,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6agnidus_agate_gemstone_6_agnidus_agate_gemstone",
-        "name": "6Agnidus Agate Gemstone 6 Agnidus Agate Gemstone",
-        "amount": null
+        "id": "agnidus_agate_gemstone",
+        "name": "Agnidus Agate Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20everflame_seed_20_everflame_seed",
-        "name": "20Everflame Seed 20 Everflame Seed",
-        "amount": null
+        "id": "everflame_seed",
+        "name": "Everflame Seed",
+        "amount": 20
       },
       "mat3": {
-        "id": "60philanemo_mushroom_60_philanemo_mushroom",
-        "name": "60Philanemo Mushroom 60 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 60
       },
       "mat4": {
-        "id": "24forbidden_curse_scroll_24_forbidden_curse_scroll",
-        "name": "24Forbidden Curse Scroll 24 Forbidden Curse Scroll",
-        "amount": null
+        "id": "forbidden_curse_scroll",
+        "name": "Forbidden Curse Scroll",
+        "amount": 24
       }
     }
   ]

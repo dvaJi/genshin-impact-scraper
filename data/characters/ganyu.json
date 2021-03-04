@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1shivada_jade_sliver_1_shivada_jade_sliver",
-        "name": "1Shivada Jade Sliver 1 Shivada Jade Sliver",
-        "amount": null
+        "id": "shivada_jade_sliver",
+        "name": "Shivada Jade Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3qingxin_3_qingxin",
-        "name": "3Qingxin 3 Qingxin",
-        "amount": null
+        "id": "qingxin",
+        "name": "Qingxin",
+        "amount": 3
       },
       "mat4": {
-        "id": "3whopperflower_nectar_3_whopperflower_nectar",
-        "name": "3Whopperflower Nectar 3 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3shivada_jade_fragment_3_shivada_jade_fragment",
-        "name": "3Shivada Jade Fragment 3 Shivada Jade Fragment",
-        "amount": null
+        "id": "shivada_jade_fragment",
+        "name": "Shivada Jade Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2hoarfrost_core_2_hoarfrost_core",
-        "name": "2Hoarfrost Core 2 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 2
       },
       "mat3": {
-        "id": "10qingxin_10_qingxin",
-        "name": "10Qingxin 10 Qingxin",
-        "amount": null
+        "id": "qingxin",
+        "name": "Qingxin",
+        "amount": 10
       },
       "mat4": {
-        "id": "15whopperflower_nectar_15_whopperflower_nectar",
-        "name": "15Whopperflower Nectar 15 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6shivada_jade_fragment_6_shivada_jade_fragment",
-        "name": "6Shivada Jade Fragment 6 Shivada Jade Fragment",
-        "amount": null
+        "id": "shivada_jade_fragment",
+        "name": "Shivada Jade Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4hoarfrost_core_4_hoarfrost_core",
-        "name": "4Hoarfrost Core 4 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 4
       },
       "mat3": {
-        "id": "20qingxin_20_qingxin",
-        "name": "20Qingxin 20 Qingxin",
-        "amount": null
+        "id": "qingxin",
+        "name": "Qingxin",
+        "amount": 20
       },
       "mat4": {
-        "id": "12shimmering_nectar_12_shimmering_nectar",
-        "name": "12Shimmering Nectar 12 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3shivada_jade_chunk_3_shivada_jade_chunk",
-        "name": "3Shivada Jade Chunk 3 Shivada Jade Chunk",
-        "amount": null
+        "id": "shivada_jade_chunk",
+        "name": "Shivada Jade Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8hoarfrost_core_8_hoarfrost_core",
-        "name": "8Hoarfrost Core 8 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 8
       },
       "mat3": {
-        "id": "30qingxin_30_qingxin",
-        "name": "30Qingxin 30 Qingxin",
-        "amount": null
+        "id": "qingxin",
+        "name": "Qingxin",
+        "amount": 30
       },
       "mat4": {
-        "id": "18shimmering_nectar_18_shimmering_nectar",
-        "name": "18Shimmering Nectar 18 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6shivada_jade_chunk_6_shivada_jade_chunk",
-        "name": "6Shivada Jade Chunk 6 Shivada Jade Chunk",
-        "amount": null
+        "id": "shivada_jade_chunk",
+        "name": "Shivada Jade Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12hoarfrost_core_12_hoarfrost_core",
-        "name": "12Hoarfrost Core 12 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 12
       },
       "mat3": {
-        "id": "45qingxin_45_qingxin",
-        "name": "45Qingxin 45 Qingxin",
-        "amount": null
+        "id": "qingxin",
+        "name": "Qingxin",
+        "amount": 45
       },
       "mat4": {
-        "id": "12energy_nectar_12_energy_nectar",
-        "name": "12Energy Nectar 12 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6shivada_jade_gemstone_6_shivada_jade_gemstone",
-        "name": "6Shivada Jade Gemstone 6 Shivada Jade Gemstone",
-        "amount": null
+        "id": "shivada_jade_gemstone",
+        "name": "Shivada Jade Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20hoarfrost_core_20_hoarfrost_core",
-        "name": "20Hoarfrost Core 20 Hoarfrost Core",
-        "amount": null
+        "id": "hoarfrost_core",
+        "name": "Hoarfrost Core",
+        "amount": 20
       },
       "mat3": {
-        "id": "60qingxin_60_qingxin",
-        "name": "60Qingxin 60 Qingxin",
-        "amount": null
+        "id": "qingxin",
+        "name": "Qingxin",
+        "amount": 60
       },
       "mat4": {
-        "id": "24energy_nectar_24_energy_nectar",
-        "name": "24Energy Nectar 24 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 24
       }
     }
   ]

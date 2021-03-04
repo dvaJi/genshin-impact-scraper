@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1vayuda_turquoise_sliver_1_vayuda_turquoise_sliver",
-        "name": "1Vayuda Turquoise Sliver 1 Vayuda Turquoise Sliver",
-        "amount": null
+        "id": "vayuda_turquoise_sliver",
+        "name": "Vayuda Turquoise Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3windwheel_aster_3_windwheel_aster",
-        "name": "3Windwheel Aster 3 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 3
       },
       "mat4": {
-        "id": "3whopperflower_nectar_3_whopperflower_nectar",
-        "name": "3Whopperflower Nectar 3 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3vayuda_turquoise_fragment_3_vayuda_turquoise_fragment",
-        "name": "3Vayuda Turquoise Fragment 3 Vayuda Turquoise Fragment",
-        "amount": null
+        "id": "vayuda_turquoise_fragment",
+        "name": "Vayuda Turquoise Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2hurricane_seed_2_hurricane_seed",
-        "name": "2Hurricane Seed 2 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 2
       },
       "mat3": {
-        "id": "10windwheel_aster_10_windwheel_aster",
-        "name": "10Windwheel Aster 10 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 10
       },
       "mat4": {
-        "id": "15whopperflower_nectar_15_whopperflower_nectar",
-        "name": "15Whopperflower Nectar 15 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6vayuda_turquoise_fragment_6_vayuda_turquoise_fragment",
-        "name": "6Vayuda Turquoise Fragment 6 Vayuda Turquoise Fragment",
-        "amount": null
+        "id": "vayuda_turquoise_fragment",
+        "name": "Vayuda Turquoise Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4hurricane_seed_4_hurricane_seed",
-        "name": "4Hurricane Seed 4 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 4
       },
       "mat3": {
-        "id": "20windwheel_aster_20_windwheel_aster",
-        "name": "20Windwheel Aster 20 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 20
       },
       "mat4": {
-        "id": "12shimmering_nectar_12_shimmering_nectar",
-        "name": "12Shimmering Nectar 12 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3vayuda_turquoise_chunk_3_vayuda_turquoise_chunk",
-        "name": "3Vayuda Turquoise Chunk 3 Vayuda Turquoise Chunk",
-        "amount": null
+        "id": "vayuda_turquoise_chunk",
+        "name": "Vayuda Turquoise Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8hurricane_seed_8_hurricane_seed",
-        "name": "8Hurricane Seed 8 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 8
       },
       "mat3": {
-        "id": "30windwheel_aster_30_windwheel_aster",
-        "name": "30Windwheel Aster 30 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 30
       },
       "mat4": {
-        "id": "18shimmering_nectar_18_shimmering_nectar",
-        "name": "18Shimmering Nectar 18 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6vayuda_turquoise_chunk_6_vayuda_turquoise_chunk",
-        "name": "6Vayuda Turquoise Chunk 6 Vayuda Turquoise Chunk",
-        "amount": null
+        "id": "vayuda_turquoise_chunk",
+        "name": "Vayuda Turquoise Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12hurricane_seed_12_hurricane_seed",
-        "name": "12Hurricane Seed 12 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 12
       },
       "mat3": {
-        "id": "45windwheel_aster_45_windwheel_aster",
-        "name": "45Windwheel Aster 45 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 45
       },
       "mat4": {
-        "id": "12energy_nectar_12_energy_nectar",
-        "name": "12Energy Nectar 12 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6vayuda_turquoise_gemstone_6_vayuda_turquoise_gemstone",
-        "name": "6Vayuda Turquoise Gemstone 6 Vayuda Turquoise Gemstone",
-        "amount": null
+        "id": "vayuda_turquoise_gemstone",
+        "name": "Vayuda Turquoise Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20hurricane_seed_20_hurricane_seed",
-        "name": "20Hurricane Seed 20 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 20
       },
       "mat3": {
-        "id": "60windwheel_aster_60_windwheel_aster",
-        "name": "60Windwheel Aster 60 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 60
       },
       "mat4": {
-        "id": "24energy_nectar_24_energy_nectar",
-        "name": "24Energy Nectar 24 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 24
       }
     }
   ]

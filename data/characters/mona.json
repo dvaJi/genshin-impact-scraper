@@ -105,19 +105,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1varunada_lazurite_sliver_1_varunada_lazurite_sliver",
-        "name": "1Varunada Lazurite Sliver 1 Varunada Lazurite Sliver",
-        "amount": null
+        "id": "varunada_lazurite_sliver",
+        "name": "Varunada Lazurite Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3philanemo_mushroom_3_philanemo_mushroom",
-        "name": "3Philanemo Mushroom 3 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 3
       },
       "mat4": {
-        "id": "3whopperflower_nectar_3_whopperflower_nectar",
-        "name": "3Whopperflower Nectar 3 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 3
       }
     },
     {
@@ -125,24 +125,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3varunada_lazurite_fragment_3_varunada_lazurite_fragment",
-        "name": "3Varunada Lazurite Fragment 3 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2cleansing_heart_2_cleansing_heart",
-        "name": "2Cleansing Heart 2 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 2
       },
       "mat3": {
-        "id": "10philanemo_mushroom_10_philanemo_mushroom",
-        "name": "10Philanemo Mushroom 10 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 10
       },
       "mat4": {
-        "id": "15whopperflower_nectar_15_whopperflower_nectar",
-        "name": "15Whopperflower Nectar 15 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 15
       }
     },
     {
@@ -150,24 +150,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6varunada_lazurite_fragment_6_varunada_lazurite_fragment",
-        "name": "6Varunada Lazurite Fragment 6 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4cleansing_heart_4_cleansing_heart",
-        "name": "4Cleansing Heart 4 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 4
       },
       "mat3": {
-        "id": "20philanemo_mushroom_20_philanemo_mushroom",
-        "name": "20Philanemo Mushroom 20 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 20
       },
       "mat4": {
-        "id": "12shimmering_nectar_12_shimmering_nectar",
-        "name": "12Shimmering Nectar 12 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 12
       }
     },
     {
@@ -175,24 +175,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3varunada_lazurite_chunk_3_varunada_lazurite_chunk",
-        "name": "3Varunada Lazurite Chunk 3 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8cleansing_heart_8_cleansing_heart",
-        "name": "8Cleansing Heart 8 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 8
       },
       "mat3": {
-        "id": "30philanemo_mushroom_30_philanemo_mushroom",
-        "name": "30Philanemo Mushroom 30 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 30
       },
       "mat4": {
-        "id": "18shimmering_nectar_18_shimmering_nectar",
-        "name": "18Shimmering Nectar 18 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 18
       }
     },
     {
@@ -200,24 +200,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6varunada_lazurite_chunk_6_varunada_lazurite_chunk",
-        "name": "6Varunada Lazurite Chunk 6 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12cleansing_heart_12_cleansing_heart",
-        "name": "12Cleansing Heart 12 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 12
       },
       "mat3": {
-        "id": "45philanemo_mushroom_45_philanemo_mushroom",
-        "name": "45Philanemo Mushroom 45 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 45
       },
       "mat4": {
-        "id": "12energy_nectar_12_energy_nectar",
-        "name": "12Energy Nectar 12 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 12
       }
     },
     {
@@ -225,24 +225,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6varunada_lazurite_gemstone_6_varunada_lazurite_gemstone",
-        "name": "6Varunada Lazurite Gemstone 6 Varunada Lazurite Gemstone",
-        "amount": null
+        "id": "varunada_lazurite_gemstone",
+        "name": "Varunada Lazurite Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20cleansing_heart_20_cleansing_heart",
-        "name": "20Cleansing Heart 20 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 20
       },
       "mat3": {
-        "id": "60philanemo_mushroom_60_philanemo_mushroom",
-        "name": "60Philanemo Mushroom 60 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 60
       },
       "mat4": {
-        "id": "24energy_nectar_24_energy_nectar",
-        "name": "24Energy Nectar 24 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 24
       }
     }
   ]

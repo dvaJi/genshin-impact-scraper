@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1varunada_lazurite_sliver_1_varunada_lazurite_sliver",
-        "name": "1Varunada Lazurite Sliver 1 Varunada Lazurite Sliver",
-        "amount": null
+        "id": "varunada_lazurite_sliver",
+        "name": "Varunada Lazurite Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3starconch_3_starconch",
-        "name": "3Starconch 3 Starconch",
-        "amount": null
+        "id": "starconch",
+        "name": "Starconch",
+        "amount": 3
       },
       "mat4": {
-        "id": "3recruits_insignia_3_recruits_insignia",
-        "name": "3Recruit's Insignia 3 Recruit's Insignia",
-        "amount": null
+        "id": "recruits_insignia",
+        "name": "Recruit's Insignia",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3varunada_lazurite_fragment_3_varunada_lazurite_fragment",
-        "name": "3Varunada Lazurite Fragment 3 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2cleansing_heart_2_cleansing_heart",
-        "name": "2Cleansing Heart 2 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 2
       },
       "mat3": {
-        "id": "10starconch_10_starconch",
-        "name": "10Starconch 10 Starconch",
-        "amount": null
+        "id": "starconch",
+        "name": "Starconch",
+        "amount": 10
       },
       "mat4": {
-        "id": "15recruits_insignia_15_recruits_insignia",
-        "name": "15Recruit's Insignia 15 Recruit's Insignia",
-        "amount": null
+        "id": "recruits_insignia",
+        "name": "Recruit's Insignia",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6varunada_lazurite_fragment_6_varunada_lazurite_fragment",
-        "name": "6Varunada Lazurite Fragment 6 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4cleansing_heart_4_cleansing_heart",
-        "name": "4Cleansing Heart 4 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 4
       },
       "mat3": {
-        "id": "20starconch_20_starconch",
-        "name": "20Starconch 20 Starconch",
-        "amount": null
+        "id": "starconch",
+        "name": "Starconch",
+        "amount": 20
       },
       "mat4": {
-        "id": "12sergeants_insignia_12_sergeants_insignia",
-        "name": "12Sergeant's Insignia 12 Sergeant's Insignia",
-        "amount": null
+        "id": "sergeants_insignia",
+        "name": "Sergeant's Insignia",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3varunada_lazurite_chunk_3_varunada_lazurite_chunk",
-        "name": "3Varunada Lazurite Chunk 3 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8cleansing_heart_8_cleansing_heart",
-        "name": "8Cleansing Heart 8 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 8
       },
       "mat3": {
-        "id": "30starconch_30_starconch",
-        "name": "30Starconch 30 Starconch",
-        "amount": null
+        "id": "starconch",
+        "name": "Starconch",
+        "amount": 30
       },
       "mat4": {
-        "id": "18sergeants_insignia_18_sergeants_insignia",
-        "name": "18Sergeant's Insignia 18 Sergeant's Insignia",
-        "amount": null
+        "id": "sergeants_insignia",
+        "name": "Sergeant's Insignia",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6varunada_lazurite_chunk_6_varunada_lazurite_chunk",
-        "name": "6Varunada Lazurite Chunk 6 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12cleansing_heart_12_cleansing_heart",
-        "name": "12Cleansing Heart 12 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 12
       },
       "mat3": {
-        "id": "45starconch_45_starconch",
-        "name": "45Starconch 45 Starconch",
-        "amount": null
+        "id": "starconch",
+        "name": "Starconch",
+        "amount": 45
       },
       "mat4": {
-        "id": "12lieutenants_insignia_12_lieutenants_insignia",
-        "name": "12Lieutenant's Insignia 12 Lieutenant's Insignia",
-        "amount": null
+        "id": "lieutenants_insignia",
+        "name": "Lieutenant's Insignia",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6varunada_lazurite_gemstone_6_varunada_lazurite_gemstone",
-        "name": "6Varunada Lazurite Gemstone 6 Varunada Lazurite Gemstone",
-        "amount": null
+        "id": "varunada_lazurite_gemstone",
+        "name": "Varunada Lazurite Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20cleansing_heart_20_cleansing_heart",
-        "name": "20Cleansing Heart 20 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 20
       },
       "mat3": {
-        "id": "60starconch_60_starconch",
-        "name": "60Starconch 60 Starconch",
-        "amount": null
+        "id": "starconch",
+        "name": "Starconch",
+        "amount": 60
       },
       "mat4": {
-        "id": "24lieutenants_insignia_24_lieutenants_insignia",
-        "name": "24Lieutenant's Insignia 24 Lieutenant's Insignia",
-        "amount": null
+        "id": "lieutenants_insignia",
+        "name": "Lieutenant's Insignia",
+        "amount": 24
       }
     }
   ]

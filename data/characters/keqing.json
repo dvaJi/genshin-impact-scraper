@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1vajrada_amethyst_sliver_1_vajrada_amethyst_sliver",
-        "name": "1Vajrada Amethyst Sliver 1 Vajrada Amethyst Sliver",
-        "amount": null
+        "id": "vajrada_amethyst_sliver",
+        "name": "Vajrada Amethyst Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3cor_lapis_3_cor_lapis",
-        "name": "3Cor Lapis 3 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 3
       },
       "mat4": {
-        "id": "3whopperflower_nectar_3_whopperflower_nectar",
-        "name": "3Whopperflower Nectar 3 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3vajrada_amethyst_fragment_3_vajrada_amethyst_fragment",
-        "name": "3Vajrada Amethyst Fragment 3 Vajrada Amethyst Fragment",
-        "amount": null
+        "id": "vajrada_amethyst_fragment",
+        "name": "Vajrada Amethyst Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2lightning_prism_2_lightning_prism",
-        "name": "2Lightning Prism 2 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 2
       },
       "mat3": {
-        "id": "10cor_lapis_10_cor_lapis",
-        "name": "10Cor Lapis 10 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 10
       },
       "mat4": {
-        "id": "15whopperflower_nectar_15_whopperflower_nectar",
-        "name": "15Whopperflower Nectar 15 Whopperflower Nectar",
-        "amount": null
+        "id": "whopperflower_nectar",
+        "name": "Whopperflower Nectar",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6vajrada_amethyst_fragment_6_vajrada_amethyst_fragment",
-        "name": "6Vajrada Amethyst Fragment 6 Vajrada Amethyst Fragment",
-        "amount": null
+        "id": "vajrada_amethyst_fragment",
+        "name": "Vajrada Amethyst Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4lightning_prism_4_lightning_prism",
-        "name": "4Lightning Prism 4 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 4
       },
       "mat3": {
-        "id": "20cor_lapis_20_cor_lapis",
-        "name": "20Cor Lapis 20 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 20
       },
       "mat4": {
-        "id": "12shimmering_nectar_12_shimmering_nectar",
-        "name": "12Shimmering Nectar 12 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3vajrada_amethyst_chunk_3_vajrada_amethyst_chunk",
-        "name": "3Vajrada Amethyst Chunk 3 Vajrada Amethyst Chunk",
-        "amount": null
+        "id": "vajrada_amethyst_chunk",
+        "name": "Vajrada Amethyst Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8lightning_prism_8_lightning_prism",
-        "name": "8Lightning Prism 8 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 8
       },
       "mat3": {
-        "id": "30cor_lapis_30_cor_lapis",
-        "name": "30Cor Lapis 30 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 30
       },
       "mat4": {
-        "id": "18shimmering_nectar_18_shimmering_nectar",
-        "name": "18Shimmering Nectar 18 Shimmering Nectar",
-        "amount": null
+        "id": "shimmering_nectar",
+        "name": "Shimmering Nectar",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6vajrada_amethyst_chunk_6_vajrada_amethyst_chunk",
-        "name": "6Vajrada Amethyst Chunk 6 Vajrada Amethyst Chunk",
-        "amount": null
+        "id": "vajrada_amethyst_chunk",
+        "name": "Vajrada Amethyst Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12lightning_prism_12_lightning_prism",
-        "name": "12Lightning Prism 12 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 12
       },
       "mat3": {
-        "id": "45cor_lapis_45_cor_lapis",
-        "name": "45Cor Lapis 45 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 45
       },
       "mat4": {
-        "id": "12energy_nectar_12_energy_nectar",
-        "name": "12Energy Nectar 12 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6vajrada_amethyst_gemstone_6_vajrada_amethyst_gemstone",
-        "name": "6Vajrada Amethyst Gemstone 6 Vajrada Amethyst Gemstone",
-        "amount": null
+        "id": "vajrada_amethyst_gemstone",
+        "name": "Vajrada Amethyst Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20lightning_prism_20_lightning_prism",
-        "name": "20Lightning Prism 20 Lightning Prism",
-        "amount": null
+        "id": "lightning_prism",
+        "name": "Lightning Prism",
+        "amount": 20
       },
       "mat3": {
-        "id": "60cor_lapis_60_cor_lapis",
-        "name": "60Cor Lapis 60 Cor Lapis",
-        "amount": null
+        "id": "cor_lapis",
+        "name": "Cor Lapis",
+        "amount": 60
       },
       "mat4": {
-        "id": "24energy_nectar_24_energy_nectar",
-        "name": "24Energy Nectar 24 Energy Nectar",
-        "amount": null
+        "id": "energy_nectar",
+        "name": "Energy Nectar",
+        "amount": 24
       }
     }
   ]

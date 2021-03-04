@@ -127,10 +127,31 @@ export default class CharactersCrawler extends Connector {
       const ascensions: Ascension[] = [];
       const ascensionTable = tableJson(
         characterContent.get("Ascensions")?.join() || "",
-        { cellSelector: "tr > td, tr > th" }
+        {
+          cellSelector: "tr > td, tr > th",
+          cellCb: (cell, _, col) => {
+            if (
+              [
+                "Character AscensionMaterial",
+                "LocalSpecialty",
+                "CommonMaterial",
+                "1",
+              ].includes(col)
+            ) {
+              const number = cell.querySelector(
+                ".card_container > .card_text > span"
+              );
+              const name = cell.querySelector(".card_caption > a");
+              const final = `${name?.textContent}||${number?.textContent}`;
+              return final === "undefined||undefined" ? "None" : final;
+            }
+
+            return cell.textContent?.trim() || "";
+          },
+        }
       );
 
-      const separator = "×";
+      const separator = "||";
       for await (const value of ascensionTable.data) {
         const [ascension, level, cost, elmat1, elmat2, elmat3, elmat4] = value;
         if (ascension === "AscensionPhase" || ascension === "MAXED") {
@@ -247,7 +268,11 @@ export default class CharactersCrawler extends Connector {
       const img =
         doc?.querySelector(this.selectors.img)?.getAttribute("src") || "";
       await saveImage(img, `characters/${id}`, id + "_card.png");
-      this.saveFile(JSON.stringify(character, undefined, 2), "/characters/", id);
+      this.saveFile(
+        JSON.stringify(character, undefined, 2),
+        "/characters/",
+        id
+      );
       // break;
     }
   }

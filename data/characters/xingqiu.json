@@ -99,19 +99,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1varunada_lazurite_sliver_1_varunada_lazurite_sliver",
-        "name": "1Varunada Lazurite Sliver 1 Varunada Lazurite Sliver",
-        "amount": null
+        "id": "varunada_lazurite_sliver",
+        "name": "Varunada Lazurite Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3silk_flower_3_silk_flower",
-        "name": "3Silk Flower 3 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 3
       },
       "mat4": {
-        "id": "3damaged_mask_3_damaged_mask",
-        "name": "3Damaged Mask 3 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 3
       }
     },
     {
@@ -119,24 +119,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3varunada_lazurite_fragment_3_varunada_lazurite_fragment",
-        "name": "3Varunada Lazurite Fragment 3 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2cleansing_heart_2_cleansing_heart",
-        "name": "2Cleansing Heart 2 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 2
       },
       "mat3": {
-        "id": "10silk_flower_10_silk_flower",
-        "name": "10Silk Flower 10 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 10
       },
       "mat4": {
-        "id": "15damaged_mask_15_damaged_mask",
-        "name": "15Damaged Mask 15 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 15
       }
     },
     {
@@ -144,24 +144,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6varunada_lazurite_fragment_6_varunada_lazurite_fragment",
-        "name": "6Varunada Lazurite Fragment 6 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4cleansing_heart_4_cleansing_heart",
-        "name": "4Cleansing Heart 4 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 4
       },
       "mat3": {
-        "id": "20silk_flower_20_silk_flower",
-        "name": "20Silk Flower 20 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 20
       },
       "mat4": {
-        "id": "12stained_mask_12_stained_mask",
-        "name": "12Stained Mask 12 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 12
       }
     },
     {
@@ -169,24 +169,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3varunada_lazurite_chunk_3_varunada_lazurite_chunk",
-        "name": "3Varunada Lazurite Chunk 3 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8cleansing_heart_8_cleansing_heart",
-        "name": "8Cleansing Heart 8 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 8
       },
       "mat3": {
-        "id": "30silk_flower_30_silk_flower",
-        "name": "30Silk Flower 30 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 30
       },
       "mat4": {
-        "id": "18stained_mask_18_stained_mask",
-        "name": "18Stained Mask 18 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 18
       }
     },
     {
@@ -194,24 +194,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6varunada_lazurite_chunk_6_varunada_lazurite_chunk",
-        "name": "6Varunada Lazurite Chunk 6 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12cleansing_heart_12_cleansing_heart",
-        "name": "12Cleansing Heart 12 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 12
       },
       "mat3": {
-        "id": "45silk_flower_45_silk_flower",
-        "name": "45Silk Flower 45 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 45
       },
       "mat4": {
-        "id": "12ominous_mask_12_ominous_mask",
-        "name": "12Ominous Mask 12 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 12
       }
     },
     {
@@ -219,24 +219,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6varunada_lazurite_gemstone_6_varunada_lazurite_gemstone",
-        "name": "6Varunada Lazurite Gemstone 6 Varunada Lazurite Gemstone",
-        "amount": null
+        "id": "varunada_lazurite_gemstone",
+        "name": "Varunada Lazurite Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20cleansing_heart_20_cleansing_heart",
-        "name": "20Cleansing Heart 20 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 20
       },
       "mat3": {
-        "id": "60silk_flower_60_silk_flower",
-        "name": "60Silk Flower 60 Silk Flower",
-        "amount": null
+        "id": "silk_flower",
+        "name": "Silk Flower",
+        "amount": 60
       },
       "mat4": {
-        "id": "24ominous_mask_24_ominous_mask",
-        "name": "24Ominous Mask 24 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 24
       }
     }
   ]

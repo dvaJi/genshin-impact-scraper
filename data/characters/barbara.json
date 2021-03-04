@@ -98,19 +98,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1varunada_lazurite_sliver_1_varunada_lazurite_sliver",
-        "name": "1Varunada Lazurite Sliver 1 Varunada Lazurite Sliver",
-        "amount": null
+        "id": "varunada_lazurite_sliver",
+        "name": "Varunada Lazurite Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3philanemo_mushroom_3_philanemo_mushroom",
-        "name": "3Philanemo Mushroom 3 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 3
       },
       "mat4": {
-        "id": "3divining_scroll_3_divining_scroll",
-        "name": "3Divining Scroll 3 Divining Scroll",
-        "amount": null
+        "id": "divining_scroll",
+        "name": "Divining Scroll",
+        "amount": 3
       }
     },
     {
@@ -118,24 +118,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3varunada_lazurite_fragment_3_varunada_lazurite_fragment",
-        "name": "3Varunada Lazurite Fragment 3 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2cleansing_heart_2_cleansing_heart",
-        "name": "2Cleansing Heart 2 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 2
       },
       "mat3": {
-        "id": "10philanemo_mushroom_10_philanemo_mushroom",
-        "name": "10Philanemo Mushroom 10 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 10
       },
       "mat4": {
-        "id": "15divining_scroll_15_divining_scroll",
-        "name": "15Divining Scroll 15 Divining Scroll",
-        "amount": null
+        "id": "divining_scroll",
+        "name": "Divining Scroll",
+        "amount": 15
       }
     },
     {
@@ -143,24 +143,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6varunada_lazurite_fragment_6_varunada_lazurite_fragment",
-        "name": "6Varunada Lazurite Fragment 6 Varunada Lazurite Fragment",
-        "amount": null
+        "id": "varunada_lazurite_fragment",
+        "name": "Varunada Lazurite Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4cleansing_heart_4_cleansing_heart",
-        "name": "4Cleansing Heart 4 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 4
       },
       "mat3": {
-        "id": "20philanemo_mushroom_20_philanemo_mushroom",
-        "name": "20Philanemo Mushroom 20 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 20
       },
       "mat4": {
-        "id": "12sealed_scroll_12_sealed_scroll",
-        "name": "12Sealed Scroll 12 Sealed Scroll",
-        "amount": null
+        "id": "sealed_scroll",
+        "name": "Sealed Scroll",
+        "amount": 12
       }
     },
     {
@@ -168,24 +168,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3varunada_lazurite_chunk_3_varunada_lazurite_chunk",
-        "name": "3Varunada Lazurite Chunk 3 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8cleansing_heart_8_cleansing_heart",
-        "name": "8Cleansing Heart 8 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 8
       },
       "mat3": {
-        "id": "30philanemo_mushroom_30_philanemo_mushroom",
-        "name": "30Philanemo Mushroom 30 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 30
       },
       "mat4": {
-        "id": "18sealed_scroll_18_sealed_scroll",
-        "name": "18Sealed Scroll 18 Sealed Scroll",
-        "amount": null
+        "id": "sealed_scroll",
+        "name": "Sealed Scroll",
+        "amount": 18
       }
     },
     {
@@ -193,24 +193,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6varunada_lazurite_chunk_6_varunada_lazurite_chunk",
-        "name": "6Varunada Lazurite Chunk 6 Varunada Lazurite Chunk",
-        "amount": null
+        "id": "varunada_lazurite_chunk",
+        "name": "Varunada Lazurite Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12cleansing_heart_12_cleansing_heart",
-        "name": "12Cleansing Heart 12 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 12
       },
       "mat3": {
-        "id": "45philanemo_mushroom_45_philanemo_mushroom",
-        "name": "45Philanemo Mushroom 45 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 45
       },
       "mat4": {
-        "id": "12forbidden_curse_scroll_12_forbidden_curse_scroll",
-        "name": "12Forbidden Curse Scroll 12 Forbidden Curse Scroll",
-        "amount": null
+        "id": "forbidden_curse_scroll",
+        "name": "Forbidden Curse Scroll",
+        "amount": 12
       }
     },
     {
@@ -218,24 +218,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6varunada_lazurite_gemstone_6_varunada_lazurite_gemstone",
-        "name": "6Varunada Lazurite Gemstone 6 Varunada Lazurite Gemstone",
-        "amount": null
+        "id": "varunada_lazurite_gemstone",
+        "name": "Varunada Lazurite Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20cleansing_heart_20_cleansing_heart",
-        "name": "20Cleansing Heart 20 Cleansing Heart",
-        "amount": null
+        "id": "cleansing_heart",
+        "name": "Cleansing Heart",
+        "amount": 20
       },
       "mat3": {
-        "id": "60philanemo_mushroom_60_philanemo_mushroom",
-        "name": "60Philanemo Mushroom 60 Philanemo Mushroom",
-        "amount": null
+        "id": "philanemo_mushroom",
+        "name": "Philanemo Mushroom",
+        "amount": 60
       },
       "mat4": {
-        "id": "24forbidden_curse_scroll_24_forbidden_curse_scroll",
-        "name": "24Forbidden Curse Scroll 24 Forbidden Curse Scroll",
-        "amount": null
+        "id": "forbidden_curse_scroll",
+        "name": "Forbidden Curse Scroll",
+        "amount": 24
       }
     }
   ]

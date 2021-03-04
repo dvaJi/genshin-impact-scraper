@@ -100,19 +100,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1prithiva_topaz_sliver_1_prithiva_topaz_sliver",
-        "name": "1Prithiva Topaz Sliver 1 Prithiva Topaz Sliver",
-        "amount": null
+        "id": "prithiva_topaz_sliver",
+        "name": "Prithiva Topaz Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3cecilia_3_cecilia",
-        "name": "3Cecilia 3 Cecilia",
-        "amount": null
+        "id": "cecilia",
+        "name": "Cecilia",
+        "amount": 3
       },
       "mat4": {
-        "id": "3divining_scroll_3_divining_scroll",
-        "name": "3Divining Scroll 3 Divining Scroll",
-        "amount": null
+        "id": "divining_scroll",
+        "name": "Divining Scroll",
+        "amount": 3
       }
     },
     {
@@ -120,24 +120,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3prithiva_topaz_fragment_3_prithiva_topaz_fragment",
-        "name": "3Prithiva Topaz Fragment 3 Prithiva Topaz Fragment",
-        "amount": null
+        "id": "prithiva_topaz_fragment",
+        "name": "Prithiva Topaz Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2basalt_pillar_2_basalt_pillar",
-        "name": "2Basalt Pillar 2 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 2
       },
       "mat3": {
-        "id": "10cecilia_10_cecilia",
-        "name": "10Cecilia 10 Cecilia",
-        "amount": null
+        "id": "cecilia",
+        "name": "Cecilia",
+        "amount": 10
       },
       "mat4": {
-        "id": "15divining_scroll_15_divining_scroll",
-        "name": "15Divining Scroll 15 Divining Scroll",
-        "amount": null
+        "id": "divining_scroll",
+        "name": "Divining Scroll",
+        "amount": 15
       }
     },
     {
@@ -145,24 +145,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6prithiva_topaz_fragment_6_prithiva_topaz_fragment",
-        "name": "6Prithiva Topaz Fragment 6 Prithiva Topaz Fragment",
-        "amount": null
+        "id": "prithiva_topaz_fragment",
+        "name": "Prithiva Topaz Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4basalt_pillar_4_basalt_pillar",
-        "name": "4Basalt Pillar 4 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 4
       },
       "mat3": {
-        "id": "20cecilia_20_cecilia",
-        "name": "20Cecilia 20 Cecilia",
-        "amount": null
+        "id": "cecilia",
+        "name": "Cecilia",
+        "amount": 20
       },
       "mat4": {
-        "id": "12sealed_scroll_12_sealed_scroll",
-        "name": "12Sealed Scroll 12 Sealed Scroll",
-        "amount": null
+        "id": "sealed_scroll",
+        "name": "Sealed Scroll",
+        "amount": 12
       }
     },
     {
@@ -170,24 +170,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3prithiva_topaz_chunk_3_prithiva_topaz_chunk",
-        "name": "3Prithiva Topaz Chunk 3 Prithiva Topaz Chunk",
-        "amount": null
+        "id": "prithiva_topaz_chunk",
+        "name": "Prithiva Topaz Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8basalt_pillar_8_basalt_pillar",
-        "name": "8Basalt Pillar 8 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 8
       },
       "mat3": {
-        "id": "30cecilia_30_cecilia",
-        "name": "30Cecilia 30 Cecilia",
-        "amount": null
+        "id": "cecilia",
+        "name": "Cecilia",
+        "amount": 30
       },
       "mat4": {
-        "id": "18sealed_scroll_18_sealed_scroll",
-        "name": "18Sealed Scroll 18 Sealed Scroll",
-        "amount": null
+        "id": "sealed_scroll",
+        "name": "Sealed Scroll",
+        "amount": 18
       }
     },
     {
@@ -195,24 +195,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6prithiva_topaz_chunk_6_prithiva_topaz_chunk",
-        "name": "6Prithiva Topaz Chunk 6 Prithiva Topaz Chunk",
-        "amount": null
+        "id": "prithiva_topaz_chunk",
+        "name": "Prithiva Topaz Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12basalt_pillar_12_basalt_pillar",
-        "name": "12Basalt Pillar 12 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 12
       },
       "mat3": {
-        "id": "45cecilia_45_cecilia",
-        "name": "45Cecilia 45 Cecilia",
-        "amount": null
+        "id": "cecilia",
+        "name": "Cecilia",
+        "amount": 45
       },
       "mat4": {
-        "id": "12forbidden_curse_scroll_12_forbidden_curse_scroll",
-        "name": "12Forbidden Curse Scroll 12 Forbidden Curse Scroll",
-        "amount": null
+        "id": "forbidden_curse_scroll",
+        "name": "Forbidden Curse Scroll",
+        "amount": 12
       }
     },
     {
@@ -220,24 +220,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6prithiva_topaz_gemstone_6_prithiva_topaz_gemstone",
-        "name": "6Prithiva Topaz Gemstone 6 Prithiva Topaz Gemstone",
-        "amount": null
+        "id": "prithiva_topaz_gemstone",
+        "name": "Prithiva Topaz Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20basalt_pillar_20_basalt_pillar",
-        "name": "20Basalt Pillar 20 Basalt Pillar",
-        "amount": null
+        "id": "basalt_pillar",
+        "name": "Basalt Pillar",
+        "amount": 20
       },
       "mat3": {
-        "id": "60cecilia_60_cecilia",
-        "name": "60Cecilia 60 Cecilia",
-        "amount": null
+        "id": "cecilia",
+        "name": "Cecilia",
+        "amount": 60
       },
       "mat4": {
-        "id": "24forbidden_curse_scroll_24_forbidden_curse_scroll",
-        "name": "24Forbidden Curse Scroll 24 Forbidden Curse Scroll",
-        "amount": null
+        "id": "forbidden_curse_scroll",
+        "name": "Forbidden Curse Scroll",
+        "amount": 24
       }
     }
   ]

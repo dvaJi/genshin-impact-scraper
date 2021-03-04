@@ -23,19 +23,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1brilliant_diamond_sliver_1_brilliant_diamond_sliver",
-        "name": "1Brilliant Diamond Sliver 1 Brilliant Diamond Sliver",
-        "amount": null
+        "id": "brilliant_diamond_sliver",
+        "name": "Brilliant Diamond Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3windwheel_aster_3_windwheel_aster",
-        "name": "3Windwheel Aster 3 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 3
       },
       "mat4": {
-        "id": "3damaged_mask_3_damaged_mask",
-        "name": "3Damaged Mask 3 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 3
       }
     },
     {
@@ -43,19 +43,19 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3brilliant_diamond_fragment_3_brilliant_diamond_fragment",
-        "name": "3Brilliant Diamond Fragment 3 Brilliant Diamond Fragment",
-        "amount": null
+        "id": "brilliant_diamond_fragment",
+        "name": "Brilliant Diamond Fragment",
+        "amount": 3
       },
       "mat3": {
-        "id": "10windwheel_aster_10_windwheel_aster",
-        "name": "10Windwheel Aster 10 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 10
       },
       "mat4": {
-        "id": "15damaged_mask_15_damaged_mask",
-        "name": "15Damaged Mask 15 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 15
       }
     },
     {
@@ -63,19 +63,19 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6brilliant_diamond_fragment_6_brilliant_diamond_fragment",
-        "name": "6Brilliant Diamond Fragment 6 Brilliant Diamond Fragment",
-        "amount": null
+        "id": "brilliant_diamond_fragment",
+        "name": "Brilliant Diamond Fragment",
+        "amount": 6
       },
       "mat3": {
-        "id": "20windwheel_aster_20_windwheel_aster",
-        "name": "20Windwheel Aster 20 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 20
       },
       "mat4": {
-        "id": "12stained_mask_12_stained_mask",
-        "name": "12Stained Mask 12 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 12
       }
     },
     {
@@ -83,19 +83,19 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3brilliant_diamond_chunk_3_brilliant_diamond_chunk",
-        "name": "3Brilliant Diamond Chunk 3 Brilliant Diamond Chunk",
-        "amount": null
+        "id": "brilliant_diamond_chunk",
+        "name": "Brilliant Diamond Chunk",
+        "amount": 3
       },
       "mat3": {
-        "id": "30windwheel_aster_30_windwheel_aster",
-        "name": "30Windwheel Aster 30 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 30
       },
       "mat4": {
-        "id": "18stained_mask_18_stained_mask",
-        "name": "18Stained Mask 18 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 18
       }
     },
     {
@@ -103,19 +103,19 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6brilliant_diamond_chunk_6_brilliant_diamond_chunk",
-        "name": "6Brilliant Diamond Chunk 6 Brilliant Diamond Chunk",
-        "amount": null
+        "id": "brilliant_diamond_chunk",
+        "name": "Brilliant Diamond Chunk",
+        "amount": 6
       },
       "mat3": {
-        "id": "45windwheel_aster_45_windwheel_aster",
-        "name": "45Windwheel Aster 45 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 45
       },
       "mat4": {
-        "id": "12ominous_mask_12_ominous_mask",
-        "name": "12Ominous Mask 12 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 12
       }
     },
     {
@@ -123,19 +123,19 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6brilliant_diamond_gemstone_6_brilliant_diamond_gemstone",
-        "name": "6Brilliant Diamond Gemstone 6 Brilliant Diamond Gemstone",
-        "amount": null
+        "id": "brilliant_diamond_gemstone",
+        "name": "Brilliant Diamond Gemstone",
+        "amount": 6
       },
       "mat3": {
-        "id": "60windwheel_aster_60_windwheel_aster",
-        "name": "60Windwheel Aster 60 Windwheel Aster",
-        "amount": null
+        "id": "windwheel_aster",
+        "name": "Windwheel Aster",
+        "amount": 60
       },
       "mat4": {
-        "id": "24ominous_mask_24_ominous_mask",
-        "name": "24Ominous Mask 24 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 24
       }
     }
   ]

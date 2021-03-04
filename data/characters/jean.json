@@ -99,19 +99,19 @@
       "level": 2040,
       "cost": 20000,
       "mat1": {
-        "id": "1vayuda_turquoise_sliver_1_vayuda_turquoise_sliver",
-        "name": "1Vayuda Turquoise Sliver 1 Vayuda Turquoise Sliver",
-        "amount": null
+        "id": "vayuda_turquoise_sliver",
+        "name": "Vayuda Turquoise Sliver",
+        "amount": 1
       },
       "mat3": {
-        "id": "3dandelion_seed_3_dandelion_seed",
-        "name": "3Dandelion Seed 3 Dandelion Seed",
-        "amount": null
+        "id": "dandelion_seed",
+        "name": "Dandelion Seed",
+        "amount": 3
       },
       "mat4": {
-        "id": "3damaged_mask_3_damaged_mask",
-        "name": "3Damaged Mask 3 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 3
       }
     },
     {
@@ -119,24 +119,24 @@
       "level": 4050,
       "cost": 40000,
       "mat1": {
-        "id": "3vayuda_turquoise_fragment_3_vayuda_turquoise_fragment",
-        "name": "3Vayuda Turquoise Fragment 3 Vayuda Turquoise Fragment",
-        "amount": null
+        "id": "vayuda_turquoise_fragment",
+        "name": "Vayuda Turquoise Fragment",
+        "amount": 3
       },
       "mat2": {
-        "id": "2hurricane_seed_2_hurricane_seed",
-        "name": "2Hurricane Seed 2 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 2
       },
       "mat3": {
-        "id": "10dandelion_seed_10_dandelion_seed",
-        "name": "10Dandelion Seed 10 Dandelion Seed",
-        "amount": null
+        "id": "dandelion_seed",
+        "name": "Dandelion Seed",
+        "amount": 10
       },
       "mat4": {
-        "id": "15damaged_mask_15_damaged_mask",
-        "name": "15Damaged Mask 15 Damaged Mask",
-        "amount": null
+        "id": "damaged_mask",
+        "name": "Damaged Mask",
+        "amount": 15
       }
     },
     {
@@ -144,24 +144,24 @@
       "level": 5060,
       "cost": 60000,
       "mat1": {
-        "id": "6vayuda_turquoise_fragment_6_vayuda_turquoise_fragment",
-        "name": "6Vayuda Turquoise Fragment 6 Vayuda Turquoise Fragment",
-        "amount": null
+        "id": "vayuda_turquoise_fragment",
+        "name": "Vayuda Turquoise Fragment",
+        "amount": 6
       },
       "mat2": {
-        "id": "4hurricane_seed_4_hurricane_seed",
-        "name": "4Hurricane Seed 4 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 4
       },
       "mat3": {
-        "id": "20dandelion_seed_20_dandelion_seed",
-        "name": "20Dandelion Seed 20 Dandelion Seed",
-        "amount": null
+        "id": "dandelion_seed",
+        "name": "Dandelion Seed",
+        "amount": 20
       },
       "mat4": {
-        "id": "12stained_mask_12_stained_mask",
-        "name": "12Stained Mask 12 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 12
       }
     },
     {
@@ -169,24 +169,24 @@
       "level": 6070,
       "cost": 80000,
       "mat1": {
-        "id": "3vayuda_turquoise_chunk_3_vayuda_turquoise_chunk",
-        "name": "3Vayuda Turquoise Chunk 3 Vayuda Turquoise Chunk",
-        "amount": null
+        "id": "vayuda_turquoise_chunk",
+        "name": "Vayuda Turquoise Chunk",
+        "amount": 3
       },
       "mat2": {
-        "id": "8hurricane_seed_8_hurricane_seed",
-        "name": "8Hurricane Seed 8 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 8
       },
       "mat3": {
-        "id": "30dandelion_seed_30_dandelion_seed",
-        "name": "30Dandelion Seed 30 Dandelion Seed",
-        "amount": null
+        "id": "dandelion_seed",
+        "name": "Dandelion Seed",
+        "amount": 30
       },
       "mat4": {
-        "id": "18stained_mask_18_stained_mask",
-        "name": "18Stained Mask 18 Stained Mask",
-        "amount": null
+        "id": "stained_mask",
+        "name": "Stained Mask",
+        "amount": 18
       }
     },
     {
@@ -194,24 +194,24 @@
       "level": 7080,
       "cost": 100000,
       "mat1": {
-        "id": "6vayuda_turquoise_chunk_6_vayuda_turquoise_chunk",
-        "name": "6Vayuda Turquoise Chunk 6 Vayuda Turquoise Chunk",
-        "amount": null
+        "id": "vayuda_turquoise_chunk",
+        "name": "Vayuda Turquoise Chunk",
+        "amount": 6
       },
       "mat2": {
-        "id": "12hurricane_seed_12_hurricane_seed",
-        "name": "12Hurricane Seed 12 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 12
       },
       "mat3": {
-        "id": "45dandelion_seed_45_dandelion_seed",
-        "name": "45Dandelion Seed 45 Dandelion Seed",
-        "amount": null
+        "id": "dandelion_seed",
+        "name": "Dandelion Seed",
+        "amount": 45
       },
       "mat4": {
-        "id": "12ominous_mask_12_ominous_mask",
-        "name": "12Ominous Mask 12 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 12
       }
     },
     {
@@ -219,24 +219,24 @@
       "level": 8090,
       "cost": 120000,
       "mat1": {
-        "id": "6vayuda_turquoise_gemstone_6_vayuda_turquoise_gemstone",
-        "name": "6Vayuda Turquoise Gemstone 6 Vayuda Turquoise Gemstone",
-        "amount": null
+        "id": "vayuda_turquoise_gemstone",
+        "name": "Vayuda Turquoise Gemstone",
+        "amount": 6
       },
       "mat2": {
-        "id": "20hurricane_seed_20_hurricane_seed",
-        "name": "20Hurricane Seed 20 Hurricane Seed",
-        "amount": null
+        "id": "hurricane_seed",
+        "name": "Hurricane Seed",
+        "amount": 20
       },
       "mat3": {
-        "id": "60dandelion_seed_60_dandelion_seed",
-        "name": "60Dandelion Seed 60 Dandelion Seed",
-        "amount": null
+        "id": "dandelion_seed",
+        "name": "Dandelion Seed",
+        "amount": 60
       },
       "mat4": {
-        "id": "24ominous_mask_24_ominous_mask",
-        "name": "24Ominous Mask 24 Ominous Mask",
-        "amount": null
+        "id": "ominous_mask",
+        "name": "Ominous Mask",
+        "amount": 24
       }
     }
   ]
