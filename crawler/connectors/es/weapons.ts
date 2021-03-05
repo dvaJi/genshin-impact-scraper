@@ -72,7 +72,7 @@ export default class CharactersCrawler extends Connector {
         ),
       };
 
-      this.saveFile(JSON.stringify(weapon, undefined, 2), "/es/weapons/", id);
+      this.saveFile(weapon, "/es/weapons/", id);
     }
   }
 }

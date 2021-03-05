@@ -9,7 +9,8 @@ export default class CharactersCrawler extends Connector {
     table_urls:
       "table > tbody > tr > td:nth-child(2) > div > div > div.card_caption > a",
     boss_drop_urls: `table > tbody > tr > td > div > div > div.card_caption > a`,
-    limited_urls: "table > tbody > tr > td:nth-child(1) > div > div > div.card_caption > a",
+    limited_urls:
+      "table > tbody > tr > td:nth-child(1) > div > div > div.card_caption > a",
     name: "#mw-content-text > div > aside > h2",
     description: "div > div",
     location: "#mw-content-text > div > aside > div:nth-child(3) > div > a",
@@ -101,7 +102,7 @@ export default class CharactersCrawler extends Connector {
       };
 
       await saveImage(imgSrc, "materials", id + ".png");
-      this.saveFile(JSON.stringify(material, undefined, 2), "/materials/", id);
+      this.saveFile(material, "/materials/", id);
     }
   }
 }

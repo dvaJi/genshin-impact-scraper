@@ -106,7 +106,7 @@ export default class CharactersCrawler extends Connector {
       console.log(sets);
 
       const artifactContent = this.parseWikiContent(doc);
-      console.log(artifactContent)
+      console.log(artifactContent);
       const descriptions = this.getTextContentArray(
         artifactContent.get("Historia[editar | editar código]")?.join() || "",
         this.selectors.descriptions
@@ -127,7 +127,7 @@ export default class CharactersCrawler extends Connector {
         };
       });
 
-      this.saveFile(JSON.stringify(artifact, undefined, 2), "/es/artifacts/", id);
+      this.saveFile(artifact, "/es/artifacts/", id);
       // break;
     }
   }

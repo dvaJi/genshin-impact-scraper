@@ -248,10 +248,15 @@ export abstract class Connector implements Crawler {
 
   protected abstract crawl(): Promise<void>;
 
-  protected saveFile(data: string, directory: string, filename: string): void {
+  protected saveFile(
+    object: unknown,
+    directory: string,
+    filename: string
+  ): void {
     const filePath = `${DATA_PATH}${directory}${filename}.json`;
 
     try {
+      const data = JSON.stringify(object, undefined, 2);
       fs.ensureDirSync(path.dirname(filePath));
       fs.writeFileSync(filePath, data);
     } catch (err) {

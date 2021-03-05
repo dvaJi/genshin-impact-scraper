@@ -9,7 +9,8 @@ export default class CharactersCrawler extends Connector {
   selectors = {
     urls: "table > tbody > tr > td:nth-child(1) > a",
     name: "#mw-content-text > div > aside > h2",
-    img: "#mw-content-text > div > aside > div.pi-image-collection > div.pi-image-collection-tab-content.current > figure > a > img",
+    img:
+      "#mw-content-text > div > aside > div.pi-image-collection > div.pi-image-collection-tab-content.current > figure > a > img",
     rarity: "#mw-content-text > div > aside > div:nth-child(4) > div > img",
     type: "#mw-content-text > div > aside > div:nth-child(3) > div > a",
     description: "#mw-content-text > div > p:nth-child(6) > i",
@@ -19,7 +20,8 @@ export default class CharactersCrawler extends Connector {
       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(2)",
     substat_value:
       "#mw-content-text > div > aside > section.pi-item.pi-group.pi-border-color > table > tbody > tr > td:nth-child(3)",
-    passive: "#mw-content-text > div > aside > section:nth-child(10) > div.pi-section-contents > div.pi-section-content.pi-section-active > section > table > thead > tr > th",
+    passive:
+      "#mw-content-text > div > aside > section:nth-child(10) > div.pi-section-contents > div.pi-section-content.pi-section-active > section > table > thead > tr > th",
     bonus:
       "#mw-content-text > div > aside > section:nth-child(10) > div.pi-section-contents > div.pi-section-content.pi-section-active > section > table > tbody > tr > td",
     location: "#mw-content-text > div > aside > div:nth-child(6) > div > a",
@@ -93,11 +95,7 @@ export default class CharactersCrawler extends Connector {
         series: this.getTextContent(doc, this.selectors.series),
       };
 
-      // weapons.push({ ...weapon, id: id++ });
-      this.saveFile(JSON.stringify(weapon, undefined, 2), "/weapons/", id);
+      this.saveFile(weapon, "/weapons/", id);
     }
-
-    // console.log(weapons);
-    // this.saveFile(JSON.stringify(weapons), "weapons");
   }
 }

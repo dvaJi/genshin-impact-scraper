@@ -23,10 +23,16 @@ import CharactersJPCrawler from "@connectors/jp/characters";
 import MaterialsJPCrawler from "@connectors/jp/materials";
 // import TalentMaterialsJPCrawler from "@connectors/jp/talent-materials";
 
+import { clearFolder } from "@helper/clear-content";
+
 (async () => {
   dotenv.config();
 
   if (process.env.CRAWL_ENGLISH === "true") {
+    await clearFolder("/es/artifacts/");
+    await clearFolder("/materials/");
+    await clearFolder("/characters/");
+    await clearFolder("/weapons/");
     console.log("Starting Crawl English content...");
     const pCrawler = new CharactersENCrawler();
     await pCrawler.run();
@@ -43,6 +49,10 @@ import MaterialsJPCrawler from "@connectors/jp/materials";
   }
 
   if (process.env.CRAWL_SPANISH === "true") {
+    await clearFolder("/es/artifacts/");
+    await clearFolder("/es/materials/");
+    await clearFolder("/es/characters/");
+    await clearFolder("/es/weapons/");
     console.log("Starting Crawl Spanish content...");
 
     const cCrawler = new CharactersESCrawler();
@@ -58,6 +68,10 @@ import MaterialsJPCrawler from "@connectors/jp/materials";
   }
 
   if (process.env.CRAWL_JAPANESE === "true") {
+    // await clearFolder("/jp/artifacts/");
+    await clearFolder("/jp/materials/");
+    await clearFolder("/jp/characters/");
+    await clearFolder("/jp/weapons/");
     console.log("Starting Crawl Japanese content...");
 
     const cCrawler = new CharactersJPCrawler();

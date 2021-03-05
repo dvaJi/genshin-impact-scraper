@@ -76,11 +76,7 @@ export default class CharactersCrawler extends Connector {
         bonus: info.replace(/【\W*】/g, ""),
       };
 
-      this.saveFile(
-        JSON.stringify(weapon, undefined, 2),
-        "/jp/weapons/",
-        `${weaponType}_${name}`
-      );
+      this.saveFile(weapon, "/jp/weapons/", `${weaponType}_${name}`);
     }
   }
 }
