@@ -1,6 +1,7 @@
 import { Request } from "node-fetch";
 import { Connector } from "@engine/Connector";
 import { Material } from "@engine/Types";
+import { finalId, findMaterialFolder } from "@helper/create-es-materials-index";
 
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
@@ -42,9 +43,9 @@ export default class CharactersCrawler extends Connector {
 
       const name = this.getTextContent(doc, this.selectors.name);
       const englishLink =
-        doc.querySelector(this.selectors.id)?.getAttribute("href") || "";
-      const id = this.slugify(
-        decodeURI(englishLink.replace(/.*\/wiki\/(.*)/g, "$1"))
+        doc.querySelector(this.selectors.id)?.getAttribute("href") || name;
+      const id = finalId(
+        this.slugify(decodeURI(englishLink.replace(/.*\/wiki\/(.*)/g, "$1")))
       );
 
       const description = (
@@ -56,22 +57,15 @@ export default class CharactersCrawler extends Connector {
         .replace(/(«|»)/, "")
         .trim();
 
-      const rarity = Number(
-        doc
-          .querySelector(this.selectors.rarity)
-          ?.getAttribute("alt")
-          ?.trim()
-          .replace(/( Stars| Star)/, "") || ""
-      );
-
       const material: Partial<Material> = {
         id,
         name,
         description,
-        rarity,
       };
 
-      this.saveFile(material, "/es/materials/", id);
+      const materialFolder = findMaterialFolder(id);
+
+      this.saveFile(material, `/es/${materialFolder}/`, id);
     }
   }
 }

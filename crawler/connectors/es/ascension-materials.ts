@@ -1,6 +1,7 @@
 import { Request } from "node-fetch";
 import { Connector } from "@engine/Connector";
 import { Material } from "@engine/Types";
+import { finalId, findMaterialFolder } from "@helper/create-es-materials-index";
 
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://genshin-impact.fandom.com";
@@ -8,6 +9,7 @@ export default class CharactersCrawler extends Connector {
     "/es/wiki/Categoría:Materiales_de_ascensión",
     "/es/wiki/Categoría:Objetos_típicos_de_Mondstadt",
     "/es/wiki/Categoría:Objetos_típicos_de_Liyue",
+    "/es/wiki/Categoría:Materiales_de_ascensión_de_arma",
   ];
   selectors = {
     urls: "#mw-content-text > div.category-page__members > ul > li > a",
@@ -49,9 +51,9 @@ export default class CharactersCrawler extends Connector {
 
       const name = this.getTextContent(doc, this.selectors.name);
       const englishLink =
-        doc.querySelector(this.selectors.id)?.getAttribute("href") || "";
-      const id = this.slugify(
-        decodeURI(englishLink.replace(/.*\/wiki\/(.*)/g, "$1"))
+        doc.querySelector(this.selectors.id)?.getAttribute("href") || name;
+      const id = finalId(
+        this.slugify(decodeURI(englishLink.replace(/.*\/wiki\/(.*)/g, "$1")))
       );
 
       const description = (
@@ -63,22 +65,47 @@ export default class CharactersCrawler extends Connector {
         .replace(/(«|»)/, "")
         .trim();
 
-      const rarity = Number(
-        doc
-          .querySelector(this.selectors.rarity)
-          ?.getAttribute("alt")
-          ?.trim()
-          .replace(/( Stars| Star)/, "") || ""
+      let craft:
+        | { name?: string; amount?: number; cost?: number }
+        | undefined = undefined;
+
+      const craftDom = this.createDOM(
+        `<div>${content
+          .get("Obtención[editar | editar código]")
+          ?.join("")}</div>`
       );
+      craftDom.window.document
+        .querySelectorAll(".ingrediente-receta")
+        .forEach((value) => {
+          const amount = Number(
+            value
+              .querySelector(".cantidad-ingrediente-receta")
+              ?.textContent?.trim()
+              .replace("x", "")
+          );
+
+          const mName = value
+            .querySelector(".collapsable-item-name")
+            ?.textContent?.trim();
+
+          if (mName !== name) {
+            craft = {
+              name: mName,
+              amount,
+            };
+          }
+        });
 
       const material: Partial<Material> = {
         id,
         name,
         description,
-        rarity,
+        craft,
       };
 
-      this.saveFile(material, "/es/materials/", id);
+      const materialFolder = findMaterialFolder(id);
+
+      this.saveFile(material, `/es/${materialFolder}/`, id);
     }
   }
 }

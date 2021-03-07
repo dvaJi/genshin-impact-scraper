@@ -25,6 +25,7 @@ import MaterialsJPCrawler from "@connectors/jp/materials";
 // import TalentMaterialsJPCrawler from "@connectors/jp/talent-materials";
 
 import { clearFolder } from "@helper/clear-content";
+import { createESMaterialsIndex } from "@helper/create-es-materials-index";
 
 (async () => {
   dotenv.config();
@@ -58,22 +59,31 @@ import { clearFolder } from "@helper/clear-content";
   }
 
   if (process.env.CRAWL_SPANISH === "true") {
-    await clearFolder("/es/artifacts/");
-    await clearFolder("/es/materials/");
-    await clearFolder("/es/characters/");
-    await clearFolder("/es/weapons/");
+    createESMaterialsIndex();
+    // await clearFolder("/es/characters/");
+    // await clearFolder("/es/weapons/");
+    // await clearFolder("/es/artifacts/");
+    // await clearFolder("/es/materials/");
+    // await clearFolder("/es/talent_lvl_up_materials/");
+    // await clearFolder("/es/local_materials/");
+    // await clearFolder("/es/elemental_stone_materials/");
+    // await clearFolder("/es/jewels_materials/");
+    // await clearFolder("/es/common_materials/");
+    // await clearFolder("/es/weapon_secondary_materials/");
+    // await clearFolder("/es/weapon_primary_materials/");
+
     console.log("Starting Crawl Spanish content...");
 
-    const cCrawler = new CharactersESCrawler();
-    await cCrawler.run();
-    const wCrawler = new WeaponsESCrawler();
-    await wCrawler.run();
-    const aCrawler = new ArtifactsESCrawler();
-    await aCrawler.run();
+    // const cCrawler = new CharactersESCrawler();
+    // await cCrawler.run();
+    // const wCrawler = new WeaponsESCrawler();
+    // await wCrawler.run();
+    // const aCrawler = new ArtifactsESCrawler();
+    // await aCrawler.run();
     const amCrawler = new AscensionMaterialsESCrawler();
     await amCrawler.run();
-    const tmCrawler = new TalentMaterialsESCrawler();
-    await tmCrawler.run();
+    // const tmCrawler = new TalentMaterialsESCrawler();
+    // await tmCrawler.run();
   }
 
   if (process.env.CRAWL_JAPANESE === "true") {
