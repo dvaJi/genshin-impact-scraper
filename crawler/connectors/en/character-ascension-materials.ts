@@ -140,8 +140,8 @@ export default class CharactersCrawler extends Connector {
         sources,
       };
 
-      await saveImage(imgSrc, "materials", id + ".png");
-      this.saveFile(material, "/materials/", id);
+      await saveImage(imgSrc, "jewels_materials", id + ".png");
+      this.saveFile(material, "/en/jewels_materials/", id);
     }
   }
 
@@ -181,8 +181,8 @@ export default class CharactersCrawler extends Connector {
         type: "Elite Boss Material",
       };
 
-      await saveImage(imgSrc, "materials", id + ".png");
-      this.saveFile(material, "/materials/", id);
+      await saveImage(imgSrc, "elemental_stone_materials", id + ".png");
+      this.saveFile(material, "/en/elemental_stone_materials/", id);
     }
   }
 
@@ -228,8 +228,8 @@ export default class CharactersCrawler extends Connector {
         sources,
       };
 
-      await saveImage(imgSrc, "materials", id + ".png");
-      this.saveFile(material, "/materials/", id);
+      await saveImage(imgSrc, "local_materials", id + ".png");
+      this.saveFile(material, "/en/local_materials/", id);
     }
   }
 }

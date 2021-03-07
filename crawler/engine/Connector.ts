@@ -9,6 +9,8 @@ export interface Crawler {
   id: symbol;
   label: string;
   isValid: boolean;
+  language: string;
+  folder: string;
   requestOptions: RequestInit;
   run(): Promise<void>;
 }
@@ -20,6 +22,8 @@ export abstract class Connector implements Crawler {
   id = Symbol();
   label = "";
   isValid = true;
+  language = "en";
+  folder = "";
   requestOptions = {
     method: "GET",
     redirect: "follow" as "follow",

@@ -8,6 +8,7 @@ import ArtifactsENCrawler from "@connectors/en/artifacts";
 import MaterialsENCrawler from "@connectors/en/character-ascension-materials";
 import TalentMaterialsENCrawler from "@connectors/en/talent-materials";
 import CommonMaterialsENCrawler from "@connectors/en/common-materials";
+import WeaponAscMaterialsENCrawler from "@connectors/en/weapon-ascension-materials";
 
 // Spanish connectors
 import WeaponsESCrawler from "@connectors/es/weapons";
@@ -29,10 +30,16 @@ import { clearFolder } from "@helper/clear-content";
   dotenv.config();
 
   if (process.env.CRAWL_ENGLISH === "true") {
-    await clearFolder("/es/artifacts/");
-    await clearFolder("/materials/");
-    await clearFolder("/characters/");
-    await clearFolder("/weapons/");
+    await clearFolder("/en/artifacts/");
+    await clearFolder("/en/talent_lvl_up_materials/");
+    await clearFolder("/en/local_materials/");
+    await clearFolder("/en/elemental_stone_materials/");
+    await clearFolder("/en/jewels_materials/");
+    await clearFolder("/en/common_materials/");
+    await clearFolder("/en/weapon_secondary_materials/");
+    await clearFolder("/en/weapon_primary_materials/");
+    await clearFolder("/en/characters/");
+    await clearFolder("/en/weapons/");
     console.log("Starting Crawl English content...");
     const pCrawler = new CharactersENCrawler();
     await pCrawler.run();
@@ -46,6 +53,8 @@ import { clearFolder } from "@helper/clear-content";
     await tmCrawler.run();
     const cmCrawler = new CommonMaterialsENCrawler();
     await cmCrawler.run();
+    const waCrawler = new WeaponAscMaterialsENCrawler();
+    await waCrawler.run();
   }
 
   if (process.env.CRAWL_SPANISH === "true") {

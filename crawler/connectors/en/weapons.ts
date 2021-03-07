@@ -95,7 +95,7 @@ export default class CharactersCrawler extends Connector {
         series: this.getTextContent(doc, this.selectors.series),
       };
 
-      this.saveFile(weapon, "/weapons/", id);
+      this.saveFile(weapon, "/en/weapons/", id);
     }
   }
 }

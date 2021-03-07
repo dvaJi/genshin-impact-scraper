@@ -131,7 +131,22 @@ export interface Material {
   material_type: string[];
   description: string;
   location?: string;
+  craft?: {
+    name: string;
+    amount: number;
+    cost: number;
+  };
   sources?: string[];
+}
+
+export interface TalentLevelUpMaterial extends Material {
+  day?: string[];
+  region?: string;
+}
+
+export interface WeaponAscensionMaterial extends Material {
+  day?: string[];
+  region?: string;
 }
 
 export type DeepPartial<T> = {
