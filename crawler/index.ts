@@ -22,10 +22,9 @@ import WeaponsJPCrawler from "@connectors/jp/weapons";
 import CharactersJPCrawler from "@connectors/jp/characters";
 // import ArtifactsJPCrawler from "@connectors/jp/artifacts";
 import MaterialsJPCrawler from "@connectors/jp/materials";
-// import TalentMaterialsJPCrawler from "@connectors/jp/talent-materials";
 
 import { clearFolder } from "@helper/clear-content";
-import { createESMaterialsIndex } from "@helper/create-es-materials-index";
+import { createMaterialsIndex } from "@helper/create-es-materials-index";
 
 (async () => {
   dotenv.config();
@@ -58,51 +57,58 @@ import { createESMaterialsIndex } from "@helper/create-es-materials-index";
     await waCrawler.run();
   }
 
+  createMaterialsIndex();
+
   if (process.env.CRAWL_SPANISH === "true") {
-    createESMaterialsIndex();
-    // await clearFolder("/es/characters/");
-    // await clearFolder("/es/weapons/");
-    // await clearFolder("/es/artifacts/");
-    // await clearFolder("/es/materials/");
-    // await clearFolder("/es/talent_lvl_up_materials/");
-    // await clearFolder("/es/local_materials/");
-    // await clearFolder("/es/elemental_stone_materials/");
-    // await clearFolder("/es/jewels_materials/");
-    // await clearFolder("/es/common_materials/");
-    // await clearFolder("/es/weapon_secondary_materials/");
-    // await clearFolder("/es/weapon_primary_materials/");
+    await clearFolder("/es/characters/");
+    await clearFolder("/es/weapons/");
+    await clearFolder("/es/artifacts/");
+    await clearFolder("/es/materials/");
+    await clearFolder("/es/talent_lvl_up_materials/");
+    await clearFolder("/es/local_materials/");
+    await clearFolder("/es/elemental_stone_materials/");
+    await clearFolder("/es/jewels_materials/");
+    await clearFolder("/es/common_materials/");
+    await clearFolder("/es/weapon_secondary_materials/");
+    await clearFolder("/es/weapon_primary_materials/");
 
     console.log("Starting Crawl Spanish content...");
 
-    // const cCrawler = new CharactersESCrawler();
-    // await cCrawler.run();
-    // const wCrawler = new WeaponsESCrawler();
-    // await wCrawler.run();
-    // const aCrawler = new ArtifactsESCrawler();
-    // await aCrawler.run();
+    const cCrawler = new CharactersESCrawler();
+    await cCrawler.run();
+    const wCrawler = new WeaponsESCrawler();
+    await wCrawler.run();
+    const aCrawler = new ArtifactsESCrawler();
+    await aCrawler.run();
     const amCrawler = new AscensionMaterialsESCrawler();
     await amCrawler.run();
-    // const tmCrawler = new TalentMaterialsESCrawler();
-    // await tmCrawler.run();
+    const tmCrawler = new TalentMaterialsESCrawler();
+    await tmCrawler.run();
   }
 
   if (process.env.CRAWL_JAPANESE === "true") {
     // await clearFolder("/jp/artifacts/");
+    // await clearFolder("/jp/characters/");
+    // await clearFolder("/jp/weapons/");
+    await clearFolder("/jp/artifacts/");
     await clearFolder("/jp/materials/");
-    await clearFolder("/jp/characters/");
-    await clearFolder("/jp/weapons/");
+    await clearFolder("/jp/talent_lvl_up_materials/");
+    await clearFolder("/jp/local_materials/");
+    await clearFolder("/jp/elemental_stone_materials/");
+    await clearFolder("/jp/jewels_materials/");
+    await clearFolder("/jp/common_materials/");
+    await clearFolder("/jp/weapon_secondary_materials/");
+    await clearFolder("/jp/weapon_primary_materials/");
     console.log("Starting Crawl Japanese content...");
 
-    const cCrawler = new CharactersJPCrawler();
-    await cCrawler.run();
-    const wCrawler = new WeaponsJPCrawler();
-    await wCrawler.run();
+    // const cCrawler = new CharactersJPCrawler();
+    // await cCrawler.run();
+    // const wCrawler = new WeaponsJPCrawler();
+    // await wCrawler.run();
     // const aCrawler = new ArtifactsJPCrawler();
     // await aCrawler.run();
     const amCrawler = new MaterialsJPCrawler();
     await amCrawler.run();
-    // const tmCrawler = new TalentMaterialsJPCrawler();
-    // await tmCrawler.run();
   }
 
   // End

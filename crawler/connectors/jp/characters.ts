@@ -5,11 +5,11 @@ import {
   Character,
   Constellation,
   DeepPartial,
-  instanceOfSkill,
   Passive,
   Skill,
 } from "@engine/Types";
 import { tableJson } from "@helper/table-json";
+import { finalId } from "@helper/create-jp-index";
 
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://gamewith.jp/genshin";
@@ -56,7 +56,7 @@ export default class CharactersCrawler extends Connector {
         "の評価とおすすめ聖遺物・武器",
         ""
       );
-      const id = name;
+      const id = finalId(name, "characters");
       const description = this.getTextContent(
         characterContent.get("人物紹介")?.join() || "",
         this.selectors.description
@@ -79,7 +79,7 @@ export default class CharactersCrawler extends Connector {
         }
 
         constellations.push({
-          name: name.replace(/\s【\d凸で解放】/g, ""),
+          name: name.replace(/【\d凸で解放】/g, "").trim(),
           description,
           level: Number(name.replace(/.*【(\d)凸で解放】/g, "$1")),
         });

@@ -2,6 +2,7 @@ import { Request } from "node-fetch";
 import { Connector } from "@engine/Connector";
 import { Material } from "@engine/Types";
 import { tableJson } from "@helper/table-json";
+import { finalId, findMaterialFolder } from "@helper/create-jp-index";
 
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://gamewith.jp";
@@ -57,7 +58,7 @@ export default class CharactersCrawler extends Connector {
         continue;
       }
 
-      const id = name.replace("|", "__");
+      const id = finalId(name.split("|")[0], "materials");
 
       const material: Partial<Material> = {
         id,
@@ -65,7 +66,9 @@ export default class CharactersCrawler extends Connector {
         description,
       };
 
-      this.saveFile(material, "/jp/materials/", id);
+      const materialFolder = findMaterialFolder(id);
+
+      this.saveFile(material, `/jp/${materialFolder}/`, id);
     }
   }
 }

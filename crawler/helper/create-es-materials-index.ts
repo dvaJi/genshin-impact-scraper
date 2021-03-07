@@ -16,7 +16,7 @@ const folders = [
 
 const namesMap = require(path.join(ES_DATA_PATH, `materials_names_map.json`));
 
-export const createESMaterialsIndex = async (): Promise<void> => {
+export const createMaterialsIndex = async (): Promise<void> => {
   const index: any = {};
   try {
     for (const folder of folders) {

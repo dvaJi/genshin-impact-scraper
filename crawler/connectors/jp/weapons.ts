@@ -2,6 +2,7 @@ import { Request } from "node-fetch";
 import { Connector } from "@engine/Connector";
 import { Weapon } from "@engine/Types";
 import { tableJson } from "@helper/table-json";
+import { finalId } from "@helper/create-jp-index";
 
 export default class CharactersCrawler extends Connector {
   BASE_URL = "https://gamewith.jp";
@@ -59,6 +60,7 @@ export default class CharactersCrawler extends Connector {
   }
 
   async generateWeapons(content: string, weaponType: string): Promise<void> {
+    console.log(`Getting ${weaponType}...`);
     const weaponsTable = tableJson(content, {
       cellCb: (cell, index, col) => {
         if (col === "性能/スキル効果") {
@@ -69,14 +71,15 @@ export default class CharactersCrawler extends Connector {
     });
     for await (const value of weaponsTable.data) {
       const [name, info] = value;
+      const id = finalId(name, "weapons");
 
       const weapon: Partial<Weapon> = {
-        id: name,
+        id,
         name,
         bonus: info.replace(/【\W*】/g, ""),
       };
 
-      this.saveFile(weapon, "/jp/weapons/", `${weaponType}_${name}`);
+      this.saveFile(weapon, "/jp/weapons/", id);
     }
   }
 }
