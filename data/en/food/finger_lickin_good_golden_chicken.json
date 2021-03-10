@@ -1,0 +1,12 @@
+{
+  "id": "finger_lickin_good_golden_chicken",
+  "name": "Finger Lickin' Good Golden Chicken",
+  "material_type": [
+    "Food"
+  ],
+  "type": "Consumables",
+  "description": "",
+  "rarity": 4,
+  "dish_type": [],
+  "effect": ""
+}

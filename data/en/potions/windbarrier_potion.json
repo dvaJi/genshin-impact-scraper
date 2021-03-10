@@ -1,0 +1,10 @@
+{
+  "id": "windbarrier_potion",
+  "name": "Windbarrier Potion",
+  "description": "",
+  "rarity": 3,
+  "sources": [
+    "Alchemy"
+  ],
+  "effect": ""
+}

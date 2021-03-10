@@ -1,0 +1,16 @@
+{
+  "id": "lantern_rite_special_triplelayered_consomm",
+  "name": "Lantern Rite Special Triple-Layered Consommé",
+  "material_type": [
+    "Food"
+  ],
+  "type": "Consumables",
+  "description": "Traditional cuisine made to celebrate Lantern Rite. The ham, fowl, and bamboo shoots have been sliced into threads of equal length, and they've been laid out neatly in the soup bowl after being steamed at high heat, before being covered in consommé. The layers are distinct, and the mouthfeel is salty yet fresh.",
+  "rarity": 3,
+  "dish_type": [
+    "Special",
+    "Sage's Dish"
+  ],
+  "effect": "Increases all party members' Shield strength by 30%.",
+  "base": "Triple-Layered Consommé"
+}

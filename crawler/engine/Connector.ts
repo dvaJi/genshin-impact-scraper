@@ -166,6 +166,24 @@ export abstract class Connector implements Crawler {
     return dom.querySelector(selector)?.textContent?.trim() || "";
   }
 
+  protected getAttributeValue(
+    content: string | Document,
+    selector: string,
+    attributeName: string
+  ): string {
+    let dom = null;
+
+    if (typeof content === "string") {
+      dom = this.createDOM(content).window.document;
+    } else {
+      dom = content;
+    }
+
+    return (
+      dom.querySelector(selector)?.getAttribute(attributeName)?.trim() || ""
+    );
+  }
+
   protected getHtmlContent(
     content: string | Document,
     selector: string

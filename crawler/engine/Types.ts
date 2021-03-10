@@ -149,6 +149,39 @@ export interface WeaponAscensionMaterial extends Material {
   region?: string;
 }
 
+export type PotionResult = {
+  description: string;
+  effect: string;
+};
+
+export interface Food extends Omit<Material, "description"> {
+  character?: string;
+  effect?: string;
+  dish_type: string[];
+  variant?: string;
+  base?: string;
+  description?: string;
+  results?: {
+    normal: PotionResult;
+    delicious: PotionResult;
+    suspicious: PotionResult;
+  };
+}
+
+export interface Potion {
+  id: string;
+  name: string;
+  rarity?: number;
+  description?: string;
+  effect: string;
+  craft?: {
+    name: string;
+    amount: number;
+    cost: number;
+  };
+  sources?: string[];
+}
+
 export type DeepPartial<T> = {
   [P in keyof T]?: T[P] extends Array<infer U>
     ? Array<DeepPartial<U>>

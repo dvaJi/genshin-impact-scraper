@@ -186,7 +186,7 @@ export default class CharactersCrawler extends Connector {
         };
 
         ascensions.push({
-          ascension: Number(ascension),
+          ascension: Number(ascension.replace(/\D+/, "")),
           level: Number(level),
           cost: Number(cost.replace(/\D+/, "")),
           mat1,

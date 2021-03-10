@@ -1,0 +1,16 @@
+{
+  "id": "lantern_rite_special_grilled_tiger_fish",
+  "name": "Lantern Rite Special Grilled Tiger Fish",
+  "material_type": [
+    "Food"
+  ],
+  "type": "Consumables",
+  "description": "Traditional cuisine made to celebrate Lantern Rite. The fish is a fresh catch straight from the harbor, lightly seasoned and swiftly grilled. Its aroma attracts the street cats. Indeed, freshness is the secret of flavor. Its aroma attracts the street cats. Indeed, freshness is the secret of flavor.",
+  "rarity": 1,
+  "dish_type": [
+    "Special",
+    "Guardian's Dish"
+  ],
+  "effect": "Restores 10% of Max HP and an additional 1,200 HP.",
+  "base": "Grilled Tiger Fish"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "insulation_potion",
+  "name": "Insulation Potion",
+  "description": "",
+  "rarity": 3,
+  "sources": [
+    "Alchemy"
+  ],
+  "effect": ""
+}

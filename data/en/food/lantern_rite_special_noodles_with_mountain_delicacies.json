@@ -1,0 +1,16 @@
+{
+  "id": "lantern_rite_special_noodles_with_mountain_delicacies",
+  "name": "Lantern Rite Special Noodles with Mountain Delicacies",
+  "material_type": [
+    "Food"
+  ],
+  "type": "Consumables",
+  "description": "Traditional cuisine made to celebrate Lantern Rite. The sauce has a rustic flavor, and there's a generous amount of it mixed in with the noodles. A humble but enduringly popular dish.",
+  "rarity": 2,
+  "dish_type": [
+    "Special",
+    "Adventurer's Dish"
+  ],
+  "effect": "Restores 60 Stamina.",
+  "base": "Noodles with Mountain Delicacies"
+}

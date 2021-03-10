@@ -1,0 +1,10 @@
+{
+  "id": "frostshield_potion",
+  "name": "Frostshield Potion",
+  "description": "",
+  "rarity": 3,
+  "sources": [
+    "Alchemy"
+  ],
+  "effect": ""
+}

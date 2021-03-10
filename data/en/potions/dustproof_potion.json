@@ -1,0 +1,10 @@
+{
+  "id": "dustproof_potion",
+  "name": "Dustproof Potion",
+  "description": "",
+  "rarity": 3,
+  "sources": [
+    "Alchemy"
+  ],
+  "effect": ""
+}
