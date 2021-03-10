@@ -17,7 +17,7 @@
     {
       "id": "bolts_of_downfall",
       "name": "Bolts of Downfall",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Perform up to 5 consecutive shots with a bow.<br><p><b>Charged Attack:</b> Perform a more precise Aimed Shot with increased DMG. While aiming, the dark lightning spirits of Immernachtreich shall heed the call of their Prinzessin and indwell the enchanted arrowhead. When fully indwelt, the Rachsüchtig Blitz shall deal immense <span style=\"color:#9336b0\"><b>Electro DMG</b></span>.<br><b>Plunging Attack:</b> Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
@@ -215,7 +215,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

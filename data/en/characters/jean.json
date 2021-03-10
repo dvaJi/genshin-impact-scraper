@@ -17,7 +17,7 @@
     {
       "id": "favonius_bladework",
       "name": "Favonius Bladework",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Performs up to 5 consecutive strikes.<br><p><b>Charged Attack:</b> Consumes a certain amount of stamina to launch an opponent using the power of wind. Launched opponents will slowly fall to the ground.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
@@ -215,7 +215,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

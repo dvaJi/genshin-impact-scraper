@@ -16,7 +16,7 @@
     {
       "id": "divine_marksmanship",
       "name": "Divine Marksmanship",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Perform up to 6 consecutive shots with a bow.<br><p><b>Charged Attack:</b> Perform a more precise Aimed Shot with increased DMG. While aiming, favorable winds will accumulate on the arrowhead. A fully charged wind arrow will deal <span style=\"color:#26a684\"><b>Anemo DMG</b></span>.<br><b>Plunging Attack:</b> Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
@@ -51,7 +51,7 @@
     {
       "id": "windrider",
       "name": "Windrider",
-      "description": "Decreases gliding Stamina consumption for your own party members by 20%.<p>Not stackable with Passive Talents that provide the exact same effects.</p>"
+      "description": "Decreases Stamina consumption for your own party members by 20%.<br>Not stackable with Passive Talents that provide the exact same effects."
     }
   ],
   "constellations": [
@@ -214,7 +214,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

@@ -16,7 +16,7 @@
     {
       "id": "wind_spirit_creation",
       "name": "Wind Spirit Creation",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Performs up to 4 attacks using Wind Spirits, dealing <span style=\"color:#26a684\"><b>Anemo DMG</b></span>.<br><p><b>Charged Attack:</b> Consumes a certain amount of Stamina and deals <span style=\"color:#26a684\"><b>AoE Anemo DMG</b></span> after a short casting time.<br><b>Plunging Attack:</b> Calling upon the power of her Wind Spirits, Sucrose plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color:#26a684\"><b>AoE Anemo DMG</b></span> upon impact with the ground.</p>",
       "modifiers": []
     },
@@ -214,7 +214,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

@@ -16,8 +16,8 @@
     {
       "id": "ancient_sword_art",
       "name": "Ancient Sword Art",
-      "type": "Normal/Charged Attack",
-      "description": "<b>Normal Attack</b>: Perform up to 5 rapid strikes.<br><p><b>Charged Attack</b>: Consumes a certain amount Stamina to unleash 2 rapid sword strikes.<br> <b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
+      "type": "Normal Attack",
+      "description": "<b>Normal Attack</b>: Perform up to 5 rapid strikes.<br><p><b>Charged Attack</b>: Consumes a certain amount Stamina to unleash 2 rapid sword strikes.<br> <b>Plunging Attack</b>: Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
     {
@@ -214,7 +214,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

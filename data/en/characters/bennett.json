@@ -16,7 +16,7 @@
     {
       "id": "strike_of_fortune",
       "name": "Strike of Fortune",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Performs up to 5 rapid strikes.<br><p><b>Charged Attack:</b> Consumes a certain amount of Stamina to unleash 2 rapid sword swings.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
@@ -214,7 +214,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

@@ -18,7 +18,7 @@
     {
       "id": "sparkling_scatter",
       "name": "Sparkling Scatter",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack</b>: Shoots gems that deal <span style=\"color:#b67607\"><b>Geo DMG</b></span>. Upon hit, this grants Ningguang 1 Star Jade.<br><p><b>Charged Attack</b>: Consumes a certain amount of stamina to fire off a giant gem that deals <span style=\"color:#b67607\"><b>Geo DMG</b></span>. If Ningguang has any Star Jades, unleashing a Charged Attack will cause the Star Jades to be fired at the enemy as well, dealing additional DMG.<br><b>Plunging Attack</b>: Gathering the might of Geo, Ningguang plunges toward the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color:#b67607\"><b>AoE Geo DMG</b></span> upon impact with the ground.</p>",
       "modifiers": []
     },
@@ -216,7 +216,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

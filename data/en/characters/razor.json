@@ -17,7 +17,7 @@
     {
       "id": "steel_fang",
       "name": "Steel Fang",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Perform up to 4 consecutive strikes.<br><p><b>Charged Attack:</b> Drains Stamina over time to perform continuous swirling attacks against all nearby opponents. At end of the sequence, perform a more powerful slash.<br><b>Plunging Aattack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
@@ -89,7 +89,7 @@
     {
       "id": "lupus_fulguris",
       "name": "Lupus Fulguris",
-      "description": "Every 10s, Razor's sword charges up, causing the next Normal Attack to release lightning that deals 100% of Razor's ATK as Electro DMG. When Razor is not using Lightning Fang, a lightning strike on an opponent will grant Razor an Electro Sigil for Claw and Thunder",
+      "description": "Every 10s, Razor's sword charges up, causing the next Normal Attack to release lightning that deals 100% of Razor's ATK as Electro DMG. When Razor is not using Lightning Fang, a lightning strike on an opponent will grant Razor an Electro Sigil for Claw and Thunder.",
       "level": 6
     }
   ],
@@ -215,7 +215,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

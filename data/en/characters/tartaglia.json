@@ -16,7 +16,7 @@
     {
       "id": "cutting_torrent",
       "name": "Cutting Torrent",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Perform up to 6 consecutive shots with a bow.<br><p><b>Charged Attack:</b> Perform a more precise Aimed Shot with increased DMG. While aiming, the power of Hydro will accumulate on the arrowhead. An arrow fully charged with the torrent will deal <span style=\"color:#0b4dda\"><b>Hydro DMG</b></span> and apply the Riptide status.<br><b>Riptide:</b> Opponents affected by Riptide will suffer from <span style=\"color:#0b4dda\"><b>AoE Hydro DMG</b></span> effects when attacked by Tartaglia in various ways. DMG dealt in this way is considered Normal Attack dmg.</p><ul><li>Riptide Flash: A fully-charged Aimed Shot that hits an opponent affected by Riptide deals consecutive bouts of AoE DMG. Can occur once every 0.7s.</li><li>Riptide Burst: Defeating an opponent affected by Riptide creates a Hydro burst that inflicts the Riptide status on nearby opponents hit.<br></li></ul><p><b>Plunging Attack:</b> Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.<br> When Tartaglia is in Foul Legacy: Raging Tide's Melee Stance, he cannot perform a plunging attack.</p>",
       "modifiers": []
     },
@@ -214,7 +214,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

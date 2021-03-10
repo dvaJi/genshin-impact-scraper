@@ -18,7 +18,7 @@
     {
       "id": "tempered_sword",
       "name": "Tempered Sword",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Perform up to 4 consecutive strikes.<br><p><b>Charged Attack:</b> Drains Stamina over time to perform continuous slashes. At the end of the sequence, perform a more powerful slash.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
@@ -216,7 +216,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

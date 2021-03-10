@@ -16,7 +16,7 @@
     {
       "id": "lightning_touch",
       "name": "Lightning Touch",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Performs up to 4 Electro attacks, dealing <span style=\"color:#9336b0\"><b>Electro DMG</b></span>.<br><p><b>Charged Attack:</b> Consumes a certain amount of Stamina to deal <span style=\"color:#9336b0\"><b>Electro DMG</b></span> after a short casting time.<br><b>Plunging Attack:</b> Gathering the might of Electro, Lisa plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color:#9336b0\"><b>AoE Electro DMG</b></span> upon impact with the ground.</p>",
       "modifiers": []
     },
@@ -214,7 +214,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

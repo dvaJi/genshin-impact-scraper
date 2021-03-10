@@ -18,7 +18,7 @@
     {
       "id": "favonius_bladework_weiss",
       "name": "Favonius Bladework - Weiss",
-      "type": "Normal/Charged Attack",
+      "type": "Normal Attack",
       "description": "<b>Normal Attack:</b> Perform up to 5 rapid strikes.<br><b>Charged Attack:</b> Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.<br><b>Plunging Attack:</b> Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
       "modifiers": []
     },
@@ -216,7 +216,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

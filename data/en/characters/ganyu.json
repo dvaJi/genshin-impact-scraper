@@ -16,8 +16,8 @@
     {
       "id": "liutian_archery",
       "name": "Liutian Archery",
-      "type": "Normal/Charged Attack",
-      "description": "<b>Normal Attack:</b> Perform up to 6 consecutive shots with a bow.<br><p><b>Charged Attack:</b> Perform a more precise <b>Aimed Shot</b> with increased DMG. While aiming, an icy aura will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:<br></p><ul><li>Charge Level 1: Fires off an icy arrow that deals <span style=\"color:#4878a8\"><b>Cryo DMG</b></span>.</li><li>Charge Level 2: Fires off a Frostflake Arrow that deals <span style=\"color:#4878a8\"><b>Cryo DMG</b></span>.</li></ul><p>The Frostflake Arrow blooms after hitting its target, dealing <span style=\"color:#4878a8\"><b>AoE Cryo DMG</b></span>.<br><b>Plunging Attack:</b> Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.</p>",
+      "type": "Normal Attack",
+      "description": "<b>Normal Attack:</b> Perform up to 6 consecutive shots with a bow.<br><p><b>Charged Attack:</b> Perform a more precise Aimed Shot with increased DMG. While aiming, an icy aura will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:<br></p><ul><li>Charge Level 1: Fires off an icy arrow that deals <span style=\"color:#4878a8\"><b>Cryo DMG</b></span>.</li><li>Charge Level 2: Fires off a Frostflake Arrow that deals <span style=\"color:#4878a8\"><b>Cryo DMG</b></span>.</li></ul><p>The Frostflake Arrow blooms after hitting its target, dealing <span style=\"color:#4878a8\"><b>AoE Cryo DMG</b></span>.<br><b>Plunging Attack:</b> Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.</p>",
       "modifiers": []
     },
     {
@@ -214,7 +214,7 @@
       }
     },
     {
-      "ascension": null,
+      "ascension": 6,
       "level": 8090,
       "cost": 120000,
       "mat1": {

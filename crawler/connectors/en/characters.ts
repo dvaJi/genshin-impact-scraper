@@ -312,6 +312,7 @@ export default class CharactersCrawler extends Connector {
     if (
       [
         "Normal/Charged Attack",
+        "Normal Attack",
         "Elemental Skill",
         "Elemental Burst",
         "Alternate Sprint",
@@ -326,11 +327,11 @@ export default class CharactersCrawler extends Connector {
       };
       return skill;
     } else {
-      const passiveType = Number(type.replace("Passive Talent ", ""));
+      const passiveType = Number(type.replace(/\D+/, ""));
       let unlock = undefined;
       if (passiveType === 1) {
         unlock = "Ascension 1";
-      } else if (passiveType === 2) {
+      } else if (passiveType === 4) {
         unlock = "Ascension 4";
       }
 
