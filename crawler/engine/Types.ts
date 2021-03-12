@@ -171,6 +171,8 @@ export interface Food extends Omit<Material, "description"> {
 export interface Potion {
   id: string;
   name: string;
+  material_type: string[];
+  type: string;
   rarity?: number;
   description?: string;
   effect: string;

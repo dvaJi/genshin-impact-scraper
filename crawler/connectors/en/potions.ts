@@ -9,8 +9,8 @@ export default class PotionsCrawler extends Connector {
   selectors = {
     urls: "table > tbody > tr > td:nth-child(2) > a",
     name: "#mw-content-text > div > aside > h2",
-    description:
-      "#mw-content-text > div > aside > section > div.pi-section-contents > div.pi-section-content.pi-section-active > figure > figcaption",
+    description: ".pi-data-value",
+    effect: ".pi-data-value",
     rarity: "#mw-content-text > div > aside > div:nth-child(4) > div > img",
     sources:
       "#mw-content-text > div > aside > section > div > .pi-data-value > a",
@@ -51,7 +51,11 @@ export default class PotionsCrawler extends Connector {
 
       const name = this.getTextContent(doc, this.selectors.name);
       const id = this.slugify(name);
-      const description = this.getTextContent(doc, this.selectors.description);
+      console.log(infoboxContent);
+      const description = this.getTextContent(
+        infoboxContent.get("description") || "",
+        this.selectors.description
+      );
 
       const sources: string[] = [];
       doc.querySelectorAll(this.selectors.sources).forEach((value) => {
@@ -60,7 +64,7 @@ export default class PotionsCrawler extends Connector {
 
       let craft: { name?: string; amount?: number }[] | undefined = undefined;
       const recipeDom = this.createDOM(
-        `<div>${content.get("Recipe")?.join("")}</div>`
+        `<div>${content.get("Alchemy")?.join("")}</div>`
       );
       recipeDom.window.document
         .querySelectorAll(".genshin_recipe > .card_container")
@@ -91,10 +95,15 @@ export default class PotionsCrawler extends Connector {
         id,
         name,
         description,
+        material_type: ["Potions"],
+        type: "Consumables",
         craft,
         rarity,
         sources,
-        effect: infoboxContent.get("Effect") || "",
+        effect: this.getTextContent(
+          infoboxContent.get("effect") || "",
+          this.selectors.effect
+        ),
       };
 
       const imgSrc =
